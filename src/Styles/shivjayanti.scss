@@ -1,0 +1,143 @@
+.Shivjayanti{
+    background: #efefef;
+    padding: 50px 0px;
+    .Shivjayanti-container{
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        // background: #ffffff;
+        gap: 40px;
+
+        .mySwiper {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+                background: var(--accent);
+            }
+
+            .swiper-button-prev:after,
+            .swiper-button-next:after {
+             display:none;
+            }
+            @media only screen and (max-width:1000px){
+              .swiper-button-prev:after,
+            .swiper-button-next:after {
+              display:block !important;
+              background:var(--accent);
+              padding:10px;
+              color:var(--white);
+              font-size:16px;
+              border-radius:100%;
+            }
+            }
+        }
+
+        .Shivjayanti_twobox_cont{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background: #ffffff;
+            border-radius: 10px;
+            gap: 20px;
+            margin-bottom: 50px;
+            
+            .Shivjayanti_img{
+                width: 50%;
+                height: 600px;
+                border-radius: 10px;            
+             
+            }
+            .img1{
+                background: url("../assets/shivjayanti/2018.webp");
+                background-position: center !important;
+
+             }
+             .img2{
+                background: url("../assets/shivjayanti/2019.webp");
+                background-position: left !important;
+
+             }
+             .img3{
+                background: url("../assets/shivjayanti/2020.webp");
+                background-position: center !important;
+
+             }
+             .img4{
+                background: url("../assets/shivjayanti/2021.webp");
+
+             }
+             .img5{
+                background: url("../assets/shivjayanti/2022.webp");
+
+             }
+             .img6{
+                background: url("../assets/shivjayanti/2023.webp");
+
+             }
+             .img7{
+                background: url("../assets/shivjayanti/2024.webp");
+
+             }
+
+            .Shivjayanti_content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                height: 600px;
+                border-radius: 10px;
+                background:white;
+                padding: 30px;
+                
+
+            }
+        }
+        @media only screen and (max-width:1000px){
+            .Shivjayanti_twobox_cont{
+                flex-direction:column-reverse;
+                .Shivjayanti_img{
+                    width:100%;
+                    height:350px;
+                }
+                .Shivjayanti_content{
+                    width:100%;
+                    height: 400px;
+
+                }
+            }
+
+        }
+        @media only screen and (max-width:750px){
+            .Shivjayanti_twobox_cont{
+                .Shivjayanti_img{
+
+                }
+                .Shivjayanti_content{
+                    height: 550px;
+
+                }
+            }
+
+        }
+        @media only screen and (max-width:500px){
+            .Shivjayanti_twobox_cont{
+                .Shivjayanti_img{
+
+                }
+                .Shivjayanti_content{
+                    height: 800px;
+
+                }
+            }
+
+        }
+
+    }
+}

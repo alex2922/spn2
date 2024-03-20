@@ -1,0 +1,41 @@
+.home-about-parent {
+    width: 100svw;
+    height: auto;
+    padding-top: 100px 10px;
+
+
+    .home-about-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .habout-left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .habout-img {
+                height: 400px;
+                width: 350px;
+                border-radius: 10px;
+                background: url('../assets/s3.jpg');
+            }
+        }
+
+        .habout-right {
+            width: 50%;
+            display: flex;
+            gap: 15px;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 10px;
+        }
+
+
+    }
+}

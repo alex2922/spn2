@@ -1,0 +1,235 @@
+.htestamonial-parent {
+    padding: 60px 10px;
+    background-color: #efefef;
+
+    .htestamonial-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        .testamonial-heading {
+            width: 100%;
+            text-align: center;
+        }
+
+
+        .tmySwiper {
+            width: 100%;
+            height: 100%;
+            .swiper-button-next:after{
+                font-size: 20px;
+            }
+            .swiper-button-prev:after{
+                font-size: 20px;
+            }
+            .swiper-button-next,
+            .swiper-rtl .swiper-button-prev {
+                // display: none;
+                background: var(--accent);
+                border-radius: 100%;
+                color: white;
+                padding: 20px;
+            }
+
+            .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+                // display: none;
+                background: var(--accent);
+                border-radius: 100%;
+                color: white;
+                padding: 20px;
+            }
+            .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+                background:var(--accent);
+            }
+        }
+
+        .tcard {
+            height: 350px;
+            width: 900px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px;
+            gap: 10px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            
+
+            .tcard-left {
+                width: 20%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                
+                
+
+
+                .tcard-img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 100px;  
+                }
+
+                .tcard-img-1{
+                    background: url('../photos/testimonial/Dr.-Ashok-Kukade.jpg');
+                }
+                .tcard-img-2{
+                    background: url('../photos/testimonial/Dr.-Gopalrao-Patil.jpg');
+                }
+                .tcard-img-3{
+                    background: url('../photos/testimonial/Mrs.-Smita-Parchure.jpg');
+                }
+                .tcard-img-4{
+                    background: url('../photos/testimonial/Ganesh-Hake.jpg');
+                }
+                .tcard-img-5{
+                    background: url('../photos/testimonial/Suresh-Pawar.jpg');
+                }
+                .tcard-img-6{
+                    background: url('../photos/testimonial/sanjay.jpg');
+                }
+                .tcard-img-7{
+                    background: url('../photos/testimonial/Atul-Thombare.jpg');
+                }
+                .tcard-img-8{
+                    background: url('../photos/testimonial/Sudhakar-Joshi.jpg');
+                }
+                .tcard-img-9{
+                    background: url('../photos/testimonial/blank.png');
+                }
+                .tcard-img-10{
+                    background: url('../photos/testimonial/makarant.jpg');
+                }
+
+
+            }
+
+            .tcard-right {
+
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 5px;
+
+                .theadding {
+                    font-size: 18px;
+                    text-align: left;
+
+                }
+
+                .tsubheadding {
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: var(--accent);
+                    text-align: left;
+                }
+
+                p{
+                    padding-top: 10px;
+                }
+            }
+
+        }
+
+    }
+
+}
+@media only screen and (max-width:1024px) {
+    .tcard {
+        padding: 10px!important;
+        height: 350px !important;
+        width: 800px !important;
+        
+
+        .tcard-left {
+            width: 20%!important;
+
+        }
+
+        .tcard-right {
+            width: 80%!important;
+            display: flex !important;
+            align-items: flex-start !important;
+        }
+
+
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .tcard {
+        padding: 10px!important;
+        flex-direction: column;
+        height: 540px !important;
+        width: 500px !important;
+
+        .tcard-left {
+            width: 100%!important;
+
+        }
+
+        .tcard-right {
+            width: 100%!important;
+            .theadding, .tsubheadding{
+                text-align: center !important;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                align-items: center;
+            
+
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .tcard {
+        // padding: 10px!important;
+        flex-direction: column;
+        height: 640px !important;
+        width: 400px !important;
+
+        .tcard-left {
+            width: 100%!important;
+
+        }
+
+        .tcard-right {
+            width: 100%!important;
+        }
+
+
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .tcard {
+        // padding: 10px!important;
+        flex-direction: column;
+        height: 700px !important;
+        width: 320px !important;
+
+        .tcard-left {
+            width: 100%!important;
+
+        }
+
+        .tcard-right {
+            width: 100%!important;
+        }
+
+
+    }
+}
+

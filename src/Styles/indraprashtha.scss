@@ -1,0 +1,112 @@
+.indraprashtha {
+    background: #efefef;
+    padding: 50px 0px;
+
+    .indraprashtha-container {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        // background: #ffffff;
+        gap: 40px;
+
+        .mySwiper {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                background: var(--accent);
+            }
+
+            .swiper-button-prev:after,
+            .swiper-button-next:after {
+             display:none;
+            }
+            @media only screen and (max-width:800px){
+              .swiper-button-prev:after,
+            .swiper-button-next:after {
+              display:block !important;
+              background:var(--accent);
+              padding:10px;
+              color:var(--white);
+              font-size:16px;
+              border-radius:100%;
+            }
+            }
+        }
+
+        .indraprashtha_twobox_cont {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background: #ffffff;
+            border-radius: 10px;
+            gap: 20px;
+            margin-bottom: 50px;
+
+            .indraprashtha_img {
+                width: 40%;
+                height: 350px;
+                border-radius: 10px;
+            }
+            .indraprashtha_img1{
+                background: url("../photos/indraprasta/s11img.webp");
+            }
+            .indraprashtha_img2{
+                background: url("../photos/indraprasta/s12img.webp");
+            }
+            .indraprashtha_img3{
+                background: url("../photos/indraprasta/s13img.webp");
+            }
+
+            .indraprashtha_content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                height: 350px;
+                border-radius: 10px;
+                background: white;
+                padding: 30px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .indraprashtha {
+
+        .indraprashtha-container {
+
+            .indraprashtha_twobox_cont {
+                flex-direction: column-reverse;
+                height: auto;
+
+                .indraprashtha_content {
+                    width: 100%;
+                    height: auto;
+
+                }
+
+                .indraprashtha_img {
+                    width: 100%;
+
+                }
+
+            }
+
+        }
+
+
+
+    }
+
+
+}

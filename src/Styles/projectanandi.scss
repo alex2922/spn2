@@ -1,0 +1,160 @@
+.anandi {
+    background: #efefef;
+    padding: 50px 0px;
+
+    .anandi-container {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        // background: #ffffff;
+        gap: 40px;
+
+        .mySwiper {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+            .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+                background: var(--accent);
+            }
+
+            .swiper-button-prev:after,
+            .swiper-button-next:after {
+                display: none;
+            }
+
+            @media only screen and (max-width:1150px) {
+
+                .swiper-button-prev:after,
+                .swiper-button-next:after {
+                    display: block !important;
+                    background: var(--accent);
+                    padding: 10px;
+                    color: var(--white);
+                    font-size: 16px;
+                    border-radius: 100%;
+                }
+            }
+        }
+
+        .anandi_twobox_cont {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background: #ffffff;
+            border-radius: 10px;
+            gap: 20px;
+            margin-bottom: 50px;
+
+            .anandi_img {
+                width: 40%;
+                height: 500px;
+                // margin: 10px;
+                border-radius: 10px;
+             background: url("../photos/anandi/g4img.webp");
+             
+
+                background: url("../assets/projectAnandi/iStock-535555329.webp");
+            }
+
+            .anandi_img1 {
+                width: 40%;
+                height: 500px;
+                // margin: 10px;
+                border-radius: 10px;
+                background: url("../photos/anandi/g5img.webp");
+            }
+
+            .anandi_content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 60%;
+                height: 500px;
+                border-radius: 10px;
+                background: white;
+                padding: 30px;
+
+
+            }
+        }
+
+        @media only screen and (max-width:1150px) {
+            .anandi_twobox_cont {
+                flex-direction: column-reverse;
+                background: var(--white);
+
+                .anandi_img {
+                    width: 100%;
+                    height: 300px;
+                }
+
+                .anandi_img1 {
+                    width: 100%;
+                    height: 300px;
+
+                }
+
+                .anandi_content {
+                    width: 100%;
+                    height: 500px;
+
+                }
+            }
+
+        }
+
+        @media only screen and (max-width:650px) {
+            .anandi_twobox_cont {
+                .anandi_img {}
+
+                .anandi_img1 {}
+
+                .anandi_content {
+                    width: 100%;
+                    height: 700px;
+
+                }
+            }
+
+        }
+
+        @media only screen and (max-width:450px) {
+            .anandi_twobox_cont {
+                .anandi_img {}
+
+                .anandi_img1 {}
+
+                .anandi_content {
+                    width: 100%;
+                    height: 850px;
+
+                }
+            }
+
+        }
+
+        @media only screen and (max-width:450px) {
+            .anandi_twobox_cont {
+                .anandi_img {}
+
+                .anandi_img1 {}
+
+                .anandi_content {
+                    width: 100%;
+                    height: 1050px;
+
+                }
+            }
+
+        }
+
+
+    }
+}

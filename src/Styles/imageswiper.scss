@@ -1,0 +1,49 @@
+.imageswiper-parent {
+    // margin-top: 70px;
+    height: auto;
+    padding: 60px 10px;
+
+    .imageswiper-conatiner {
+        height: 100%;
+        width: 100%;
+        .titles{
+            padding:0px 0px 20px 0px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+        .mySwiper {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+                background: var(--accent);
+            }
+        }
+
+        .img-card-parent {
+
+            border-radius: 10px;
+            width: 280px;
+            height: 300px;
+            border-radius: 10px;
+            margin-bottom: 70px;
+           margin-left: auto;
+           margin-right: auto;
+
+            .card-img {
+                height: 100%;
+                width: 100%;
+                background: url('../assets/s2.jpg');
+                border-radius: 10px;
+            }
+        }
+
+
+    }
+
+}
