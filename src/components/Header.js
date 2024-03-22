@@ -53,7 +53,7 @@ useEffect(()=>{
           <>
             <Menu className="dropdown" onClick={handleMenuClick}>
               <Menu.Item key="1">
-                <Link to="/samrudha">{data.Header_samrudha}</Link>
+                <Link to="/Marathwada">{data.Header_marathwada}</Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Link to="/indraprashtha">{data.Header_indraprashtha}</Link>

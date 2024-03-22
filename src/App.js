@@ -21,6 +21,7 @@ import Success from "./Pages/Success";
 import ScrollTop from "./components/ScrollTop";
 import Cookies from "./Pages/Cookies"
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import Marathwadacoach from "./Pages/Marathwadacoach";
 
 function App() {
   const [language, setlanguage] = useState(english);
@@ -46,8 +47,8 @@ function App() {
           <Route path="/about" element={<About data={language} />}></Route>
           <Route path="/success" element={<Success data={language} />}></Route>
           <Route
-            path="/samrudha"
-            element={<Samruddha data={language} />}
+            path="/Marathwada"
+            element={<Marathwadacoach data={language} />}
           ></Route>
           <Route
             path="/indraprashtha"
