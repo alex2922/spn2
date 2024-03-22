@@ -321,7 +321,7 @@ const marathi = [
         Header_Gallery:"गैलरी ",
         Header_Blog:"ब्लॉग्स",
         Header_contact:"संपर्क",
-        Header_samrudha:"समृद्ध शेतकरी अभियान",
+        Header_marathwada:"Marathwada Coach Factory",
         Header_indraprashtha:"इंद्रप्रस्थ जलभूमी अभियान",
         Header_harit:"हरित लातूर",
         Header_shiv:"शिवजयंती",
