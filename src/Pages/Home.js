@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import img1 from "../assets/home/s6.png";
 
 import "../Styles/home.scss";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Link } from "react-router-dom";
@@ -21,6 +21,7 @@ import s5 from "../assets/home/s5.png";
 import s7 from "../assets/home/s6.png";
 import s8 from "../assets/home/s8.png";
 import s9 from "../assets/home/s9.png";
+import Accr from "./Accr";
 
 function Home(props) {
   const swiperSlidesData = [
@@ -39,6 +40,8 @@ function Home(props) {
     AOS.init();
   }, []);
 
+
+
   return (
     <>
       {props.data.map((data) => {
@@ -56,7 +59,7 @@ function Home(props) {
               />
             </div>
 
-           <div className="success-superparent">
+            <div className="success-superparent">
 
             <h2 className="head">Success Stories</h2>
 
@@ -161,6 +164,8 @@ function Home(props) {
                 </Link>
               </div>
             </div>
+
+           
           </>
         );
       })}
