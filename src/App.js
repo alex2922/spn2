@@ -9,10 +9,7 @@ import Togglebtn from "./components/Togglebtn";
 import Home from "../src/Pages/Home";
 import About from "../src/Pages/About";
 import Gallery from "../src/Pages/Gallery";
-import Samruddha from "../src/Pages/Samruddha_setkari";
 import Drushti from "../src/Pages/Drushti";
-import Harit from "../src/Pages/Harit_latur";
-import Indraprashtha from "../src/Pages/Indraprashtha";
 import Project_anandi from "../src/Pages/Project_anandi";
 import Shivjayanti from "../src/Pages/Shivjayanti";
 import Blog from "../src/Pages/Blog";
@@ -22,6 +19,9 @@ import ScrollTop from "./components/ScrollTop";
 import Cookies from "./Pages/Cookies"
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Marathwadacoach from "./Pages/Marathwadacoach";
+import Jalsaksharta from "../src/Pages/Jalsaksharta";
+import Taasandolan from "../src/Pages/Taasandolan";
+import Latur from "../src/Pages/Laturvachava";
 
 function App() {
   const [language, setlanguage] = useState(english);
@@ -51,13 +51,13 @@ function App() {
             element={<Marathwadacoach data={language} />}
           ></Route>
           <Route
-            path="/indraprashtha"
-            element={<Indraprashtha data={language} />}
+            path="/Jalsaksharta"
+            element={<Jalsaksharta data={language} />}
           ></Route>
-          <Route path="/harit" element={<Harit data={language} />}></Route>
+          <Route path="/Taas" element={<Taasandolan data={language} />}></Route>
           <Route
-            path="/shivjayanti"
-            element={<Shivjayanti data={language} />}
+            path="/Latur"
+            element={<Latur data={language} />}
           ></Route>
           <Route
             path="/anandi"
