@@ -56,10 +56,10 @@ useEffect(()=>{
                 <Link to="/Marathwada">{data.Header_marathwada}</Link>
               </Menu.Item>
               <Menu.Item key="2">
-                <Link to="/indraprashtha">{data.Header_indraprashtha}</Link>
+                <Link to="/Jalsaksharta">{data.Header_indraprashtha}</Link>
               </Menu.Item>
               <Menu.Item key="3">
-                <Link to="/harit">{data.Header_harit}</Link>
+                <Link to="/Taas">{data.Header_Taas}</Link>
               </Menu.Item>
               <Menu.Item key="4">
                 <Link to="/shivjayanti">{data.Header_shiv}</Link>

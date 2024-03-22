@@ -318,15 +318,19 @@ const marathi = [
         Header_home:"मुखपृष्ठ   ",
         Header_about:"आमच्याबद्दल",
         Header_story:"यशोगाथा",
+        Header_marathwada:"Marathwada Coach Factory",
+        Header_Jal:"Jal Saksharta Rally",
+        Header_Taas:"72 Taas Andolan",
+        Header_Latur:"Latur Vachava Andolan",
+        Header_Atal:"Atal Maharogya Shibir",
+        Header_Namo_maharojgar:"Namo Maharojgar Melava, Latur 2023",
+        Header_indraprashtha:"Indraprasth Jalbhumi Abhiyan",
+        Header_akka:"Akka Foundation",
         Header_Gallery:"गैलरी ",
         Header_Blog:"ब्लॉग्स",
         Header_contact:"संपर्क",
-        Header_marathwada:"Marathwada Coach Factory",
-        Header_indraprashtha:"इंद्रप्रस्थ जलभूमी अभियान",
-        Header_harit:"हरित लातूर",
-        Header_shiv:"शिवजयंती",
-        Header_anandi:"प्रोजेक्ट आनंदी",
-        Header_drushti:"दृष्टी अभियान", 
+        
+        
         // gallery page==================================
 
         Gallery_election:"निवडणूक पोस्ट ",
