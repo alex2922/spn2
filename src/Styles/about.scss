@@ -29,18 +29,18 @@
 
       .swiper-button-prev:after,
       .swiper-button-next:after {
-       display:none;
+        display: none;
       }
-      @media only screen and (max-width:1000px){
+      @media only screen and (max-width: 1000px) {
         .swiper-button-prev:after,
-      .swiper-button-next:after {
-        display:block !important;
-        background:var(--accent);
-        padding:10px;
-        color:var(--white);
-        font-size:16px;
-        border-radius:100%;
-      }
+        .swiper-button-next:after {
+          display: block !important;
+          background: var(--accent);
+          padding: 10px;
+          color: var(--white);
+          font-size: 16px;
+          border-radius: 100%;
+        }
       }
     }
 
@@ -59,31 +59,31 @@
         height: 650px;
         border-radius: 10px;
       }
-      .personality_img-1{
+      .personality_img-1 {
         background: url("../photos/personality/withshah.webp");
       }
-      .personality_img-2{
-        background: url("../photos/personality/bjp.webp");
+      .personality_img-2 {
+        background: url("../photos/personality/bjp.jpg");
       }
-      .personality_img-3{
+      .personality_img-3 {
         background: url("../photos/personality/ptom.webp");
       }
-      .personality_img-4{
+      .personality_img-4 {
         background: url("../photos/personality/friendly.webp");
       }
-      .personality_img-5{
+      .personality_img-5 {
         background: url("../photos/personality/pilot.webp");
       }
-      .personality_img-6{
+      .personality_img-6 {
         background: url("../photos/personality/osmanabad.webp");
       }
-      .personality_img-7{
+      .personality_img-7 {
         background: url("../photos/personality/railway.webp");
       }
-      .personality_img-8{
+      .personality_img-8 {
         background: url("../photos/personality/boost.webp");
       }
-      .personality_img-9{
+      .personality_img-9 {
         background: url("../photos/personality/employing.webp");
       }
 
@@ -102,7 +102,6 @@
       .personality_twobox_cont {
         flex-direction: column !important;
         gap: 10px;
-
         padding-top: 20px;
         background: var(--white);
         .personality_img {
@@ -110,10 +109,10 @@
           width: 90%;
         }
         .personality_content {
-            padding:10px 0px 10px 0px;
+          padding: 10px 0px 10px 0px;
           width: 90%;
           height: 400px;
-          align-items:flex-start;
+          align-items: flex-start;
         }
       }
     }
@@ -121,7 +120,6 @@
       .personality_twobox_cont {
         flex-direction: column !important;
         gap: 10px;
-
         padding-top: 20px;
         background: var(--white);
         .personality_img {
@@ -129,24 +127,24 @@
           width: 90%;
         }
         .personality_content {
-            padding:10px 0px 10px 0px;
+          padding: 10px 0px 10px 0px;
           width: 90%;
           height: 550px;
-          align-items:flex-start;
+          align-items: flex-start;
         }
       }
     }
-    @media only screen and (max-width:500px){
-        .personality_twobox_cont {
-            .personality_img {
-                height: 300px;
-                width: 90%;
-              }
-              .personality_content {
-                width: 90%;
-                height: 600px;
-              }
+    @media only screen and (max-width: 500px) {
+      .personality_twobox_cont {
+        .personality_img {
+          height: 300px;
+          width: 90%;
         }
+        .personality_content {
+          width: 90%;
+          height: 600px;
+        }
+      }
     }
   }
 }
