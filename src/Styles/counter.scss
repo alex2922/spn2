@@ -1,0 +1,39 @@
+.counter-parent {
+   height: 300px;
+    
+
+
+
+    .conter-container {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+
+        .count-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+
+            .counter-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+               .counter-number{
+                font-size: 70px;
+                font-weight: 600;
+               } 
+
+
+
+            }
+
+        }
+    }
+
+}

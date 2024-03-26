@@ -4,6 +4,7 @@ import Imageswiper from "../components/Imageswiper";
 import img1 from "../photos/drushti/g1img.webp"
 import img from "../photos/drushti/g1img.webp"
 import TwoColSec from "../components/TwoColSec";
+import Counter from "../components/Counter";
 
 function Marathwadacoach() {
   return (
@@ -40,6 +41,11 @@ function Marathwadacoach() {
           </div>
         </div>
       </div>
+
+      <Counter
+      background="#efefef"
+      
+      />
 
       
            <TwoColSec

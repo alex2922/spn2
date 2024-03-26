@@ -4,6 +4,7 @@ import img1 from "../photos/drushti/g1img.webp"
 import img from "../photos/drushti/g1img.webp"
 import Imageswiper from "../components/Imageswiper";
 import TwoColSec from "../components/TwoColSec";
+import Counter from '../components/Counter';
 
 
 function Namomaharojgar() {
@@ -41,6 +42,10 @@ function Namomaharojgar() {
     </div>
   </div>
 </div>
+<Counter
+      background="#efefef"
+      
+      />
 <TwoColSec
               padding="50px 0px 50px 0px"
               background=""
