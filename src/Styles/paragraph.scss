@@ -1,0 +1,12 @@
+.para-parent {
+    padding: 50px 10px;
+
+    .para-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
