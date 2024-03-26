@@ -46,8 +46,8 @@ function About(props) {
 
             <div className="personality parent">
               <div className="personality-container cont">
-                <h2>{data.About_personality}</h2>
-                <p>{data.About_personality_para}</p>
+                <h2 data-aos="fade-up" data-aos-delay="0" data-aos-duration="900">{data.About_personality}</h2>
+                <p data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">{data.About_personality_para}</p>
 
                 <Swiper
                   spaceBetween={30}
@@ -65,7 +65,7 @@ function About(props) {
                 >
                   <SwiperSlide>
                     <div className="personality_twobox_cont">
-                      <div className="personality_img personality_img-1 bg-img-cover"></div>
+                      <div className="personality_img personality_img-1 bg-img-cover" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200"></div>
                       <div className="personality_content">
                         <List
                           title={data.About_card1}
@@ -76,7 +76,7 @@ function About(props) {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="personality_twobox_cont">
-                      <div className="personality_img personality_img-2 bg-img-cover"></div>
+                      <div className="personality_img personality_img-2 bg-img-cover" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1700"></div>
                       <div className="personality_content">
                         <List
                           title={data.About_card2}
@@ -87,7 +87,7 @@ function About(props) {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="personality_twobox_cont">
-                      <div className="personality_img personality_img-3 bg-img-cover"></div>
+                      <div className="personality_img personality_img-3 bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1200"></div>
                       <div className="personality_content">
                         <List
                           title={data.About_card3}
@@ -98,7 +98,7 @@ function About(props) {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="personality_twobox_cont">
-                      <div className="personality_img personality_img-4 bg-img-cover"></div>
+                      <div className="personality_img personality_img-4 bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1200"></div>
                       <div className="personality_content">
                         <List
                           title={data.About_card4}
@@ -109,7 +109,7 @@ function About(props) {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="personality_twobox_cont">
-                      <div className="personality_img personality_img-5 bg-img-cover"></div>
+                      <div className="personality_img personality_img-5 bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1200"></div>
                       <div className="personality_content">
                         <List
                           title={data.About_card5}
@@ -120,7 +120,7 @@ function About(props) {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="personality_twobox_cont">
-                      <div className="personality_img personality_img-6 bg-img-cover"></div>
+                      <div className="personality_img personality_img-6 bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1200"></div>
                       <div className="personality_content">
                         <List
                           title={data.About_card6}
@@ -131,7 +131,7 @@ function About(props) {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="personality_twobox_cont">
-                      <div className="personality_img personality_img-7 bg-img-cover"></div>
+                      <div className="personality_img personality_img-7 bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1200"></div>
                       <div className="personality_content">
                         <List
                           title={data.About_card7}
@@ -142,7 +142,7 @@ function About(props) {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="personality_twobox_cont">
-                      <div className="personality_img personality_img-8 bg-img-cover"></div>
+                      <div className="personality_img personality_img-8 bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1200"></div>
                       <div className="personality_content">
                         <List
                           title={data.About_card8}
@@ -153,7 +153,7 @@ function About(props) {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="personality_twobox_cont">
-                      <div className="personality_img personality_img-9 bg-img-cover"></div>
+                      <div className="personality_img personality_img-9 bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1200"></div>
                       <div className="personality_content">
                         <List
                           title={data.About_card9}

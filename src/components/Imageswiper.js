@@ -15,7 +15,7 @@ function Imageswiper(props) {
     return (
 
         <>
-            <div className="imageswiper-parent parent">
+            <div className="imageswiper-parent parent" style={{background:`${props.background}`}}>
                 <div className="imageswiper-conatiner cont">
                     <h2 className='titles'>{props.titlegallery}</h2>
 

@@ -10,7 +10,7 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Link } from "react-router-dom";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 import s1 from "../assets/home/s1.png";
 import s2 from "../assets/home/s2.png";
@@ -61,14 +61,18 @@ function Home(props) {
 
             <div className="success-superparent">
 
-            <h2 className="head">Success Stories</h2>
+            <h2 className="head" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Success Stories</h2>
 
-           <div className="success-swipe parent">
+           <div className="success-swipe parent" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
               <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
                 pagination={{
                   clickable: true,
+                }}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
                 }}
                 navigation={true}
                 breakpoints={{
@@ -85,7 +89,7 @@ function Home(props) {
                     spaceBetween: 20,
                   },
                 }}
-                modules={[Pagination, Navigation]}
+                modules={[Pagination, Navigation, Autoplay]}
                 className="mySwiper"
               >
                 {swiperSlidesData.map((slide, index) => (
