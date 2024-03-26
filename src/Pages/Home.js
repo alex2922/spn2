@@ -164,8 +164,6 @@ function Home(props) {
                 </Link>
               </div>
             </div>
-
-           
           </>
         );
       })}
