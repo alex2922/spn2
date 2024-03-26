@@ -1,5 +1,8 @@
 import React from "react";
 import "../Styles/marathwadacoach.scss";
+import Imageswiper from "../components/Imageswiper";
+import img1 from "../photos/drushti/g1img.webp"
+import img2 from "../photos/drushti/g1img.webp"
 
 function Marathwadacoach() {
   return (
@@ -40,14 +43,17 @@ function Marathwadacoach() {
 
 
 
-      <div className="zig-zag">
-        <div className="zig-zag-cont cont">
-          <div className="img">
-            
-          </div>
+      
 
-        </div>
-      </div>
+      <Imageswiper
+            titlegallery="gallery"
+              img1={img1}
+              img2={img2}
+              img3={img1}
+              img4={img1}
+              img5={img1}
+              
+            />
     </>
   );
 }
