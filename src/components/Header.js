@@ -62,7 +62,7 @@ function Header(props) {
                 <Link to="/72_Taas_Andolan">72 Taas Andolan</Link>
               </Menu.Item>
               <Menu.Item key="4">
-                <Link to="/Latur_Vachava_Andolan">Latur Vachava Andolan</Link>
+                <Link to="/Jan_Jagar_Sanvad">Jan Jagar Sanvad</Link>
               </Menu.Item>
               <Menu.Item key="5">
                 <Link to="/Atal_Maharogya_Shibir">Atal Maharogya Shibir</Link>

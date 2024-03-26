@@ -57,7 +57,7 @@ function App() {
           ></Route>
           <Route path="/72_Taas_Andolan" element={<Taasandolan data={language} />}></Route>
           <Route
-            path="/Latur_Vachava_Andolan"
+            path="/Jan_Jagar_Sanvad"
             element={<Latur data={language} />}
           ></Route>
           <Route
