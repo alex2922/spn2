@@ -4,7 +4,7 @@ import Imageswiper from "../components/Imageswiper";
 import img1 from "../photos/drushti/g1img.webp"
 import img from "../photos/drushti/g1img.webp"
 import TwoColSec from "../components/TwoColSec";
-import Para from "../components/Para";
+
 import Counter from "../components/Counter";
 
 function Marathwadacoach() {
@@ -44,15 +44,7 @@ function Marathwadacoach() {
 </div>
 
 
-<Para
-  paraheadding='Lorem ipsum dolor sit amet consectetur adipisicing'
-  para=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-  porro molestiae id cupiditate sequi veritatis doloremque vitae!
-  Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-  quas explicabo accusamus beatae, magni nostrum tempora iusto.
-  Officia, itaque asperiores distinctio maxime aperiam rerum illo
-  nesciunt saepe mollitia id. Iusto, accusamus beatae!"
-/>
+
 
 <Counter
   background="#efefef"
@@ -60,18 +52,19 @@ function Marathwadacoach() {
 />
 
 <TwoColSec
-  padding="50px 0px 50px 0px"
-  background=""
-  row="row-reverse"
-  bg={img}
-  subheading=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-        porro molestiae id cupiditate sequi veritatis doloremque vitae!
-        Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-        quas explicabo accusamus beatae, magni nostrum tempora iusto.
-        Officia, itaque asperiores distinctio maxime aperiam rerum illo
-        nesciunt saepe mollitia id. Iusto, accusamus beatae!"
-  btn=""
-/>
+              padding="50px 0px 50px 0px"
+              background=""
+              row="row-reverse"
+              bg={img}
+              subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              subdescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              porro molestiae id cupiditate sequi veritatis doloremque vitae!
+              Quo sapiente molestias iure rem ipsum cum minus debitis maxime
+              quas explicabo accusamus beatae, magni nostrum tempora iusto.
+              Officia, itaque asperiores distinctio maxime aperiam rerum illo
+              nesciunt saepe mollitia id. Iusto, accusamus beatae!"
+              btn=""
+            />
 
 
 

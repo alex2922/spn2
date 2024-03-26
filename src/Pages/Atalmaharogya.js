@@ -3,7 +3,7 @@ import "../Styles/atalmaharogya.scss";
 import img1 from "../photos/drushti/g1img.webp"
 import img from "../photos/drushti/g1img.webp"
 import Imageswiper from "../components/Imageswiper";
-import Para from '../components/Para';
+
 import TwoColSec from "../components/TwoColSec";
 import Counter from '../components/Counter';
 function Atalmaharogya() {
@@ -66,21 +66,7 @@ function Atalmaharogya() {
 
 
 
-<Para
-        paraheadding='Lorem ipsum dolor sit amet consectetur adipisicing'
-        para='Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-porro molestiae id cupiditate sequi veritatis doloremque vitae!
-Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-quas explicabo accusamus beatae, magni nostrum tempora iusto.
-Officia, itaque asperiores distinctio maxime aperiam rerum illo
-nesciunt saepe mollitia id. Iusto, accusamus beatae!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              porro molestiae id cupiditate sequi veritatis doloremque vitae!
-              Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-              quas explicabo accusamus beatae, magni nostrum tempora iusto.
-              Officia, itaque asperiores distinctio maxime aperiam rerum illo
-              nesciunt saepe mollitia id. Iusto, accusamus beatae!'
 
-      />
 
 <Imageswiper
   titlegallery="gallery"
