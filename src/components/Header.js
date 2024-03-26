@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/Header.scss";
 import { Link } from "react-router-dom";
 import logo from "../assets/header/BJP_election_symbol.png";
@@ -19,25 +19,25 @@ function Header(props) {
   const [scrollClass, setScrollClass] = useState('');
 
 
-  
-useEffect(()=>{
-  AOS.init();
 
-  const handleScroll = () => {
-    // You can adjust the scroll position as needed
-    if (window.scrollY > 0) {
-      setScrollClass(true);
-    } else {
-      setScrollClass(false);
-    }
-  };
+  useEffect(() => {
+    AOS.init();
 
-  window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      // You can adjust the scroll position as needed
+      if (window.scrollY > 0) {
+        setScrollClass(true);
+      } else {
+        setScrollClass(false);
+      }
+    };
 
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-},[])
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [])
   const [navopen, setNavOpen] = useState(false);
 
   const [accordian, setaccordian] = useState(false);
@@ -53,22 +53,28 @@ useEffect(()=>{
           <>
             <Menu className="dropdown" onClick={handleMenuClick}>
               <Menu.Item key="1">
-                <Link to="/Marathwada">{data.Header_marathwada}</Link>
+                <Link to="/Marathwada_Coach_Factory">Marathwada Coach Factory</Link>
               </Menu.Item>
               <Menu.Item key="2">
-                <Link to="/Jalsaksharta">{data.Header_indraprashtha}</Link>
+                <Link to="/Jal_Saksharta_Rally">Jal Saksharta Rally</Link>
               </Menu.Item>
               <Menu.Item key="3">
-                <Link to="/Taas">{data.Header_Taas}</Link>
+                <Link to="/72_Taas_Andolan">72 Taas Andolan</Link>
               </Menu.Item>
               <Menu.Item key="4">
-                <Link to="/shivjayanti">{data.Header_shiv}</Link>
+                <Link to="/Latur_Vachava_Andolan">Latur Vachava Andolan</Link>
               </Menu.Item>
               <Menu.Item key="5">
-                <Link to="/anandi">{data.Header_anandi}</Link>
+                <Link to="/Atal_Maharogya_Shibir">Atal Maharogya Shibir</Link>
               </Menu.Item>
               <Menu.Item key="6">
-                <Link to="/drushti">{data.Header_drushti}</Link>
+                <Link to="/Namo_Maharojgar_Melava">Namo Maharojgar Melava, Latur 2023</Link>
+              </Menu.Item>
+              <Menu.Item key="7">
+                <Link to="/Indraprasth_Jalbhumi_Abhiyan">Indraprasth Jalbhumi Abhiyan</Link>
+              </Menu.Item>
+              <Menu.Item key="8">
+                <Link to="/Akka_Foundation">Akka Foundation</Link>
               </Menu.Item>
             </Menu>
           </>
@@ -82,7 +88,7 @@ useEffect(()=>{
       {props.data.map((data) => {
         return (
           <>
-            <div className={scrollClass ? " parent header scrolled" :"parent header"} data-aos-duration="1000"  data-aos-easing="ease-out" data-aos="fade-down"   >
+            <div className={scrollClass ? " parent header scrolled" : "parent header"} data-aos-duration="1000" data-aos-easing="ease-out" data-aos="fade-down"   >
               <div className="header-cont cont">
                 <Link to="/" className="logo">
                   <img src={logo} alt="logo" />
@@ -131,24 +137,26 @@ useEffect(()=>{
                   {data.Header_about}
                 </Link>
 
-            
 
 
-          <div className="toprow" onClick={()=>setaccordian(!accordian)}>
-      <Link  to="/success"> {data.Header_story}+</Link>  
-    </div>
-{accordian &&
-    <div className="dropdown-mob">
-   < Link to="/success" onClick={() => {setNavOpen(false);{setaccordian(false)}}}>{data.Header_story}</Link> 
-        <Link to="/samrudha" onClick={() => {setNavOpen(false);{setaccordian(false)}}}>Samrudha Shetkari Abhiyan</Link>
-        <Link to="/indraprashtha" onClick={() => {setNavOpen(false);{setaccordian(false)}}}>Indraprastha Jalbhumi Mission</Link>
-        <Link to="/harit" onClick={() => {setNavOpen(false);{setaccordian(false)}}}>Harit Latur</Link>
-        <Link to="/shivjayanti" onClick={() => {setNavOpen(false);{setaccordian(false)}}}>Shivjayanti</Link>
-        <Link to="/anandi" onClick={() => {setNavOpen(false);{setaccordian(false)}}}>Project Anandi</Link>
-        <Link to="/drushti" onClick={() => {setNavOpen(false);{setaccordian(false)}}}>Drushti Abhiyan</Link>
-    </div>
 
-}
+                <div className="toprow" onClick={() => setaccordian(!accordian)}>
+                  <Link to="/success"> {data.Header_story}+</Link>
+                </div>
+                {accordian &&
+                  <div className="dropdown-mob">
+                    < Link to="/success" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_story}</Link>
+                    <Link to="/Marathwada" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_marathwada}</Link>
+                    <Link to="/Jalsaksharta" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Jal}</Link>
+                    <Link to="/Taas" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Taas}</Link>
+                    <Link to="/Latur" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Latur}</Link>
+                    <Link to="/atal" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Atal}</Link>
+                    <Link to="/Namo" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Namo_maharojgar}</Link>
+                    <Link to="/indra" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_indraprashtha}</Link>
+                    <Link to="/akka" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Namo_maharojgar}</Link>
+                  </div>
+
+                }
 
 
 

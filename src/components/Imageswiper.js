@@ -15,7 +15,7 @@ function Imageswiper(props) {
     return (
 
         <>
-            <div className="imageswiper-parent parent">
+            <div className="imageswiper-parent parent" style={{background:`${props.background}`}}>
                 <div className="imageswiper-conatiner cont">
                     <h2 className='titles'>{props.titlegallery}</h2>
 
@@ -63,50 +63,50 @@ function Imageswiper(props) {
                     >
                         {props.img1 && <SwiperSlide>
                             <div className="img-card-parent">
-                                <div className="card-img bg-img-cover" style={{background:`url(${props.img1})`}}></div>
+                                <div className="card-img bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" style={{background:`url(${props.img1})`}}></div>
                             </div>
 
                         </SwiperSlide>}
                         {props.img2 && <SwiperSlide>
                             <div className="img-card-parent">
-                                <div className="card-img bg-img-cover" style={{background:`url(${props.img2})`}}></div>
+                                <div className="card-img bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" style={{background:`url(${props.img2})`}}></div>
                             </div>
                         </SwiperSlide>}
                         {props.img3 && <SwiperSlide>
                             <div className="img-card-parent">
-                                <div className="card-img bg-img-cover" style={{background:`url(${props.img3})`}}></div>
+                                <div className="card-img bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" style={{background:`url(${props.img3})`}}></div>
                             </div>
 
                         </SwiperSlide>}
                         {props.img4 && <SwiperSlide>
                             <div className="img-card-parent">
-                                <div className="card-img bg-img-cover" style={{background:`url(${props.img4})`}}></div>
+                                <div className="card-img bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" style={{background:`url(${props.img4})`}}></div>
                             </div>
 
 
                         </SwiperSlide>}
                         {props.img5 && <SwiperSlide>
                             <div className="img-card-parent">
-                                <div className="card-img bg-img-cover" style={{background:`url(${props.img5})`}}></div>
+                                <div className="card-img bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" style={{background:`url(${props.img5})`}}></div>
                             </div>
 
                         </SwiperSlide>
 
                         }
                         {props.img6 && <SwiperSlide>  <div className="img-card-parent">
-                            <div className="card-img bg-img-cover" style={{background:`url(${props.img6})`}}></div>
+                            <div className="card-img bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" style={{background:`url(${props.img6})`}}></div>
                         </div>
                         </SwiperSlide>}
                         {props.img7 && <SwiperSlide>  <div className="img-card-parent">
-                            <div className="card-img bg-img-cover" style={{background:`url(${props.img7})`}}></div>
+                            <div className="card-img bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" style={{background:`url(${props.img7})`}}></div>
                         </div>
                         </SwiperSlide>}
                         {props.img8 && <SwiperSlide>  <div className="img-card-parent">
-                            <div className="card-img bg-img-cover" style={{background:`url(${props.img8})`}}></div>
+                            <div className="card-img bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" style={{background:`url(${props.img8})`}}></div>
                         </div>
                         </SwiperSlide>}
                         {props.img9 && <SwiperSlide>  <div className="img-card-parent">
-                            <div className="card-img bg-img-cover" style={{background:`url(${props.img9})`}}></div>
+                            <div className="card-img bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" style={{background:`url(${props.img9})`}}></div>
                         </div>
                         </SwiperSlide>}
                     </Swiper>

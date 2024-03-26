@@ -9,9 +9,6 @@ import Togglebtn from "./components/Togglebtn";
 import Home from "../src/Pages/Home";
 import About from "../src/Pages/About";
 import Gallery from "../src/Pages/Gallery";
-import Drushti from "../src/Pages/Drushti";
-import Project_anandi from "../src/Pages/Project_anandi";
-import Shivjayanti from "../src/Pages/Shivjayanti";
 import Blog from "../src/Pages/Blog";
 import Contact from "../src/Pages/Contact";
 import Success from "./Pages/Success";
@@ -22,6 +19,10 @@ import Marathwadacoach from "./Pages/Marathwadacoach";
 import Jalsaksharta from "../src/Pages/Jalsaksharta";
 import Taasandolan from "../src/Pages/Taasandolan";
 import Latur from "../src/Pages/Laturvachava";
+import Atal from "../src/Pages/Atalmaharogya";
+import Namo from "../src/Pages/Namomaharojgar";
+import Indra from "../src/Pages/Indraprashtha";
+import Akka from "../src/Pages/Akkafoundation";
 
 function App() {
   const [language, setlanguage] = useState(english);
@@ -47,23 +48,25 @@ function App() {
           <Route path="/about" element={<About data={language} />}></Route>
           <Route path="/success" element={<Success data={language} />}></Route>
           <Route
-            path="/Marathwada"
+            path="/Marathwada_Coach_Factory"
             element={<Marathwadacoach data={language} />}
           ></Route>
           <Route
-            path="/Jalsaksharta"
+            path="/Jal_Saksharta_Rally"
             element={<Jalsaksharta data={language} />}
           ></Route>
-          <Route path="/Taas" element={<Taasandolan data={language} />}></Route>
+          <Route path="/72_Taas_Andolan" element={<Taasandolan data={language} />}></Route>
           <Route
-            path="/Latur"
+            path="/Latur_Vachava_Andolan"
             element={<Latur data={language} />}
           ></Route>
           <Route
-            path="/anandi"
-            element={<Project_anandi data={language} />}
+            path="/Atal_Maharogya_Shibir"
+            element={<Atal data={language} />}
           ></Route>
-          <Route path="/drushti" element={<Drushti data={language} />}></Route>
+          <Route path="/Namo_Maharojgar_Melava" element={<Namo data={language} />}></Route>
+          <Route path="/Indraprasth_Jalbhumi_Abhiyan" element={<Indra data={language} />}></Route>
+          <Route path="/Akka_Foundation" element={<Akka data={language} />}></Route>
           <Route
             path="/gallery"
             element={
