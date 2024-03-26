@@ -1,8 +1,9 @@
 import React from 'react'
 import "../Styles/taasandolan.scss";
 import img1 from "../photos/drushti/g1img.webp"
-import img2 from "../photos/drushti/g1img.webp"
+import img from "../photos/drushti/g1img.webp"
 import Imageswiper from "../components/Imageswiper";
+import TwoColSec from "../components/TwoColSec";
 
 function Taasandolan() {
   return (
@@ -40,6 +41,21 @@ function Taasandolan() {
         </div>
       </div>
 
+      <TwoColSec
+              padding="50px 0px 50px 0px"
+              background=""
+              row="row-reverse"
+              bg={img}
+              subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              subdescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              porro molestiae id cupiditate sequi veritatis doloremque vitae!
+              Quo sapiente molestias iure rem ipsum cum minus debitis maxime
+              quas explicabo accusamus beatae, magni nostrum tempora iusto.
+              Officia, itaque asperiores distinctio maxime aperiam rerum illo
+              nesciunt saepe mollitia id. Iusto, accusamus beatae!"
+              btn=""
+            />
+
 
 
 
@@ -47,8 +63,9 @@ function Taasandolan() {
 
       <Imageswiper
             titlegallery="gallery"
+            background= "#efefef"
               img1={img1}
-              img2={img2}
+              img2={img1}
               img3={img1}
               img4={img1}
               img5={img1}
