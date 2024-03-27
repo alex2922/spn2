@@ -6,8 +6,11 @@ import Imageswiper from "../components/Imageswiper";
 
 import TwoColSec from "../components/TwoColSec";
 import Counter from '../components/Counter';
-function Laturvachava() {
+function Laturvachava(props) {
   return (
+    <>
+    {props.data.map((data) => {
+        return (
     <>
     
     
@@ -42,7 +45,7 @@ function Laturvachava() {
     </div>
   </div>
 </div>
-<Counter
+<Counter data={props.data}
       background="#efefef"
       
       />
@@ -75,6 +78,10 @@ function Laturvachava() {
   img5={img1}
 
 />
+
+</>
+        );
+      })}
     
     </>
   )

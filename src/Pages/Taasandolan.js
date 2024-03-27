@@ -8,8 +8,11 @@ import TwoColSec from "../components/TwoColSec";
 import Counter from '../components/Counter';
 
 
-function Taasandolan() {
+function Taasandolan(props) {
   return (
+    <>
+    {props.data.map((data) => {
+      return (
     <>
     
     <div className="header-bg-box">
@@ -44,7 +47,7 @@ function Taasandolan() {
         </div>
       </div>
 
-      <Counter
+      <Counter data={props.data}
       background="#efefef"
       
       />
@@ -93,6 +96,9 @@ nesciunt saepe mollitia id. Iusto, accusamus beatae!Lorem, ipsum dolor sit amet 
               img5={img1}
               
             />
+                 </>
+        );
+      })}
     
     
     </>

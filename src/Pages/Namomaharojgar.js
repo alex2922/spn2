@@ -11,8 +11,11 @@ import Counter from '../components/Counter';
 
 
 
-function Namomaharojgar() {
+function Namomaharojgar(props) {
   return (
+    <>
+    {props.data.map((data) => {
+        return (
     <>
     
     <div className="header-bg-box">
@@ -46,7 +49,7 @@ function Namomaharojgar() {
     </div>
   </div>
 </div>
-<Counter
+<Counter data={props.data}
       background="#efefef"
       
       />
@@ -78,6 +81,10 @@ function Namomaharojgar() {
   img5={img1}
 
 />
+
+</>
+        );
+      })}
 
     
     

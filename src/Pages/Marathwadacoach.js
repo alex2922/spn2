@@ -7,8 +7,11 @@ import TwoColSec from "../components/TwoColSec";
 
 import Counter from "../components/Counter";
 
-function Marathwadacoach() {
+function Marathwadacoach(props) {
   return (
+    <>
+    {props.data.map((data) => {
+        return (
     <>
 
 <div className="header-bg-box">
@@ -46,14 +49,17 @@ function Marathwadacoach() {
 
 
 
-<Counter
-  background="#efefef"
+<Counter data={props.data}
+  background=""
+  text1="guku"
+  text2="guku"
+  text3="guku"
 
 />
 
 <TwoColSec
               padding="50px 0px 50px 0px"
-              background=""
+              background="#efefef"
               row="row-reverse"
               bg={img}
               subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit."
@@ -72,7 +78,7 @@ function Marathwadacoach() {
 
 <Imageswiper
   titlegallery="gallery"
-  background="#efefef"
+  background=""
   img1={img1}
   img2={img1}
   img3={img1}
@@ -80,6 +86,10 @@ function Marathwadacoach() {
   img5={img1}
 
 />
+</>
+        );
+      })}
+    
 
     </>
   );

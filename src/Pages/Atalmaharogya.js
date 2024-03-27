@@ -6,7 +6,7 @@ import Imageswiper from "../components/Imageswiper";
 
 import TwoColSec from "../components/TwoColSec";
 import Counter from '../components/Counter';
-function Atalmaharogya() {
+function Atalmaharogya(props) {
   return (
     <>
     
@@ -44,7 +44,7 @@ function Atalmaharogya() {
   </div>
 </div>
 
-<Counter
+<Counter data={props.data}
       background="#efefef"
       
       />

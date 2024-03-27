@@ -7,8 +7,12 @@ import Imageswiper from "../components/Imageswiper";
 import TwoColSec from "../components/TwoColSec";
 import Counter from '../components/Counter';
 
-function Jalsaksharta() {
+function Jalsaksharta(props) {
   return (
+    <>
+    {props.data.map((data) => {
+        return (
+
     <>
 
       <div className="header-bg-box">
@@ -43,7 +47,7 @@ function Jalsaksharta() {
         </div>
       </div>
       
-      <Counter
+      <Counter data={props.data}
       background="#efefef"
       
       />
@@ -76,6 +80,10 @@ function Jalsaksharta() {
         img5={img1}
 
       />
+
+</>
+        );
+      })}
 
 
 

@@ -11,8 +11,12 @@ import Imageswiper from "../components/Imageswiper";
 import TwoColSec from "../components/TwoColSec";
 import Counter from '../components/Counter';
 
-function Indraprashtha() {
+function Indraprashtha(props) {
   return (
+    <>
+    {props.data.map((data) => {
+        return (
+
     <>
 
 
@@ -52,7 +56,7 @@ function Indraprashtha() {
 
       
 
-      <Counter
+      <Counter data={props.data}
         background="#efefef"
 
       />
@@ -86,6 +90,9 @@ function Indraprashtha() {
         img5={img1}
 
       />
+      </>
+        );
+      })}
 
 
 

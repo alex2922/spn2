@@ -9,8 +9,11 @@ import TwoColSec from "../components/TwoColSec";
 import Counter from '../components/Counter';
 
 
-function Akkafoundation() {
+function Akkafoundation(props) {
   return (
+    <>
+    {props.data.map((data) => {
+        return (
     <>
     
     
@@ -46,7 +49,7 @@ function Akkafoundation() {
   </div>
 </div>
 
-<Counter
+<Counter data={props.data}
       background="#efefef"
       
       />
@@ -80,6 +83,10 @@ function Akkafoundation() {
   img5={img1}
 
 />
+</>
+        );
+      })}
+
     
     </>
   )
