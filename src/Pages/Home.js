@@ -12,15 +12,15 @@ import "swiper/css";
 import { Link } from "react-router-dom";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-import s1 from "../assets/home/s1.png";
-import s2 from "../assets/home/s2.png";
-import s3 from "../assets/home/s3.png";
-import s4 from "../assets/home/s4.png";
-import s5 from "../assets/home/s5.png";
+import s1 from "../assets/home/Marathwada_coach_factory.jpg";
+import s2 from "../assets/home/Jal_saksharta_rally.jpg";
+import s3 from "../assets/home/72_taas_andolan.jpg";
+import s4 from "../assets/home/Latur_Vachva_Andolan.jpg";
+import s5 from "../assets/home/Atal_Mahaarogya_Shibir.jpg";
 // import s6 from "../assets/home/s7.png";
 import s7 from "../assets/home/s6.png";
-import s8 from "../assets/home/s8.png";
-import s9 from "../assets/home/s9.png";
+import s8 from "../assets/home/Indraprastha_jalbhumi.jpg";
+import s9 from "../assets/home/Akka_foundation.jpg";
 import Accr from "./Accr";
 
 function Home(props) {
