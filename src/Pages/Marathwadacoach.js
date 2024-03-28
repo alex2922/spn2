@@ -43,7 +43,7 @@ function Marathwadacoach(props) {
 
 
 
-
+<div className="counter-parent1">
 <Counter data={props.data}
   background=""
   textnum1="600"
@@ -60,6 +60,7 @@ function Marathwadacoach(props) {
   text4=""
 
 />
+</div>
 
 <TwoColSec
               padding="50px 0px 50px 0px"

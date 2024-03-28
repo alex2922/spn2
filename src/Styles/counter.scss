@@ -1,18 +1,26 @@
-.counter-parent {
-   height: auto;
-   padding: 60px 0px;
+// .counter-parent {
+//    height: auto;
+//    padding: 60px 0px;
    
     
 
 
 
-    .conter-container {
+//     .conter-container {
+
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-direction: column;
+//         gap: 60px;
+.counter-box-container{
 
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         gap: 60px;
+        // padding: 50px 0px;
 
         .count-box {
             display: flex;
@@ -72,5 +80,6 @@
 
         }
     }
+//     }
 
-}
+// }

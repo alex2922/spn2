@@ -9,8 +9,10 @@ function Counter(props) {
     {props.data.map((data) => {
         return (
     <>
-    <div className="counter-parent parent" style={{background:`${props.background}`}}>
-        <div className="conter-container cont">
+    {/* <div className="counter-parent parent" style={{background:`${props.background}`}}>
+        <div className="conter-container cont"> */}
+
+        <div className="counter-box-container">
             
             <div className="count-box">
 
@@ -44,9 +46,10 @@ function Counter(props) {
                     </div>}
                 
                 </div>
+                </div>
                 
-                </div>
-                </div>
+                {/* </div>
+                </div> */}
 
                 </>
         );
