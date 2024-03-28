@@ -1,6 +1,13 @@
 import React from 'react'
 import "../Styles/jalsaksharta.scss";
-import img1 from "../photos/drushti/g1img.webp"
+import img1 from "../photos/Jal_saksharta_rally/01.JPG.webp"
+import img2 from "../photos/Jal_saksharta_rally/06.webp"
+import img3 from "../photos/Jal_saksharta_rally/08.webp"
+import img4 from "../photos/Jal_saksharta_rally/09.webp"
+import img5 from "../photos/Jal_saksharta_rally/10.webp"
+import img6 from "../photos/Jal_saksharta_rally/16.webp"
+import img7 from "../photos/Jal_saksharta_rally/19.webp"
+import img8 from "../photos/Jal_saksharta_rally/_MG_6713.webp"
 import img from "../photos/drushti/g1img.webp"
 import Imageswiper from "../components/Imageswiper";
 
@@ -74,10 +81,13 @@ function Jalsaksharta(props) {
         titlegallery={data.Marathwada_gallery}
         background= "#efefef"
         img1={img1}
-        img2={img1}
-        img3={img1}
-        img4={img1}
-        img5={img1}
+        img2={img2}
+        img3={img3}
+        img4={img4}
+        img5={img5}
+        img6={img6}
+        img7={img7}
+        img8={img8}
 
       />
 

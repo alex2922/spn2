@@ -18,7 +18,7 @@ import s3 from "../assets/home/72_taas_andolan.jpg";
 import s4 from "../assets/home/Latur_Vachva_Andolan.jpg";
 import s5 from "../assets/home/Atal_Mahaarogya_Shibir.jpg";
 // import s6 from "../assets/home/s7.png";
-import s7 from "../assets/home/s6.png";
+import s7 from "../assets/home/Employee_People.jpg";
 import s8 from "../assets/home/Indraprastha_jalbhumi.jpg";
 import s9 from "../assets/home/Akka_foundation.jpg";
 import Accr from "./Accr";

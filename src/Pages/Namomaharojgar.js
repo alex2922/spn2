@@ -1,6 +1,11 @@
 import React from 'react'
 import "../Styles/namomaharojgar.scss";
-import img1 from "../photos/drushti/g1img.webp"
+import img1 from "../photos/Atal_Mahaarogya_Shibir/359A2242.webp"
+import img2 from "../photos/Atal_Mahaarogya_Shibir/359A7720.webp"
+import img3 from "../photos/Atal_Mahaarogya_Shibir/359A7724.webp"
+import img4 from "../photos/Atal_Mahaarogya_Shibir/359A7739.webp"
+import img5 from "../photos/Atal_Mahaarogya_Shibir/IMG_7558.JPG"
+import img6 from "../photos/Atal_Mahaarogya_Shibir/IMG_7717.JPG"
 import img from "../photos/drushti/g1img.webp"
 import Imageswiper from "../components/Imageswiper";
 
@@ -75,10 +80,11 @@ function Namomaharojgar(props) {
   titlegallery="gallery"
   background= "#efefef"
   img1={img1}
-  img2={img1}
-  img3={img1}
-  img4={img1}
-  img5={img1}
+  img2={img2}
+  img3={img3}
+  img4={img4}
+  img5={img5}
+  img6={img6}
 
 />
 
