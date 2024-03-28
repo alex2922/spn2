@@ -7,12 +7,47 @@ const english = [
 
       Marathwada_countup1:"Investment exceeding ",
       
-      Marathwada_countup2:"acres  ",
-      Marathwada_countup3:"direct and indirect jobs",
+      Marathwada_countup2:"Acres  ",
+      Marathwada_countup3:"Direct and Indirect jobs",
 
       Marathwada_heading2:"Promotion of Economic Development in Marathwada",
       Marathwada_para2:"The groundbreaking ceremony, graced by Union Minister Shri. Piyush Goyal and then-Chief Minister Devendra Fadnavis, took place on March 31, 2018. Remarkably, within a span of just six years, the factory was completed, culminating in its inauguration on March 12, 2024, by Prime Minister Narendra Modi.      Even amidst the challenges of the COVID-19 pandemic, the factory demonstrated resilience, achieving the milestone of completing its first railway coach shell as scheduled in 2020. Recognizing its capacity and efficiency, the central government has announced plans to manufacture 120 Vande Bharat Express trains in this facility, heralding a significant boost to Marathwada's industrial landscape.  The Marathwada Railway Coach Factory epitomizes progress and opportunity, symbolizing a transformative leap in the region's industrial journey.       ",
       Marathwada_gallery:"Snapshots",
+
+      // Jal=============================================================
+
+      
+      Jal_saksharta_heading:"Jal Saksharta Rally",
+      Jal_saksharta_para:"To solve the water problem of Latur district forever and for the demand that Latur district should get its rightful water from the water flowing in the Arabian Sea. On the initiative of Sambhaji Patil Nilangekar, 'Jal Saksharta Rally' was organized in the entire Latur district from 19th September to 26th September 2023. At this time, thousands of citizens leave their homes for the festival of ‘Ain Gauri-Ganpati’ and roam around the entire district for 8 days to awaken the citizens especially by meeting the Ganesha mandals. In this, the current situation of the district in terms of water, the problems arising from it, the seriousness of the future and the solution-plans were awakened and motivated the citizens to participate in this work. Finally, on September 26, the first phase of the rally was concluded at Latur in the presence of lakhs of Latur’s residents.  ",
+
+      Jal_countup1:"Days",      
+      Jal_countup2:"Talukas",
+      Jal_countup3:"kms Bike Ride. ",
+      Jal_countup4:"Villages ",      
+      Jal_countup5:"Gram Panchayats",
+      Jal_countup6:"Letters of Support",
+
+      Jal_heading2:"Fair water – this is our demand!",
+      Jal_para2:"During this 'Jal Saksharta Rally', the state government was demanded to urgently take three immediate, medium-term, and long-term solutions to permanently solve the problem of water scarcity in Latur. In which, three measures were suggested - maintenance of retention ponds in the district, increasing the storage capacity of the dams that supply water to the districts by removing the silt and out of the 167 TMC of water supplied to Marathwada, Latur's share of water should be distributed to the source and not brought through the diverting water from the Godavari River to the Manjra valley via the Bhandardara route. So that everyone will get water in a fair and healthy manner without any water dispute in any district.",
+
+
+    //   Taas_Andolan=============================================================
+
+      
+      Taas_heading:"72-hour fasting",
+      Taas_saksharta_para:"On the initiative of MLA Sambhaji Patil Nilangekar, '72 Hours Fasting' was held on 11th October 2021 to raise voice about the anti-farmer policies of the then Maha Vikas Aghadi government and the neglect of the damaged farmers. This movement was held in the presence of thousands of farmers. Attacking the Nizam attitude of the government, farmers along with Sambhaji Patil went on a food boycott. Meanwhile, 14 more farmers had to be taken to the hospital due to this. Finally, the government woke up and on the third day, the government announced an aid of 10 thousand crore rupees for the affected farmers.",
+
+      Taas_countup1:"Days",      
+      Taas_countup2:"Talukas",
+      Taas_countup3:"kms Bike Ride. ",
+      Taas_countup4:"Villages ",      
+      Taas_countup5:"Gram Panchayats",
+      Taas_countup6:"Letters of Support",
+
+      Taas_heading2:"•	Sacrificing food for food!",
+      Taas_para2:"Many socio-political organizations including farmers across the state also supported the movement. Many people in the state and center supported the movement by visiting it and also through video messages. Nagtirthwadi village of Latur district supported its farmer brothers by taking the role of 'Ek Diwas Chulband'. In the protest, 25 protestors protested against the policies of the government by shaving their heads. At that time, everyone took a firm stand to sacrifice food for the food giver and get him justice. Finally, the movement was successful and the then coalition government announced aid.",
+
+
         // home_page=========================
         Home_slider1:"The Youngest MLA",
         Home_slider2:"A people’s leader",
