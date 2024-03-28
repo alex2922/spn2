@@ -1,5 +1,7 @@
 .counter-parent {
-   height: 300px;
+   height: auto;
+   padding: 60px 0px;
+   
     
 
 
@@ -10,12 +12,13 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        gap: 30px;
+        gap: 60px;
 
         .count-box {
             display: flex;
             align-items: center;
             justify-content: center;
+            
             gap: 60px;
 
             .counter-box {
@@ -23,6 +26,40 @@
                 align-items: center;
                 justify-content: center;
                 flex-direction: column;
+                box-shadow: var(--shadow);
+                border-radius: 10px;
+                height: 200px;
+                width: 300px;
+
+               .counter-number{
+                font-size: 70px;
+                font-weight: 600;
+               } 
+
+
+
+            }
+
+
+        }
+
+        .count-box2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            gap: 60px;
+            
+
+            .counter-box {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                border-radius: 10px;
+                height: 200px;
+                width: 300px;
+                box-shadow: var(--shadow);
 
                .counter-number{
                 font-size: 70px;

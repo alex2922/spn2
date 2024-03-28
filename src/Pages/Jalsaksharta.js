@@ -71,7 +71,7 @@ function Jalsaksharta(props) {
 
 
       <Imageswiper
-        titlegallery="gallery"
+        titlegallery={data.Marathwada_gallery}
         background= "#efefef"
         img1={img1}
         img2={img1}

@@ -1,6 +1,18 @@
 const english = [
     {   
+       // Marathwda coach factory===========================================
 
+      Marathwada_coach_factory_heading:"Marathwada Railway Coach Factory",
+      Marathwada_coach_factory_para:"The Marathwada Railway Coach Factory stands as the largest government project in the region, a testament to the tireless efforts of MLA Sambhaji Patil Nilangekar. This significant initiative, secured through persistent advocacy by Sambhaji Patil, has garnered praise from senior leaders and officials who credit him for its establishment.      Initiated by the Central Government and Ministry of Railways, this factory marks a pioneering achievement as the country's first facility dedicated to manufacturing AC metro coaches. With a vision for regional development, it promises to address unemployment challenges in Marathwada while generating substantial employment opportunities and fostering industrial-commercial growth.       ",
+
+      Marathwada_countup1:"Investment exceeding ",
+      
+      Marathwada_countup2:"acres  ",
+      Marathwada_countup3:"direct and indirect jobs",
+
+      Marathwada_heading2:"Promotion of Economic Development in Marathwada",
+      Marathwada_para2:"The groundbreaking ceremony, graced by Union Minister Shri. Piyush Goyal and then-Chief Minister Devendra Fadnavis, took place on March 31, 2018. Remarkably, within a span of just six years, the factory was completed, culminating in its inauguration on March 12, 2024, by Prime Minister Narendra Modi.      Even amidst the challenges of the COVID-19 pandemic, the factory demonstrated resilience, achieving the milestone of completing its first railway coach shell as scheduled in 2020. Recognizing its capacity and efficiency, the central government has announced plans to manufacture 120 Vande Bharat Express trains in this facility, heralding a significant boost to Marathwada's industrial landscape.  The Marathwada Railway Coach Factory epitomizes progress and opportunity, symbolizing a transformative leap in the region's industrial journey.       ",
+      Marathwada_gallery:"Snapshots",
         // home_page=========================
         Home_slider1:"The Youngest MLA",
         Home_slider2:"A people’s leader",

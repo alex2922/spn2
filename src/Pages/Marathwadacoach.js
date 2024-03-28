@@ -29,17 +29,12 @@ function Marathwadacoach(props) {
     <div className="ss-right">
 
       <h2 data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-        Indraprasth_Jalbhumi_Abhiyan sit amet consectetur adipisicing elit.
+        {data.Marathwada_coach_factory_heading}
       </h2>
       <div className="line" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000"></div>
 
       <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-        porro molestiae id cupiditate sequi veritatis doloremque vitae!
-        Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-        quas explicabo accusamus beatae, magni nostrum tempora iusto.
-        Officia, itaque asperiores distinctio maxime aperiam rerum illo
-        nesciunt saepe mollitia id. Iusto, accusamus beatae!
+        {data.Marathwada_coach_factory_para}
       </p>
 
     </div>
@@ -51,9 +46,18 @@ function Marathwadacoach(props) {
 
 <Counter data={props.data}
   background=""
-  text1="guku"
-  text2="guku"
-  text3="guku"
+  textnum1="600"
+  plus="+"
+  text1={data.Marathwada_countup1}
+  textnum2="300"
+  plus2="+"
+  text2={data.Marathwada_countup2}
+  textnum3="45000"
+  plus3=""
+  text3={data.Marathwada_countup3}
+  textnum4=""
+  plus4=""
+  text4=""
 
 />
 
@@ -62,13 +66,8 @@ function Marathwadacoach(props) {
               background="#efefef"
               row="row-reverse"
               bg={img}
-              subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              subdescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              porro molestiae id cupiditate sequi veritatis doloremque vitae!
-              Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-              quas explicabo accusamus beatae, magni nostrum tempora iusto.
-              Officia, itaque asperiores distinctio maxime aperiam rerum illo
-              nesciunt saepe mollitia id. Iusto, accusamus beatae!"
+              subheading={data.Marathwada_heading2}
+              subdescription={data.Marathwada_para2}
               btn=""
             />
 
@@ -77,7 +76,7 @@ function Marathwadacoach(props) {
 
 
 <Imageswiper
-  titlegallery="gallery"
+  titlegallery={data.Marathwada_gallery}
   background=""
   img1={img1}
   img2={img1}
