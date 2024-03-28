@@ -39,7 +39,7 @@ function Marathwadacoach(props) {
                     data-aos-delay="200"
                     data-aos-duration="1000"
                   >
-                    {data.Marathwada_coach_factory_heading}
+                    {data.Marathwada_coach_factory_heading} 
                   </h2>
                   <div
                     className="line"
@@ -59,30 +59,26 @@ function Marathwadacoach(props) {
               </div>
             </div>
 
-            
+            <div className="counter-parent1">
+              <Counter
+                data={props.data}
+                background=""
+                textnum1="600"
+                plus="+"
+                text1={data.Marathwada_countup1}
+                textnum2="300"
+                plus2="+"
+                text2={data.Marathwada_countup2}
+                textnum3="45000"
+                plus3=""
+                text3={data.Marathwada_countup3}
+                textnum4=""
+                plus4=""
+                text4=""
+              />
+            </div>
 
-
-
-  <div className="counter-parent1">
-<Counter data={props.data}
-  background=""
-  textnum1="600"
-  plus="+"
-  text1={data.Marathwada_countup1}
-  textnum2="300"
-  plus2="+"
-  text2={data.Marathwada_countup2}
-  textnum3="45000"
-  plus3=""
-  text3={data.Marathwada_countup3}
-  textnum4=""
-  plus4=""
-  text4=""
-
-/>
-</div>
-
-<TwoColSec
+            <TwoColSec
               padding="50px 0px 50px 0px"
               background="#efefef"
               row="row-reverse"
@@ -95,12 +91,12 @@ function Marathwadacoach(props) {
             <Imageswiper
               titlegallery={data.Marathwada_gallery}
               background=""
-              img1={img1}
-            //   img2={img2}
+            //   img1={img1}
+              //   img2={img2}
               img3={img3}
               img4={img4}
               img5={img5}
-              img6={img6}
+            //   img6={img6}
               img7={img7}
               img8={img8}
             />
