@@ -80,7 +80,7 @@ function Atalmaharogya(props) {
 
       <TwoColSec
         padding="50px 0px 50px 0px"
-        background=""
+        background="#efefef"
         row="row-reverse"
         bg={img}
         subheading={data.Atal_heading2}
@@ -90,7 +90,7 @@ function Atalmaharogya(props) {
 
       <Imageswiper
         titlegallery={data.Marathwada_gallery}
-        background="#efefef"
+        background=""
         img1={img1}
         img2={img2}
         img3={img3}

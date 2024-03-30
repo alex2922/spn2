@@ -73,6 +73,19 @@ const english = [
     Atal_heading2:"Providing free health facilities for the poor!",
     Atal_para2:"This marked the first time in the history of Latur district that such a large-scale health camp was organized. The District Health Department, along with dedicated Asha volunteers, worked tirelessly day and night to ensure its success. Additionally, 23 coordination committees were appointed to assist the health department in organizing the camp effectively. Following the camp, patients enrolled in the program received free treatment through various government healthcare schemes. Successful completion of surgeries, including a hip replacement procedure performed on Mr. Vishnuji Santoba Surnar from Ahmedpur.",
 
+    // Namo=============================================================
+
+      
+    Namo_saksharta_heading:"Namo Maharojgar Melawa!",
+    Namo_saksharta_para:"On 23rd February 2024, the 'NAMO Maharojgar and Career Guidance Melawa' was held at Mahila Tannariketan Maidan, Latur, under the guidance of MLA Sambhaji Patil Nilangekar. This grand event aimed to shape the future of Marathwada's youth, recognizing their immense potential and the need to provide them with proper direction. Over 240 reputed companies participated in the Maharojgar Mela, offering more than 7000 employment opportunities. Additionally, numerous youths received valuable guidance and support in business-oriented matters, with special programs tailored for women and girls. ",
+    Namo_countup1:"Companies",      
+    Namo_countup2:"Job Openings",
+    Namo_countup3:"  ",
+    
+
+    Namo_heading2:"•	Ensuring employment for everyone is our goal!",
+    Namo_para2:"The event also witnessed the presence of HR representatives from over 180 companies, further boosting employment prospects for the youth. To cater to the specific needs of women and farmers, dedicated wings were established within the ‘Mahamela’, providing industry and business guidance tailored to their requirements. The enthusiastic participation of young women from Marathwada added to the success of this grand gathering.",
+
 
 
         // home_page=========================
