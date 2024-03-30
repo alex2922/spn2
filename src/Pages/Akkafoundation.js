@@ -15,10 +15,28 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Akkafoundation(props) {
   return (
     <>
+      <Helmet>
+        <title>Akka_Foundation</title>
+        <meta
+          name="keywords"
+          content="
+            Akka Foundation,Sambhaji bhaiyya,Rupatai Patil Nilangekar,Arvind Patil Nilangekar,
+            Latur district,Drought relief initiatives,Community support organization,Women empowerment projects,Education initiatives,Healthcare services,Environmental conservation efforts,Water management programs,Support for farming communities,Art and culture preservation,Project Anand,Drashti Abhiyan,Underprivileged support,Charitable foundation,Social welfare organization,Crisis response initiatives."
+        />
+        <meta
+          name="description"
+          content="Discover Akka Foundation's work in Latur led by Sambhaji bhaiyya. They help with drought relief, women's empowerment, education, healthcare, and more. Join their initiatives like Project Anand and Drashti Abhiyan."
+        />
+        <link
+          rel="canonical"
+          href="https://sambhajipatilnilangekar.in/Akka_Foundation"
+        />
+      </Helmet>
       {props.data.map((data) => {
         return (
           <>
@@ -90,9 +108,21 @@ function Akkafoundation(props) {
                     <div className="left-swiper">
                       <h3 className="swiper-heading">Empowerment</h3>
                       <p className="swiper-para">
-                      Empowering the underprivileged lies at the core of Akka Foundation's mission for sustainable development. It entails providing sustainable opportunities, motivation, and resources to those facing economic and social challenges. By nurturing skills development and providing financial support, the foundation aims to make individuals self-reliant for a sustainable future.
+                        Empowering the underprivileged lies at the core of Akka
+                        Foundation's mission for sustainable development. It
+                        entails providing sustainable opportunities, motivation,
+                        and resources to those facing economic and social
+                        challenges. By nurturing skills development and
+                        providing financial support, the foundation aims to make
+                        individuals self-reliant for a sustainable future.
                       </p>
-                      <Link to="https://akkafoundation.in/empower" target="_blank" className="btn swiper-btn">Read More</Link>
+                      <Link
+                        to="https://akkafoundation.in/empower"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        Read More
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -103,9 +133,20 @@ function Akkafoundation(props) {
                     <div className="left-swiper">
                       <h3 className="swiper-heading">Education</h3>
                       <p className="swiper-para">
-                      In a country with over a billion people, only one-third can read due to challenges like a lack of basic facilities, resources, and teachers, along with insufficient public funds for education—creating a significant barrier to achieving sustainable development.
+                        In a country with over a billion people, only one-third
+                        can read due to challenges like a lack of basic
+                        facilities, resources, and teachers, along with
+                        insufficient public funds for education—creating a
+                        significant barrier to achieving sustainable
+                        development.
                       </p>
-                      <Link to="https://akkafoundation.in/education" target="_blank" className="btn swiper-btn">Read More</Link>
+                      <Link
+                        to="https://akkafoundation.in/education"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        Read More
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -116,9 +157,17 @@ function Akkafoundation(props) {
                     <div className="left-swiper">
                       <h3 className="swiper-heading">Environment</h3>
                       <p className="swiper-para">
-                      In the intricate web of rural welfare, the environment stands as a linchpin for Akka Foundation, playing a pivotal role in fostering sustainable development.
+                        In the intricate web of rural welfare, the environment
+                        stands as a linchpin for Akka Foundation, playing a
+                        pivotal role in fostering sustainable development.
                       </p>
-                      <Link to="https://akkafoundation.in/environment" target="_blank" className="btn swiper-btn">Read More</Link>
+                      <Link
+                        to="https://akkafoundation.in/environment"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        Read More
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -129,9 +178,19 @@ function Akkafoundation(props) {
                     <div className="left-swiper">
                       <h3 className="swiper-heading">Health</h3>
                       <p className="swiper-para">
-                      Prioritising health is a fundamental aspect of Akka Foundation's mission for sustainable development among underprivileged communities. Health, being a cornerstone of individual and societal well-being, is integral for achieving long-term progress. 
+                        Prioritising health is a fundamental aspect of Akka
+                        Foundation's mission for sustainable development among
+                        underprivileged communities. Health, being a cornerstone
+                        of individual and societal well-being, is integral for
+                        achieving long-term progress.
                       </p>
-                      <Link to="https://akkafoundation.in/health" target="_blank" className="btn swiper-btn">Read More</Link>
+                      <Link
+                        to="https://akkafoundation.in/health"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        Read More
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -142,9 +201,21 @@ function Akkafoundation(props) {
                     <div className="left-swiper">
                       <h3 className="swiper-heading">Art & Culture</h3>
                       <p className="swiper-para">
-                      Art and culture form the vibrant tapestry of Akka Foundation's holistic approach to rural welfare, contributing profoundly to sustainable development. Recognizing the transformative power of artistic expression, the foundation integrates art and culture into its initiatives, fostering a sense of identity, pride, and unity within communities.
+                        Art and culture form the vibrant tapestry of Akka
+                        Foundation's holistic approach to rural welfare,
+                        contributing profoundly to sustainable development.
+                        Recognizing the transformative power of artistic
+                        expression, the foundation integrates art and culture
+                        into its initiatives, fostering a sense of identity,
+                        pride, and unity within communities.
                       </p>
-                      <Link  to="https://akkafoundation.in/art&culture" target="_blank" className="btn swiper-btn">Read More</Link>
+                      <Link
+                        to="https://akkafoundation.in/art&culture"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        Read More
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -155,9 +226,17 @@ function Akkafoundation(props) {
                     <div className="left-swiper">
                       <h3 className="swiper-heading">Project Anandi</h3>
                       <p className="swiper-para">
-                      An innovative initiative ‘Project Anandi’ was launched as a sustainable solution to the menstrual health problems of women and girls in rural areas.
+                        An innovative initiative ‘Project Anandi’ was launched
+                        as a sustainable solution to the menstrual health
+                        problems of women and girls in rural areas.
                       </p>
-                      <Link to="https://akkafoundation.in/project-Anandi" target="_blank" className="btn swiper-btn">Read More</Link>
+                      <Link
+                        to="https://akkafoundation.in/project-Anandi"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        Read More
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>

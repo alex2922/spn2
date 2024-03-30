@@ -13,10 +13,18 @@ import Imageswiper from "../components/Imageswiper";
 
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
+import { Helmet } from 'react-helmet';
+
 
 function Indraprashtha(props) {
   return (
     <>
+    <Helmet>
+        <title>Indraprasth Jalbhumi Abhiyan</title>
+        <meta name="keywords" content="drought-free,water-abundant,Indraprastha Jalbhumi Mission,recharged 2800 borewells,Jala Yoddha" />
+        <meta name="description" content="Explore the Indraprastha Jalbhumi Mission's initiative to combat drought with water abundance. Witness the success as 2800 borewells are recharged, transforming warriors into 'Jala Yoddha'. Join the movement towards a drought-free future." />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/Indraprasth_Jalbhumi_Abhiyan" />
+      </Helmet>
       {props.data.map((data) => {
         return (
           <>
@@ -60,24 +68,24 @@ function Indraprashtha(props) {
             </div>
 
             <div className="counter-parent1">
-    <h3>{data.Marathwada_counter}</h3>
-<Counter data={props.data}
-  background=""
-  textnum1="945"
-  plus="+"
-  text1={data.Indraprashtha11_countup1}
-  textnum2="2800"
-  plus2="+"
-  text2={data.Indraprashtha11_countup2}
-  textnum3="8"
-  plus3=""
-  text3={data.Indraprashtha11_countup3}
-  textnum4=""
-  plus4=""
-  text4=""
-
-/>
-</div>
+              <h3>{data.Marathwada_counter}</h3>
+              <Counter
+                data={props.data}
+                background=""
+                textnum1="945"
+                plus="+"
+                text1={data.Indraprashtha11_countup1}
+                textnum2="2800"
+                plus2="+"
+                text2={data.Indraprashtha11_countup2}
+                textnum3="8"
+                plus3=""
+                text3={data.Indraprashtha11_countup3}
+                textnum4=""
+                plus4=""
+                text4=""
+              />
+            </div>
 
             <TwoColSec
               padding="50px 0px 50px 0px"
