@@ -132,10 +132,12 @@ function Contact(props) {
                           {" "}
                           <AiOutlineMail />{" "}
                         </div>
-                        <a href="mailto:contact@sambhajipatilnilangekar.com" target="_black" className="item-details">
+                        <a href="mailto:info@sambhajipatilnilangekar.com" target="_black" className="item-details">
                           <h4>{data.Contact_email}</h4>
-                          <p>contact@sambhajipatilnilangekar.com</p>
+                          <p>info@sambhajipatilnilangekar.com</p>
+                          
                         </a>
+                        
                       </div>
                     </div>
                   </div>
