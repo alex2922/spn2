@@ -2,21 +2,16 @@ import React, { useEffect, useState } from "react";
 import "../Styles/herosection.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-
 function HeroSection(props) {
-
-
-  const [slide1 ,setslide1] = useState(true);
-  const [slide2 ,setslide2] = useState(false);
-  const [slide3 ,setslide3] = useState(false);
-  const [slide4 ,setslide4] = useState(true);
+  const [slide1, setslide1] = useState(true);
+  const [slide2, setslide2] = useState(false);
+  const [slide3, setslide3] = useState(false);
+  const [slide4, setslide4] = useState(true);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -30,14 +25,10 @@ function HeroSection(props) {
         setslide3(false);
         setslide1(true);
       }
-    }, 6000); 
+    }, 6000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, [slide1, slide2, slide3]);
-
-
-
-
 
   return (
     <>
@@ -60,57 +51,36 @@ function HeroSection(props) {
                 className="mySwiper"
               >
                 <div className="swiper-parent">
-                  {slide1  && 
-                  <SwiperSlide>
-                   
-                    <div className="slide1 slide-img">
-                    <h1>One Voice, One Purpose, Endless Progress</h1>
-                    <div className="overlay"></div>
-                      <div className="slide-main bg-img-contain"  >
-
-                       
-
+                  {slide1 && (
+                    <SwiperSlide>
+                      <div className="slide1 slide-img">
+                        <h1>One Voice, One Purpose, Endless Progress</h1>
+                        <div className="overlay"></div>
+                        <div className="slide-main bg-img-contain"></div>
                       </div>
-                     
-                    </div>
-                  </SwiperSlide>
-}
-                  {slide2 && 
-                  <SwiperSlide>
-                   
-                    <div className="slide1 slide-img">
-                    <h1>One Voice, One Purpose, Endless Progress</h1>
-                    <div className="overlay"></div>
-                      <div className="slide-main bg-img-contain"  >
-
-                       
-
+                    </SwiperSlide>
+                  )}
+                  {slide2 && (
+                    <SwiperSlide>
+                      <div className="slide1 slide-img">
+                        <h1>One Voice, One Purpose, Endless Progress</h1>
+                        <div className="overlay"></div>
+                        <div className="slide-main bg-img-contain"></div>
                       </div>
-                     
-                    </div>
-                  </SwiperSlide>
-}
-                  {slide3 && 
-                  <SwiperSlide>
-                   
-                    <div className="slide1 slide-img">
-                    <h1>One Voice, One Purpose, Endless Progress</h1>
-                    <div className="overlay"></div>
-                      <div className="slide-main bg-img-contain"  >
-
-                       
-
+                    </SwiperSlide>
+                  )}
+                  {slide3 && (
+                    <SwiperSlide>
+                      <div className="slide1 slide-img">
+                        <h1>One Voice, One Purpose, Endless Progress</h1>
+                        <div className="overlay"></div>
+                        <div className="slide-main bg-img-contain"></div>
                       </div>
-                     
-                    </div>
-                  </SwiperSlide>
-}
-                 
+                    </SwiperSlide>
+                  )}
                 </div>
               </Swiper>
             </div>
-
-           
           </>
         );
       })}

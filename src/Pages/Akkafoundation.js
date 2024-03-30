@@ -7,9 +7,14 @@ import img4 from "../photos/Akka foundation/Sambhaji_Patil_Nilanhekar.webp";
 import img5 from "../photos/Akka foundation/Sambhaji_bhaiyya_with_kids.webp";
 import img from "../photos/drushti/g1img.webp";
 import Imageswiper from "../components/Imageswiper";
-
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 function Akkafoundation(props) {
   return (
@@ -63,6 +68,102 @@ function Akkafoundation(props) {
             </div>
 
             <Counter data={props.data} background="#efefef" />
+
+            <div className="akka-found-parent parent ">
+              <Swiper
+                spaceBetween={30}
+                centeredSlides={true}
+                autoplay={{
+                  delay: 25000000,
+                  disableOnInteraction: false,
+                }}
+                pagination={{
+                  clickable: true,
+                }}
+                navigation={true}
+                modules={[Autoplay, Pagination, Navigation]}
+                className="mySwiper"
+              >
+                <SwiperSlide className="slide-img slide-img1 bg-img-cover">
+                  <div className="overlay"></div>
+                  <div className="swiper-section">
+                    <div className="left-swiper">
+                      <h3 className="swiper-heading">Empowerment</h3>
+                      <p className="swiper-para">
+                      Empowering the underprivileged lies at the core of Akka Foundation's mission for sustainable development. It entails providing sustainable opportunities, motivation, and resources to those facing economic and social challenges. By nurturing skills development and providing financial support, the foundation aims to make individuals self-reliant for a sustainable future.
+                      </p>
+                      <Link to="https://akkafoundation.in/empower" target="_blank" className="btn swiper-btn">Read More</Link>
+                    </div>
+                    <div className="right-swiper"></div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="slide-img slide-img2 bg-img-cover">
+                  <div className="overlay"></div>
+                  <div className="swiper-section">
+                    <div className="left-swiper">
+                      <h3 className="swiper-heading">Education</h3>
+                      <p className="swiper-para">
+                      In a country with over a billion people, only one-third can read due to challenges like a lack of basic facilities, resources, and teachers, along with insufficient public funds for education—creating a significant barrier to achieving sustainable development.
+                      </p>
+                      <Link to="https://akkafoundation.in/education" target="_blank" className="btn swiper-btn">Read More</Link>
+                    </div>
+                    <div className="right-swiper"></div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="slide-img slide-img3 bg-img-cover">
+                  <div className="overlay"></div>
+                  <div className="swiper-section">
+                    <div className="left-swiper">
+                      <h3 className="swiper-heading">Environment</h3>
+                      <p className="swiper-para">
+                      In the intricate web of rural welfare, the environment stands as a linchpin for Akka Foundation, playing a pivotal role in fostering sustainable development.
+                      </p>
+                      <Link to="https://akkafoundation.in/environment" target="_blank" className="btn swiper-btn">Read More</Link>
+                    </div>
+                    <div className="right-swiper"></div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="slide-img slide-img4 bg-img-cover">
+                  <div className="overlay"></div>
+                  <div className="swiper-section">
+                    <div className="left-swiper">
+                      <h3 className="swiper-heading">Health</h3>
+                      <p className="swiper-para">
+                      Prioritising health is a fundamental aspect of Akka Foundation's mission for sustainable development among underprivileged communities. Health, being a cornerstone of individual and societal well-being, is integral for achieving long-term progress. 
+                      </p>
+                      <Link to="https://akkafoundation.in/health" target="_blank" className="btn swiper-btn">Read More</Link>
+                    </div>
+                    <div className="right-swiper"></div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="slide-img slide-img5 bg-img-cover">
+                  <div className="overlay"></div>
+                  <div className="swiper-section">
+                    <div className="left-swiper">
+                      <h3 className="swiper-heading">Art & Culture</h3>
+                      <p className="swiper-para">
+                      Art and culture form the vibrant tapestry of Akka Foundation's holistic approach to rural welfare, contributing profoundly to sustainable development. Recognizing the transformative power of artistic expression, the foundation integrates art and culture into its initiatives, fostering a sense of identity, pride, and unity within communities.
+                      </p>
+                      <Link  to="https://akkafoundation.in/art&culture" target="_blank" className="btn swiper-btn">Read More</Link>
+                    </div>
+                    <div className="right-swiper"></div>
+                  </div>
+                </SwiperSlide>
+                <SwiperSlide className="slide-img slide-img6 bg-img-cover">
+                  <div className="overlay"></div>
+                  <div className="swiper-section">
+                    <div className="left-swiper">
+                      <h3 className="swiper-heading">Project Anandi</h3>
+                      <p className="swiper-para">
+                      An innovative initiative ‘Project Anandi’ was launched as a sustainable solution to the menstrual health problems of women and girls in rural areas.
+                      </p>
+                      <Link to="https://akkafoundation.in/project-Anandi" target="_blank" className="btn swiper-btn">Read More</Link>
+                    </div>
+                    <div className="right-swiper"></div>
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
 
             <TwoColSec
               padding="50px 0px 50px 0px"

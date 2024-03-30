@@ -25,10 +25,28 @@ import List from "../components/List";
 import Imageswiper from "../components/Imageswiper";
 import "../Styles/success.scss";
 import According from "../components/Accordian";
+import { Helmet } from "react-helmet";
 
 function Success(props) {
   return (
     <>
+      <Helmet>
+        <title>
+          From Vision to Reality: The Success Story of Sambhaji Patil Nilangekar
+        </title>
+        <meta
+          name="keywords"
+          content="Sambhaji Patil Nilangekar,Latur,Nilanga,Dhanegaon on Manjra River,statue of Bharatratna Dr. Babasaheb Ambedkar,Railways Map,National Highway 752 K Parbhani,Gangakhed,Kingaon,Gharni,Nalegaon,Babhalgaon,Nitur,Nilanga,Zahirabad"
+        />
+        <meta
+          name="description"
+          content="Explore Sambhaji Patil Nilangekar's accomplishments in Latur, Nilanga, and Dhanegaon by the Manjra River. Highlights include the Dr. Babasaheb Ambedkar statue, railways map, and National Highway 752 K connecting Parbhani, Gangakhed, Kingaon, Gharni, Nalegaon, Babhalgaon, Nitur, Nilanga, and Zahirabad."
+        />
+        <link
+          rel="canonical"
+          href="https://sambhajipatilnilangekar.in/success"
+        />
+      </Helmet>
       {props.data.map((data) => {
         return (
           <>
@@ -51,18 +69,38 @@ function Success(props) {
                 {/* <p>{data.About_personality_para}</p> */}
                 <div className="gap"></div>
 
-                
-                <According que={data.Success_story_card1} ans={data.Success_story_card1_para} />
-                <According que={data.Success_story_card2} ans={data.Success_story_card2_para} />
-                <According que={data.Success_story_card3} ans={data.Success_story_card3_para} />
-                <According que={data.Success_story_card4} ans={data.Success_story_card4_para} />
-                <According que={data.Success_story_card5} ans={data.Success_story_card5_para} />
-                <According que={data.Success_story_card6} ans={data.Success_story_card6_para} />
-                <According que={data.Success_story_card7} ans={data.Success_story_card7_para} />
-                <According que={data.Success_story_card8} ans={data.Success_story_card8_para} />
-       
-     
-           
+                <According
+                  que={data.Success_story_card1}
+                  ans={data.Success_story_card1_para}
+                />
+                <According
+                  que={data.Success_story_card2}
+                  ans={data.Success_story_card2_para}
+                />
+                <According
+                  que={data.Success_story_card3}
+                  ans={data.Success_story_card3_para}
+                />
+                <According
+                  que={data.Success_story_card4}
+                  ans={data.Success_story_card4_para}
+                />
+                <According
+                  que={data.Success_story_card5}
+                  ans={data.Success_story_card5_para}
+                />
+                <According
+                  que={data.Success_story_card6}
+                  ans={data.Success_story_card6_para}
+                />
+                <According
+                  que={data.Success_story_card7}
+                  ans={data.Success_story_card7_para}
+                />
+                <According
+                  que={data.Success_story_card8}
+                  ans={data.Success_story_card8_para}
+                />
               </div>
             </div>
 

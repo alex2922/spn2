@@ -112,7 +112,7 @@ function Contact(props) {
                           {" "}
                           <SlLocationPin />
                         </div>
-                        <a href="#" target="_blank" className="item-details">
+                        <a href='https://maps.app.goo.gl/3vtrLStVxpJ6Vu2Z7' target="_blank" className="item-details">
                           <h4>{data.Contact_add}</h4>
                           <p>{data.Contact_para_add}</p>
                         </a>

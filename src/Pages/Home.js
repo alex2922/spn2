@@ -22,18 +22,19 @@ import s7 from "../assets/home/Employee_People.jpg";
 import s8 from "../assets/home/Indraprastha_jalbhumi.jpg";
 import s9 from "../assets/home/Akka_foundation.jpg";
 import Accr from "./Accr";
+import { Helmet } from 'react-helmet';
 
 function Home(props) {
   const swiperSlidesData = [
-    { heading: "Marathwada Coach Factory", link: "#", bgImage: s1 },
-    { heading: "Jal Saksharta Rally", link: "#", bgImage: s2 },
-    { heading: "72 Taas Andolan", link: "#", bgImage: s3 },
-    { heading: "Latur Vachava Andolan", link: "#", bgImage: s4 },
-    { heading: "Atal Maharogya Shibir", link: "#", bgImage: s5 },
+    { heading: "Marathwada Coach Factory", link: "/Marathwada_Coach_Factory", bgImage: s1 },
+    { heading: "Jal Saksharta Rally", link: "/Jal_Saksharta_Rally", bgImage: s2 },
+    { heading: "72 Taas Andolan", link: "/72_Taas_Andolan", bgImage: s3 },
+    { heading: "Latur Vachava Andolan", link: "/Jan_Jagar_Sanvad", bgImage: s4 },
+    { heading: "Atal Maharogya Shibir", link: "/Atal_Maharogya_Shibir", bgImage: s5 },
     // { heading: "Maharojgar Melava Nilanga", link: "#", bgImage: s6 },
-    { heading: "NaMo Maharojgar Melava, Latur 2023", link: "#", bgImage: s7 },
-    { heading: "Indraprasth Jalbhumi Abhiyan", link: "#", bgImage: s8 },
-    { heading: "Akka Foundation", link: "#", bgImage: s9 },
+    { heading: "NaMo Maharojgar Melava, Latur 2023", link: "/Namo_Maharojgar_Melava", bgImage: s7 },
+    { heading: "Indraprasth Jalbhumi Abhiyan", link: "Indraprasth_Jalbhumi_Abhiyan", bgImage: s8 },
+    { heading: "Akka Foundation", link: "/Akka_Foundation", bgImage: s9 },
   ];
 
   useEffect(() => {
@@ -44,6 +45,13 @@ function Home(props) {
 
   return (
     <>
+    <Helmet>
+        <title>Get to Know Sambhaji Patil Nilangekar: Your Dedicated Political Leader</title>
+        <meta name="keywords" content="Bharatiya Janata Party,MLA in Nilangekar,MLA in Latur " />
+        <meta name="description" content="Learn about the Jal Saksharta Rally in Latur, championed by Sambhaji Patil Nilangekar, promoting water awareness and conservation. Explore how this initiative educates communities and emphasizes key water sources like the Godavari River and Bhandhardara Dam. Join the effort for sustainable water management in the region." />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/Jal_Saksharta_Rally" />
+      </Helmet>
+
       {props.data.map((data) => {
         return (
           <>
