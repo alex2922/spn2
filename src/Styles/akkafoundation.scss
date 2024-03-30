@@ -25,16 +25,26 @@
   }
 
   .slide-img1 {
-    background: url("../assets/s1.jpg");
+    background: url("../photos/akka_swiper/s1.webp");
   }
 
   .slide-img2 {
-    background: url("../assets/s2.jpg");
+    background: url("../photos/akka_swiper/education.webp");
   }
 
   .slide-img3 {
-    background: url("../assets/s3.jpg");
+    background: url("../photos/akka_swiper/environment.webp");
   }
+  .slide-img4 {
+    background: url("../photos/akka_swiper/health.webp");
+  }
+  .slide-img5 {
+    background: url("../photos/akka_swiper/art_culture.webp");
+  }
+  .slide-img6 {
+    background: url("../photos/akka_swiper/anandi.webp");
+  }
+
 
   .swiper-button-next,
   .swiper-button-prev,
@@ -97,6 +107,7 @@
         &:hover {
           background: white;
           color: var(--accent) !important;
+          border: none;
         }
       }
     }
