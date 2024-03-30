@@ -39,8 +39,7 @@ function Indraprashtha(props) {
                     data-aos-delay="200"
                     data-aos-duration="1000"
                   >
-                    Indraprasth_Jalbhumi_Abhiyan sit amet consectetur
-                    adipisicing elit.
+                    {data.Indraprashtha11_saksharta_heading}
                   </h2>
                   <div
                     className="line"
@@ -54,38 +53,45 @@ function Indraprashtha(props) {
                     data-aos-delay="400"
                     data-aos-duration="1000"
                   >
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta porro molestiae id cupiditate sequi veritatis
-                    doloremque vitae! Quo sapiente molestias iure rem ipsum cum
-                    minus debitis maxime quas explicabo accusamus beatae, magni
-                    nostrum tempora iusto. Officia, itaque asperiores distinctio
-                    maxime aperiam rerum illo nesciunt saepe mollitia id. Iusto,
-                    accusamus beatae!
+                    {data.Indraprashtha11_saksharta_para}
                   </p>
                 </div>
               </div>
             </div>
 
-            <Counter data={props.data} background="#efefef" />
+            <div className="counter-parent1">
+    <h3>{data.Marathwada_counter}</h3>
+<Counter data={props.data}
+  background=""
+  textnum1="945"
+  plus="+"
+  text1={data.Indraprashtha11_countup1}
+  textnum2="2800"
+  plus2="+"
+  text2={data.Indraprashtha11_countup2}
+  textnum3="8"
+  plus3=""
+  text3={data.Indraprashtha11_countup3}
+  textnum4=""
+  plus4=""
+  text4=""
+
+/>
+</div>
 
             <TwoColSec
               padding="50px 0px 50px 0px"
-              background=""
+              background="#efefef"
               row="row-reverse"
               bg={img}
-              subheading=" Lorem, ipsum dolor sit amet consectetur adipisicing elit. "
-              subdescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              porro molestiae id cupiditate sequi veritatis doloremque vitae!
-              Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-              quas explicabo accusamus beatae, magni nostrum tempora iusto.
-              Officia, itaque asperiores distinctio maxime aperiam rerum illo
-              nesciunt saepe mollitia id. Iusto, accusamus beatae!"
+              subheading={data.Indraprashtha11_heading2}
+              subdescription={data.Indraprashtha11_para2}
               btn=""
             />
 
             <Imageswiper
               titlegallery="gallery"
-              background="#efefef"
+              background=""
               img1={img1}
               img2={img2}
               img3={img3}

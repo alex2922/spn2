@@ -87,6 +87,20 @@ const english = [
     Namo_para2:"The event also witnessed the presence of HR representatives from over 180 companies, further boosting employment prospects for the youth. To cater to the specific needs of women and farmers, dedicated wings were established within the ‘Mahamela’, providing industry and business guidance tailored to their requirements. The enthusiastic participation of young women from Marathwada added to the success of this grand gathering.",
 
 
+     // indraprashth=============================================================
+
+      
+     Indraprashtha11_saksharta_heading:"Indraprastha Jalbhumi Mission",
+     Indraprashtha11_saksharta_para:"With the aim of making Latur and Marathwada 'drought-free' and 'water-abundant', Mr. Sambhaji Patil Nilangekar initiated the Indraprastha Jalbhumi Mission. Implemented from May 22 to June 5, 2018, across the entire Latur district, this campaign aimed to educate citizens about the importance of water conservation through door-to-door outreach. The mission successfully recharged 2800 borewells and wells in the district by providing free materials and labor support. As a result, a significant increase of 8 meters was recorded in the groundwater level of the district. ",
+     Indraprashtha11_countup1:"Villages",      
+     Indraprashtha11_countup2:"Recharged Borewells",
+     Indraprashtha11_countup3:"meter increase in  groundwater level of the district",
+     
+ 
+     Indraprashtha11_heading2:"Home Awareness, Water Conservation Progress!",
+     Indraprashtha11_para2:"Achieved an 8-meter increase in the groundwater level of the district Awareness at home, progress in water conservation! This comprehensive campaign covered 945 villages, where citizens received training on water conservation and were encouraged to plant trees through doorstep distribution. Additionally, cleanliness drives were organized to raise awareness about the importance of sanitation. Citizens who actively participated and completed the water conservation training were honored with the title of 'Jala Yoddha'.",
+
+
 
         // home_page=========================
         Home_slider1:"The Youngest MLA",
