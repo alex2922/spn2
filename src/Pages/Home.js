@@ -22,6 +22,7 @@ import s7 from "../assets/home/Employee_People.jpg";
 import s8 from "../assets/home/Indraprastha_jalbhumi.jpg";
 import s9 from "../assets/home/Akka_foundation.jpg";
 import Accr from "./Accr";
+import { Helmet } from 'react-helmet';
 
 function Home(props) {
   const swiperSlidesData = [
@@ -44,6 +45,13 @@ function Home(props) {
 
   return (
     <>
+    <Helmet>
+        <title>Get to Know Sambhaji Patil Nilangekar: Your Dedicated Political Leader</title>
+        <meta name="keywords" content="Bharatiya Janata Party,MLA in Nilangekar,MLA in Latur " />
+        <meta name="description" content="Learn about the Jal Saksharta Rally in Latur, championed by Sambhaji Patil Nilangekar, promoting water awareness and conservation. Explore how this initiative educates communities and emphasizes key water sources like the Godavari River and Bhandhardara Dam. Join the effort for sustainable water management in the region." />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/Jal_Saksharta_Rally" />
+      </Helmet>
+
       {props.data.map((data) => {
         return (
           <>

@@ -11,12 +11,28 @@ import img7 from "../photos/coach_factory/img_8.webp";
 import img8 from "../photos/coach_factory/img_9.webp";
 import img from "../photos/drushti/g1img.webp";
 import TwoColSec from "../components/TwoColSec";
-
+import { Helmet } from "react-helmet";
 import Counter from "../components/Counter";
 
 function Marathwadacoach(props) {
   return (
     <>
+      <Helmet>
+        <title>MARATHWADA RAILWAY COACH FACTORY</title>
+        <meta
+          name="keywords"
+          content="Marathwada Railway Coach Factory,Marathwada,Railway,Indian Railway,Railway Bogie,Vande Bharat Express trains"
+        />
+        <meta
+          name="description"
+          content="Explore Marathwada Railway Coach Factory, a hub for Indian Railway innovation. Learn how it supports projects like Vande Bharat Express trains, shaping modern rail travel."
+        />
+        <link
+          rel="canonical"
+          href="https://sambhajipatilnilangekar.in/Marathwada_Coach_Factory"
+        />
+      </Helmet>
+
       {props.data.map((data) => {
         return (
           <>
@@ -39,7 +55,7 @@ function Marathwadacoach(props) {
                     data-aos-delay="200"
                     data-aos-duration="1000"
                   >
-                    {data.Marathwada_coach_factory_heading} 
+                    {data.Marathwada_coach_factory_heading}
                   </h2>
                   <div
                     className="line"
@@ -91,12 +107,12 @@ function Marathwadacoach(props) {
             <Imageswiper
               titlegallery={data.Marathwada_gallery}
               background=""
-            //   img1={img1}
+              //   img1={img1}
               //   img2={img2}
               img3={img3}
               img4={img4}
               img5={img5}
-            //   img6={img6}
+              //   img6={img6}
               img7={img7}
               img8={img8}
             />

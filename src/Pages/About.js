@@ -14,10 +14,18 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import List from "../components/List";
+import { Helmet } from 'react-helmet';
+
 
 function About(props) {
   return (
     <>
+    <Helmet>
+        <title>Get to Know Sambhaji Patil Nilangekar: Dive Deeper into Our Political Leadership - About Us</title>
+        <meta name="keywords" content="Sambhaji Patil Nilangekar,Zilla Parishad,Municipal Corporation,Indraprastha Jalbhumi Abhiyan, Water Literacy Rally, Janjagar Samvad, Maharojgar Melawa, and Health Camps" />
+        <meta name="description" content="Sambhaji Patil Nilangekar leads Zilla Parishad and Municipal Corporation projects, along with initiatives like Indraprastha Jalbhumi Abhiyan. Join us for Water Literacy Rally, Janjagar Samvad, Maharojgar Melawa, and Health Camps." />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/about"/>
+      </Helmet>
       {props.data.map((data) => {
         return (
           <>

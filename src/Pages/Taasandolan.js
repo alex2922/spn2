@@ -13,10 +13,18 @@ import Imageswiper from "../components/Imageswiper";
 import Para from "../components/Para";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
+import { Helmet } from 'react-helmet';
+
 
 function Taasandolan(props) {
   return (
     <>
+    <Helmet>
+        <title>72 Taas Andolan</title>
+        <meta name="keywords" content="Jal Saksharta Rally, Jal Saksharta Rally in Latur, Sambhaji Patil, Sambhaji Patil Nilangekar, Godavari River, Bhandhardara Dam" />
+        <meta name="description" content="Learn about the Jal Saksharta Rally in Latur, championed by Sambhaji Patil Nilangekar, promoting water awareness and conservation. Explore how this initiative educates communities and emphasizes key water sources like the Godavari River and Bhandhardara Dam. Join the effort for sustainable water management in the region." />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/Jal_Saksharta_Rally" />
+      </Helmet>
       {props.data.map((data) => {
         return (
           <>
