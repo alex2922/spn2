@@ -1,67 +1,85 @@
-import React from 'react'
+import React from "react";
 import "../Styles/laturvachava.scss";
-import img1 from "../photos/drushti/g1img.webp"
-import img from "../photos/drushti/g1img.webp"
+import img1 from "../photos/drushti/g1img.webp";
+import img from "../photos/drushti/g1img.webp";
 import Imageswiper from "../components/Imageswiper";
 
 import TwoColSec from "../components/TwoColSec";
-import Counter from '../components/Counter';
+import Counter from "../components/Counter";
+import { Helmet } from 'react-helmet';
+
 function Laturvachava(props) {
   return (
     <>
-    {props.data.map((data) => {
+    <Helmet>
+        <title>Jan Jagar Sanvad</title>
+        <meta name="keywords" content="Marathwada,Jan Jagar Manch,Dayanand Auditorium Hall,Jan Jagar Samvad" />
+        <meta name="description" content="Explore the cultural heart of Marathwada at Jan Jagar Manch's vibrant events held in the iconic Dayanand Auditorium Hall. Join Jan Jagar Samvad for insightful discussions shaping the region's future." />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/Jan_Jagar_Sanvad" />
+      </Helmet>
+      {props.data.map((data) => {
         return (
-    <>
-    
-    
-    <div className="header-bg-box">
+          <>
+            <div className="header-bg-box"></div>
+            <div className="ss parent  bg-img-contain">
+              <div className="overlay bg-img-cover"></div>
 
-</div>
-<div className="ss parent  bg-img-contain"   >
-  <div className="overlay bg-img-cover"></div>
+              <div className="ss-cont cont">
+                <div className="ss-left">
+                  <div
+                    className="img-box bg-img-cover"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                  ></div>
+                </div>
+                <div className="ss-right">
+                  <h2
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                    data-aos-duration="1000"
+                  >
+                    {data.Latur_saksharta_heading}
+                  </h2>
+                  <div
+                    className="line"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                    data-aos-duration="1000"
+                  ></div>
 
-  <div className="ss-cont cont">
-    <div className="ss-left">
-      <div className="img-box bg-img-cover" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000" >
+                  <p
+                    data-aos="fade-left"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
+                  >
+                    {data.Latur_saksharta_para}
+                  </p>
+                </div>
+              </div>
+            </div>
 
-      </div>
-    </div>
-    <div className="ss-right">
+            <div className="counter-parent1">
+              <h3>{data.Marathwada_counter}</h3>
+              <Counter
+                data={props.data}
+                background=""
+                textnum1="450"
+                plus=""
+                text1={data.Latur_countup1}
+                textnum2="9"
+                plus2=""
+                text2={data.Latur_countup2}
+                textnum3="100"
+                plus3="+"
+                text3={data.Latur_countup3}
+                textnum4=""
+                plus4=""
+                text4=""
+              />
+            </div>
 
-      <h2 data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
-       {data.Latur_saksharta_heading}
-      </h2>
-      <div className="line" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000"></div>
-
-      <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-        {data.Latur_saksharta_para}
-      </p>
-
-    </div>
-  </div>
-</div>
-
-<div className="counter-parent1">
-<h3>{data.Marathwada_counter}</h3>
-<Counter data={props.data}
-  background=""
-  textnum1="450"
-  plus=""
-  text1={data.Latur_countup1}
-  textnum2="9"
-  plus2=""
-  text2={data.Latur_countup2}
-  textnum3="100"
-  plus3="+"
-  text3={data.Latur_countup3}
-  textnum4=""
-  plus4=""
-  text4=""
-
-/>
-</div>
-
-<TwoColSec
+            <TwoColSec
               padding="50px 0px 50px 0px"
               background="#efefef"
               row="row-reverse"
@@ -71,26 +89,20 @@ function Laturvachava(props) {
               btn=""
             />
 
-
-
-
-<Imageswiper
-  titlegallery={data.Marathwada_gallery}
-  background= ""
-  img1={img1}
-  img2={img1}
-  img3={img1}
-  img4={img1}
-  img5={img1}
-
-/>
-
-</>
+            <Imageswiper
+              titlegallery={data.Marathwada_gallery}
+              background=""
+              img1={img1}
+              img2={img1}
+              img3={img1}
+              img4={img1}
+              img5={img1}
+            />
+          </>
         );
       })}
-    
     </>
-  )
+  );
 }
 
-export default Laturvachava
+export default Laturvachava;

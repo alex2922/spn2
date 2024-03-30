@@ -13,11 +13,17 @@ import Imageswiper from "../components/Imageswiper";
 
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet';
 
 function Atalmaharogya(props) {
   return (
     <>
+    <Helmet>
+        <title>Atal Maharogya Shibir</title>
+        <meta name="keywords" content="Atal Maharogya Shibira,health camp,Asha volunteers," />
+        <meta name="description" content="Discover quality healthcare at the Atal Maharogya Shibira health camp, where Asha volunteers extend their dedicated support. Benefit from essential medical services and compassionate care, prioritizing the well-being of every individual." />
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/Atal_Maharogya_Shibir" />
+      </Helmet>
       <Helmet>
         <title>Atal Maharogya Shibir</title>
         <meta
