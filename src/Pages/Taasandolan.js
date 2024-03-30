@@ -39,7 +39,7 @@ function Taasandolan(props) {
                     data-aos-delay="200"
                     data-aos-duration="1000"
                   >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    {data.Taas_saksharta_heading}
                   </h2>
                   <div
                     className="line"
@@ -53,13 +53,7 @@ function Taasandolan(props) {
                     data-aos-delay="400"
                     data-aos-duration="1000"
                   >
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta porro molestiae id cupiditate sequi veritatis
-                    doloremque vitae! Quo sapiente molestias iure rem ipsum cum
-                    minus debitis maxime quas explicabo accusamus beatae, magni
-                    nostrum tempora iusto. Officia, itaque asperiores distinctio
-                    maxime aperiam rerum illo nesciunt saepe mollitia id. Iusto,
-                    accusamus beatae!
+                    {data.Taas_saksharta_para}
                   </p>
                 </div>
               </div>
@@ -72,18 +66,19 @@ function Taasandolan(props) {
       
       />
 
-<div className="counter-parent1">
+<div className="counter-parent4">
+<h3>{data.Marathwada_counter}</h3>
 <Counter data={props.data}
   background=""
-  textnum1="600"
-  plus="+"
-  text1={data.Marathwada_countup1}
-  textnum2="300"
-  plus2="+"
-  text2={data.Marathwada_countup2}
-  textnum3="45000"
+  textnum1="72"
+  plus=""
+  text1={data.Taas_countup1}
+  textnum2=""
+  plus2=""
+  text2={data.Taas_countup2}
+  textnum3=""
   plus3=""
-  text3={data.Marathwada_countup3}
+  text3={data.Taas_countup3}
   textnum4=""
   plus4=""
   text4=""
@@ -96,13 +91,8 @@ function Taasandolan(props) {
               background="#efefef"
               row="row-reverse"
               bg={img}
-              subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              subdescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              porro molestiae id cupiditate sequi veritatis doloremque vitae!
-              Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-              quas explicabo accusamus beatae, magni nostrum tempora iusto.
-              Officia, itaque asperiores distinctio maxime aperiam rerum illo
-              nesciunt saepe mollitia id. Iusto, accusamus beatae!"
+              subheading={data.Taas_heading2}
+              subdescription={data.Taas_para2}
               btn=""
             />
 
@@ -112,19 +102,8 @@ function Taasandolan(props) {
       
 
       <Imageswiper
-            titlegallery="gallery"
+            titlegallery={data.Marathwada_gallery}
             background= ""
-              img1={img1}
-              img2={img1}
-              img3={img1}
-              img4={img1}
-              img5={img1}
-              
-            />
-
-            <Imageswiper
-              titlegallery="gallery"
-              background="#efefef"
               img1={img1}
               img2={img2}
               img3={img3}
@@ -133,7 +112,11 @@ function Taasandolan(props) {
               img6={img6}
               img7={img7}
               img8={img8}
+              
+              
             />
+
+            
           </>
         );
       })}

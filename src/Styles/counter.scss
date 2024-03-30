@@ -40,7 +40,12 @@
                 width: 300px;
 
                .counter-number{
-                font-size: 70px;
+                font-size: 50px;
+                font-weight: 600;
+               } 
+
+               .counter-text{
+                font-size: 18px;
                 font-weight: 600;
                } 
 
@@ -69,10 +74,15 @@
                 width: 300px;
                 box-shadow: var(--shadow);
 
-               .counter-number{
-                font-size: 70px;
-                font-weight: 600;
-               } 
+                .counter-number{
+                    font-size: 50px;
+                    font-weight: 600;
+                   } 
+    
+                   .counter-text{
+                    font-size: 18px;
+                    font-weight: 600;
+                   } 
 
 
 

@@ -64,6 +64,7 @@ function Marathwadacoach(props) {
 
 
   <div className="counter-parent1">
+    <h3>{data.Marathwada_counter}</h3>
 <Counter data={props.data}
   background=""
   textnum1="600"

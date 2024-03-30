@@ -16,6 +16,9 @@ import Counter from "../components/Counter";
 function Atalmaharogya(props) {
   return (
     <>
+      {props.data.map((data) => {
+        return (
+    <>
       <div className="header-bg-box"></div>
       <div className="ss parent  bg-img-contain">
         <div className="overlay bg-img-cover"></div>
@@ -35,7 +38,7 @@ function Atalmaharogya(props) {
               data-aos-delay="200"
               data-aos-duration="1000"
             >
-              Atal_Maharogya_Shibir sit amet consectetur adipisicing elit.
+              {data.Atal_saksharta_heading}
             </h2>
             <div
               className="line"
@@ -49,36 +52,44 @@ function Atalmaharogya(props) {
               data-aos-delay="400"
               data-aos-duration="1000"
             >
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              porro molestiae id cupiditate sequi veritatis doloremque vitae!
-              Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-              quas explicabo accusamus beatae, magni nostrum tempora iusto.
-              Officia, itaque asperiores distinctio maxime aperiam rerum illo
-              nesciunt saepe mollitia id. Iusto, accusamus beatae!
+              {data.Atal_saksharta_para}
             </p>
           </div>
         </div>
       </div>
 
-      <Counter data={props.data} background="#efefef" />
+      <div className="counter-parent1">
+    <h3>{data.Marathwada_counter}</h3>
+<Counter data={props.data}
+  background=""
+  textnum1="1"
+  plus="+"
+  text1={data.Atal_countup1}
+  textnum2="7400"
+  plus2="+"
+  text2={data.Atal_countup2}
+  textnum3="45000"
+  plus3=""
+  text3={data.Atal_countup3}
+  textnum4=""
+  plus4=""
+  text4=""
+
+/>
+</div>
 
       <TwoColSec
         padding="50px 0px 50px 0px"
         background=""
         row="row-reverse"
         bg={img}
-        subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-        subdescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              porro molestiae id cupiditate sequi veritatis doloremque vitae!
-              Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-              quas explicabo accusamus beatae, magni nostrum tempora iusto.
-              Officia, itaque asperiores distinctio maxime aperiam rerum illo
-              nesciunt saepe mollitia id. Iusto, accusamus beatae!"
+        subheading={data.Atal_heading2}
+        subdescription={data.Atal_para2}
         btn=""
       />
 
       <Imageswiper
-        titlegallery="gallery"
+        titlegallery={data.Marathwada_gallery}
         background="#efefef"
         img1={img1}
         img2={img2}
@@ -89,6 +100,9 @@ function Atalmaharogya(props) {
         img7={img7}
         img8={img8}
       />
+             </>
+        );
+      })}
     </>
   );
 }

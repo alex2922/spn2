@@ -5,7 +5,7 @@ const english = [
       Marathwada_coach_factory_heading:"Marathwada Railway Coach Factory",
       Marathwada_coach_factory_para:"The Marathwada Railway Coach Factory stands as the largest government project in the region, a testament to the tireless efforts of MLA Sambhaji Patil Nilangekar. This significant initiative, secured through persistent advocacy by Sambhaji Patil, has garnered praise from senior leaders and officials who credit him for its establishment.      Initiated by the Central Government and Ministry of Railways, this factory marks a pioneering achievement as the country's first facility dedicated to manufacturing AC metro coaches. With a vision for regional development, it promises to address unemployment challenges in Marathwada while generating substantial employment opportunities and fostering industrial-commercial growth.       ",
 
-      Marathwada_countup1:"Investment exceeding ",
+      Marathwada_countup1:"Crore Investment exceeding ",
       
       Marathwada_countup2:"Acres  ",
       Marathwada_countup3:"Direct and Indirect jobs",
@@ -13,6 +13,7 @@ const english = [
       Marathwada_heading2:"Promotion of Economic Development in Marathwada",
       Marathwada_para2:"The groundbreaking ceremony, graced by Union Minister Shri. Piyush Goyal and then-Chief Minister Devendra Fadnavis, took place on March 31, 2018. Remarkably, within a span of just six years, the factory was completed, culminating in its inauguration on March 12, 2024, by Prime Minister Narendra Modi.      Even amidst the challenges of the COVID-19 pandemic, the factory demonstrated resilience, achieving the milestone of completing its first railway coach shell as scheduled in 2020. Recognizing its capacity and efficiency, the central government has announced plans to manufacture 120 Vande Bharat Express trains in this facility, heralding a significant boost to Marathwada's industrial landscape.  The Marathwada Railway Coach Factory epitomizes progress and opportunity, symbolizing a transformative leap in the region's industrial journey.       ",
       Marathwada_gallery:"Snapshots",
+      Marathwada_counter:"Scope of the Project",
 
       // Jal=============================================================
 
@@ -34,18 +35,43 @@ const english = [
     //   Taas_Andolan=============================================================
 
       
-      Taas_heading:"72-hour fasting",
-      Taas_saksharta_para:"On the initiative of MLA Sambhaji Patil Nilangekar, '72 Hours Fasting' was held on 11th October 2021 to raise voice about the anti-farmer policies of the then Maha Vikas Aghadi government and the neglect of the damaged farmers. This movement was held in the presence of thousands of farmers. Attacking the Nizam attitude of the government, farmers along with Sambhaji Patil went on a food boycott. Meanwhile, 14 more farmers had to be taken to the hospital due to this. Finally, the government woke up and on the third day, the government announced an aid of 10 thousand crore rupees for the affected farmers.",
+    Taas_saksharta_heading:"72-hour fasting ",
+    Taas_saksharta_para:"On the initiative of MLA Sambhaji Patil Nilangekar, '72 Hours Fasting' was held on 11th October 2021 to raise voice about the anti-farmer policies of the then Maha Vikas Aghadi government and the neglect of the damaged farmers. This movement was held in the presence of thousands of farmers. Attacking the Nizam attitude of the government, farmers along with Sambhaji Patil went on a food boycott. Meanwhile, 14 more farmers had to be taken to the hospital due to this. Finally, the government woke up and on the third day, the government announced an aid of 10 thousand crore rupees for the affected farmers. ",
 
-      Taas_countup1:"Days",      
-      Taas_countup2:"Talukas",
-      Taas_countup3:"kms Bike Ride. ",
-      Taas_countup4:"Villages ",      
-      Taas_countup5:"Gram Panchayats",
-      Taas_countup6:"Letters of Support",
+    Taas_countup1:"hours duration",      
+    Taas_countup2:"Citizens giving up food",
+    Taas_countup3:"Citizen participation ",
+    
 
-      Taas_heading2:"•	Sacrificing food for food!",
-      Taas_para2:"Many socio-political organizations including farmers across the state also supported the movement. Many people in the state and center supported the movement by visiting it and also through video messages. Nagtirthwadi village of Latur district supported its farmer brothers by taking the role of 'Ek Diwas Chulband'. In the protest, 25 protestors protested against the policies of the government by shaving their heads. At that time, everyone took a firm stand to sacrifice food for the food giver and get him justice. Finally, the movement was successful and the then coalition government announced aid.",
+    Taas_heading2:"Sacrificing food for food!  ",
+    Taas_para2:"Many socio-political organizations including farmers across the state also supported the movement. Many people in the state and center supported the movement by visiting it and also through video messages. Nagtirthwadi village of Latur district supported its farmer brothers by taking the role of 'Ek Diwas Chulband'. In the protest, 25 protestors protested against the policies of the government by shaving their heads. At that time, everyone took a firm stand to sacrifice food for the food giver and get him justice. Finally, the movement was successful and the then coalition government announced aid. ",
+
+    // Latur=============================================================
+
+      
+    Latur_saksharta_heading:"Jan Jagar Sanvad",
+    Latur_saksharta_para:"Even after 75 years of independence, Marathwada has not fully developed. Today, many districts in Marathwada, including Latur, are grappling with basic necessities like drinking water. Where there's a scarcity of water, the challenges extend to industries, employment, and infrastructure. Due to the lack of a conducive development environment and employment opportunities in the district, there has been significant youth and citizen displacement. To address these issues and promote the overall development of the Latur district, the Honorable Sambhaji Patil Nilangekar initiated and guided the establishment of a development platform called 'Jan Jagar Manch'.",
+    Latur_countup1:"Expert Participants Engaged",      
+    Latur_countup2:"Area White Papers Produced",
+    Latur_countup3:"Brainstorming Development Points  ",
+    
+
+    Latur_heading2:"Discussion on the overall development of Latur",
+    Latur_para2:"The forum decided to study the Israeli model and focus on 9 specific areas. A total of 450 experts and practitioners from each of these sectors were to be brought together onto a single platform for strategic discussions aimed at preparing a white paper for the district's development. On August 12, 2023, a one-day dialogue program called 'Jan Jagar Samvad' was organized at the Dayanand Auditorium in Latur. Nine separate sessions covering nine different subjects were conducted during this event. Additionally, nine distinct white papers related to each area were prepared and presented before the audience. ",
+
+    // Atal=============================================================
+
+      
+    Atal_saksharta_heading:"Atal Mahaarogya Camp",
+    Atal_saksharta_para:"Under the leadership of MLA Sambhaji Patil Nilangekar, a state government-sponsored health camp called 'Atal Maharogya Shibira' was successfully organized from October 1st to 7th, 2018. During the 6-day campaign, more than 1 lakh citizens were registered and pre-screened for health evaluations across the district. On October 7th, the then Chief Minister Mr. Devendraji Fadnavis inaugurated the camp, where free surgeries and medical treatments were provided to those in need.",
+    Atal_countup1:"Lakh Patients Examination",      
+    Atal_countup2:"Surgical Diagnoses",
+    Atal_countup3:"Successful Treatments  ",
+    
+
+    Atal_heading2:"Providing free health facilities for the poor!",
+    Atal_para2:"This marked the first time in the history of Latur district that such a large-scale health camp was organized. The District Health Department, along with dedicated Asha volunteers, worked tirelessly day and night to ensure its success. Additionally, 23 coordination committees were appointed to assist the health department in organizing the camp effectively. Following the camp, patients enrolled in the program received free treatment through various government healthcare schemes. Successful completion of surgeries, including a hip replacement procedure performed on Mr. Vishnuji Santoba Surnar from Ahmedpur.",
+
 
 
         // home_page=========================
