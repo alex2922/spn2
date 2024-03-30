@@ -1,41 +1,24 @@
-.scroll-btn {
-    position: fixed;
-    right: 20px;
-    bottom: 12%;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-    button {
-      height: 40px;
-      width: 40px;
-      background-color: transparent;
-      border: none;
-    //   border-radius: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-  
-     
-  
-      .icon {
-        color: var(--accent);
-        font-size: 50px;
-        animation: bounce 1s infinite alternate; 
-        
-       
-  
-        @keyframes bounce {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(-3px);
-          }
-        }
-      }
-    }
-  }
+.scroll-top-btn {
+  position: fixed;
+  bottom: 80px;
+  right: 9px;
+  background-color:transparent ;
+  color: var(--accent);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+
+  cursor: pointer;
+  opacity: 0;
+  font-size: 30px;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 9999; /* Ensure the button is on top of other content */
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+}
+
+.scroll-top-btn.hide {
+  opacity: 0;
+}

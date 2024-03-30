@@ -59,7 +59,7 @@ function Akkafoundation(props) {
                     data-aos-delay="200"
                     data-aos-duration="1000"
                   >
-                    Akka_Foundation sit amet consectetur adipisicing elit.
+                    {data.akka12_saksharta_heading}
                   </h2>
                   <div
                     className="line"
@@ -73,13 +73,7 @@ function Akkafoundation(props) {
                     data-aos-delay="400"
                     data-aos-duration="1000"
                   >
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta porro molestiae id cupiditate sequi veritatis
-                    doloremque vitae! Quo sapiente molestias iure rem ipsum cum
-                    minus debitis maxime quas explicabo accusamus beatae, magni
-                    nostrum tempora iusto. Officia, itaque asperiores distinctio
-                    maxime aperiam rerum illo nesciunt saepe mollitia id. Iusto,
-                    accusamus beatae!
+                    {data.akka12_saksharta_para}
                   </p>
                 </div>
               </div>
@@ -106,23 +100,11 @@ function Akkafoundation(props) {
                   <div className="overlay"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">Empowerment</h3>
+                      <h3 className="swiper-heading">{data.akka_swiper1_heading}</h3>
                       <p className="swiper-para">
-                        Empowering the underprivileged lies at the core of Akka
-                        Foundation's mission for sustainable development. It
-                        entails providing sustainable opportunities, motivation,
-                        and resources to those facing economic and social
-                        challenges. By nurturing skills development and
-                        providing financial support, the foundation aims to make
-                        individuals self-reliant for a sustainable future.
+                      {data.akka_swiper1_para}
                       </p>
-                      <Link
-                        to="https://akkafoundation.in/empower"
-                        target="_blank"
-                        className="btn swiper-btn"
-                      >
-                        Read More
-                      </Link>
+                      <Link to="https://akkafoundation.in/empower" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -131,22 +113,11 @@ function Akkafoundation(props) {
                   <div className="overlay"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">Education</h3>
+                      <h3 className="swiper-heading">{data.akka_swiper2_heading}</h3>
                       <p className="swiper-para">
-                        In a country with over a billion people, only one-third
-                        can read due to challenges like a lack of basic
-                        facilities, resources, and teachers, along with
-                        insufficient public funds for education—creating a
-                        significant barrier to achieving sustainable
-                        development.
+                      {data.akka_swiper2_para}
                       </p>
-                      <Link
-                        to="https://akkafoundation.in/education"
-                        target="_blank"
-                        className="btn swiper-btn"
-                      >
-                        Read More
-                      </Link>
+                      <Link to="https://akkafoundation.in/education" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -155,19 +126,11 @@ function Akkafoundation(props) {
                   <div className="overlay"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">Environment</h3>
+                      <h3 className="swiper-heading">{data.akka_swiper3_heading}</h3>
                       <p className="swiper-para">
-                        In the intricate web of rural welfare, the environment
-                        stands as a linchpin for Akka Foundation, playing a
-                        pivotal role in fostering sustainable development.
+                      {data.akka_swiper3_para}
                       </p>
-                      <Link
-                        to="https://akkafoundation.in/environment"
-                        target="_blank"
-                        className="btn swiper-btn"
-                      >
-                        Read More
-                      </Link>
+                      <Link to="https://akkafoundation.in/environment" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -176,21 +139,11 @@ function Akkafoundation(props) {
                   <div className="overlay"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">Health</h3>
+                      <h3 className="swiper-heading">{data.akka_swiper4_heading}</h3>
                       <p className="swiper-para">
-                        Prioritising health is a fundamental aspect of Akka
-                        Foundation's mission for sustainable development among
-                        underprivileged communities. Health, being a cornerstone
-                        of individual and societal well-being, is integral for
-                        achieving long-term progress.
+                      {data.akka_swiper4_para} 
                       </p>
-                      <Link
-                        to="https://akkafoundation.in/health"
-                        target="_blank"
-                        className="btn swiper-btn"
-                      >
-                        Read More
-                      </Link>
+                      <Link to="https://akkafoundation.in/health" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -199,23 +152,11 @@ function Akkafoundation(props) {
                   <div className="overlay"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">Art & Culture</h3>
+                      <h3 className="swiper-heading">{data.akka_swiper5_heading}</h3>
                       <p className="swiper-para">
-                        Art and culture form the vibrant tapestry of Akka
-                        Foundation's holistic approach to rural welfare,
-                        contributing profoundly to sustainable development.
-                        Recognizing the transformative power of artistic
-                        expression, the foundation integrates art and culture
-                        into its initiatives, fostering a sense of identity,
-                        pride, and unity within communities.
+                      {data.akka_swiper5_para}
                       </p>
-                      <Link
-                        to="https://akkafoundation.in/art&culture"
-                        target="_blank"
-                        className="btn swiper-btn"
-                      >
-                        Read More
-                      </Link>
+                      <Link  to="https://akkafoundation.in/art&culture" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -224,19 +165,11 @@ function Akkafoundation(props) {
                   <div className="overlay"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">Project Anandi</h3>
+                      <h3 className="swiper-heading">{data.akka_swiper6_heading}</h3>
                       <p className="swiper-para">
-                        An innovative initiative ‘Project Anandi’ was launched
-                        as a sustainable solution to the menstrual health
-                        problems of women and girls in rural areas.
+                      {data.akka_swiper6_para}
                       </p>
-                      <Link
-                        to="https://akkafoundation.in/project-Anandi"
-                        target="_blank"
-                        className="btn swiper-btn"
-                      >
-                        Read More
-                      </Link>
+                      <Link to="https://akkafoundation.in/project-Anandi" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
@@ -249,18 +182,13 @@ function Akkafoundation(props) {
               background=""
               row="row-reverse"
               bg={img}
-              subheading="Lorem ipsum dolor sit amet consectetur adipisicing elit."
-              subdescription="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta
-              porro molestiae id cupiditate sequi veritatis doloremque vitae!
-              Quo sapiente molestias iure rem ipsum cum minus debitis maxime
-              quas explicabo accusamus beatae, magni nostrum tempora iusto.
-              Officia, itaque asperiores distinctio maxime aperiam rerum illo
-              nesciunt saepe mollitia id. Iusto, accusamus beatae!"
+              subheading={data.akka12_heading2}
+              subdescription={data.akka12_para2}
               btn=""
             />
 
             <Imageswiper
-              titlegallery="gallery"
+              titlegallery={data.Marathwada_gallery}
               background="#efefef"
               img1={img1}
               img2={img2}

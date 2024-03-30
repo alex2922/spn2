@@ -100,6 +100,41 @@ const english = [
      Indraprashtha11_heading2:"Home Awareness, Water Conservation Progress!",
      Indraprashtha11_para2:"Achieved an 8-meter increase in the groundwater level of the district Awareness at home, progress in water conservation! This comprehensive campaign covered 945 villages, where citizens received training on water conservation and were encouraged to plant trees through doorstep distribution. Additionally, cleanliness drives were organized to raise awareness about the importance of sanitation. Citizens who actively participated and completed the water conservation training were honored with the title of 'Jala Yoddha'.",
 
+     // akka=============================================================
+
+      
+     akka12_saksharta_heading:"Akka Foundation",
+     akka12_saksharta_para:"In 2016, Latur district faced severe drought. During this challenging period, various initiatives were launched to aid the people of Latur under the guidance of Sambhaji bhaiyya and his mother, Smt. Rupatai (Akka) Patil Nilangekar. The inception of 'Akka Foundation' was driven by the vision of Sambhaji bhaiyya and his younger brother, Arvind Patil Nilangekar, in response to Akka's desire for a charitable organization to support the community during crises. ",
+     
+     
+
+     akka12_heading2:"Empowering Every Facet of Society!     ",
+     akka12_para2:"Akka Foundation is dedicated to fostering the well-being and prosperity of underprivileged individuals in our society. The foundation is actively engaged in initiatives spanning women empowerment, education, healthcare, environmental conservation, water management, support for farming communities, and the preservation of art and culture. Notably, projects like Project Anand for adolescent girls and Drashti Abhiyan, providing free eye care services to senior citizens, have significantly impacted many lives. Through these endeavors, the foundation has garnered increased trust from the community, with widespread participation in its activities.",
+
+     akka_swiper1_heading:"Empowerment",
+     akka_swiper1_para:"Empowering the underprivileged lies at the core of Akka Foundation's mission for sustainable development. It entails providing sustainable opportunities, motivation, and resources to those facing economic and social challenges. By nurturing skills development and providing financial support, the foundation aims to make individuals self-reliant for a sustainable future.",
+
+     akka_swiper2_heading:"Education",
+     akka_swiper2_para:"In a country with over a billion people, only one-third can read due to challenges like a lack of basic facilities, resources, and teachers, along with insufficient public funds for education—creating a significant barrier to achieving sustainable development.",
+
+     akka_swiper3_heading:"Environment",
+     akka_swiper3_para:"In the intricate web of rural welfare, the environment stands as a linchpin for Akka Foundation, playing a pivotal role in fostering sustainable development.",
+
+     akka_swiper4_heading:"Health",
+     akka_swiper4_para:"Prioritising health is a fundamental aspect of Akka Foundation's mission for sustainable development among underprivileged communities. Health, being a cornerstone of individual and societal well-being, is integral for achieving long-term progress.",
+
+     akka_swiper5_heading:"Art & Culture",
+     akka_swiper5_para:"Art and culture form the vibrant tapestry of Akka Foundation's holistic approach to rural welfare, contributing profoundly to sustainable development. Recognizing the transformative power of artistic expression, the foundation integrates art and culture into its initiatives, fostering a sense of identity, pride, and unity within communities.",
+
+     akka_swiper6_heading:"Project Anandi",
+     akka_swiper6_para:"An innovative initiative ‘Project Anandi’ was launched as a sustainable solution to the menstrual health problems of women and girls in rural areas.",
+
+     akka_read_more:"Read More",
+
+
+    //  dropdown header===========================
+    
+
 
 
         // home_page=========================
