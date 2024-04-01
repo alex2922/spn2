@@ -35,16 +35,18 @@
   .slide-img3 {
     background: url("../photos/akka_swiper/environment.webp");
   }
+
   .slide-img4 {
     background: url("../photos/akka_swiper/health.webp");
   }
+
   .slide-img5 {
     background: url("../photos/akka_swiper/art_culture.webp");
   }
+
   .slide-img6 {
     background: url("../photos/akka_swiper/anandi.webp");
   }
-
 
   .swiper-button-next,
   .swiper-button-prev,
@@ -90,13 +92,15 @@
       flex-direction: column;
       justify-content: center;
       gap: calc(var(--gap));
-      padding: 20px;
+      //   padding: 20px;
       left: 10%;
 
       .swiper-heading {
         font-size: 30px;
         font-weight: 700;
         color: var(--white);
+        justify-content: left;
+        margin-bottom: 0px;
       }
 
       .swiper-para {
@@ -116,4 +120,33 @@
       width: 60%;
     }
   }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .swiper-section {
+        align-items: center !important;
+        justify-content: center !important;
+        .left-swiper {
+            width: 100% !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+        
+            text-align: left !important;
+        
+            .swiper-heading {
+              display: flex !important;
+              align-items: left !important;
+              justify-content: left !important;
+              }
+              .swiper-btn {
+            
+              }
+          }
+    }
+
+ 
 }

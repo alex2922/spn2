@@ -15,10 +15,28 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function Akkafoundation(props) {
   return (
     <>
+      <Helmet>
+        <title>Akka_Foundation</title>
+        <meta
+          name="keywords"
+          content="
+            Akka Foundation,Sambhaji bhaiyya,Rupatai Patil Nilangekar,Arvind Patil Nilangekar,
+            Latur district,Drought relief initiatives,Community support organization,Women empowerment projects,Education initiatives,Healthcare services,Environmental conservation efforts,Water management programs,Support for farming communities,Art and culture preservation,Project Anand,Drashti Abhiyan,Underprivileged support,Charitable foundation,Social welfare organization,Crisis response initiatives."
+        />
+        <meta
+          name="description"
+          content="Discover Akka Foundation's work in Latur led by Sambhaji bhaiyya. They help with drought relief, women's empowerment, education, healthcare, and more. Join their initiatives like Project Anand and Drashti Abhiyan."
+        />
+        <link
+          rel="canonical"
+          href="https://sambhajipatilnilangekar.in/Akka_Foundation"
+        />
+      </Helmet>
       {props.data.map((data) => {
         return (
           <>
@@ -68,7 +86,7 @@ function Akkafoundation(props) {
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                  delay: 25000000,
+                  delay: 2500,
                   disableOnInteraction: false,
                 }}
                 pagination={{

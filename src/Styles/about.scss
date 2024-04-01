@@ -34,7 +34,9 @@
       @media only screen and (max-width: 1000px) {
         .swiper-button-prev:after,
         .swiper-button-next:after {
-          display: block !important;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           background: var(--accent);
           padding: 10px;
           color: var(--white);
@@ -81,7 +83,7 @@
         background: url("../photos/personality/railway.webp");
       }
       .personality_img-8 {
-        background: url("../photos/personality/boost.webp");
+        background: url("../photos/personality/WhatsApp\ Image\ 2024-03-20\ at\ 4.24.47\ PM.jpeg");
       }
       .personality_img-9 {
         background: url("../photos/personality/employing.webp");

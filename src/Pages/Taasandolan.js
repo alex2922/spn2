@@ -21,9 +21,9 @@ function Taasandolan(props) {
     <>
     <Helmet>
         <title>72 Taas Andolan</title>
-        <meta name="keywords" content="Jal Saksharta Rally, Jal Saksharta Rally in Latur, Sambhaji Patil, Sambhaji Patil Nilangekar, Godavari River, Bhandhardara Dam" />
-        <meta name="description" content="Learn about the Jal Saksharta Rally in Latur, championed by Sambhaji Patil Nilangekar, promoting water awareness and conservation. Explore how this initiative educates communities and emphasizes key water sources like the Godavari River and Bhandhardara Dam. Join the effort for sustainable water management in the region." />
-        <link rel="canonical" href="https://sambhajipatilnilangekar.in/Jal_Saksharta_Rally" />
+        <meta name="keywords" content="Nagtirthwadi village,Ek Diwas Chulband,72 Hours Fasting,food boycott" />
+        <meta name="description" content="Discover the resilience of Nagtirthwadi village through Ek Diwas Chulband, a 72-hour fasting challenge, and a compelling food boycott movement. Join their inspiring journey as they defy odds, showcasing unity and determination in the face of hardship."/>
+        <link rel="canonical" href="https://sambhajipatilnilangekar.in/72_Taas_Andolan" />
       </Helmet>
       {props.data.map((data) => {
         return (
