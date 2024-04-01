@@ -1,8 +1,8 @@
 // .counter-parent {
 //    height: auto;
 //    padding: 60px 0px;
-   
-    
+
+
 
 
 
@@ -13,38 +13,38 @@
 //         justify-content: center;
 //         flex-direction: column;
 //         gap: 60px;
-.counter-box-container{
+.counter-box-container {
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    // padding: 50px 0px;
+
+    .count-box {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
         gap: 60px;
-        // padding: 50px 0px;
+        flex-wrap: wrap;
 
-        .count-box {
+        .counter-box {
             display: flex;
             align-items: center;
             justify-content: center;
-            
-            gap: 60px;
+            flex-direction: column;
+            box-shadow: var(--shadow);
+            border-radius: 10px;
+            height: 200px;
+            width: 300px;
 
-            .counter-box {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                box-shadow: var(--shadow);
-                border-radius: 10px;
-                height: 200px;
-                width: 300px;
-
-               .counter-number{
+            .counter-number {
                 font-size: 50px;
                 font-weight: 600;
-               } 
+            }
 
-               .counter-text{
+            .counter-text {
                 font-size: 20px;
                 font-weight: 600;
                 text-align: center;
@@ -52,49 +52,41 @@
                 max-width: 20ch;
                 line-height: 24px;
                 text-transform: capitalize;
-               } 
-
-
-
             }
-
-
         }
 
-        .count-box2{
+
+    }
+
+    .count-box2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+
+        .counter-box {
             display: flex;
             align-items: center;
             justify-content: center;
-            
-            gap: 60px;
-            
+            flex-direction: column;
+            border-radius: 10px;
+            height: 200px;
+            width: 300px;
+            box-shadow: var(--shadow);
 
-            .counter-box {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                border-radius: 10px;
-                height: 200px;
-                width: 300px;
-                box-shadow: var(--shadow);
-
-                .counter-number{
-                    font-size: 50px;
-                    font-weight: 600;
-                   } 
-    
-                   .counter-text{
-                    font-size: 18px;
-                    font-weight: 600;
-                   } 
-
-
-
+            .counter-number {
+                font-size: 50px;
+                font-weight: 600;
             }
 
+            .counter-text {
+                font-size: 18px;
+                font-weight: 600;
+            }
         }
     }
+}
+
 //     }
 
 // }

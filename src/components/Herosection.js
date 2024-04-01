@@ -8,27 +8,27 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 function HeroSection(props) {
-  const [slide1, setslide1] = useState(true);
-  const [slide2, setslide2] = useState(false);
+  const [slide1, setslide1] = useState(false);
+  const [slide2, setslide2] = useState(true);
   const [slide3, setslide3] = useState(false);
-  const [slide4, setslide4] = useState(true);
+  const [slide4, setslide4] = useState(false);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (slide1) {
-        setslide1(false);
-        setslide2(true);
-      } else if (slide2) {
-        setslide2(false);
-        setslide3(true);
-      } else {
-        setslide3(false);
-        setslide1(true);
-      }
-    }, 6000);
+    useEffect(() => {
+      const interval = setInterval(() => {
+        if (slide1) {
+          setslide1(false);
+          setslide2(true);
+        } else if (slide2) {
+          setslide2(false);
+          setslide3(true);
+        } else {
+          setslide3(false);
+          setslide1(true);
+        }
+      }, 6000);
 
-    return () => clearInterval(interval);
-  }, [slide1, slide2, slide3]);
+      return () => clearInterval(interval);
+    }, [slide1, slide2, slide3]);
 
   return (
     <>
@@ -62,9 +62,11 @@ function HeroSection(props) {
                   )}
                   {slide2 && (
                     <SwiperSlide>
-                      <div className="slide1 slide-img">
+                      <div className="slide2 slide-img">
                         <h1>One Voice, One Purpose, Endless Progress</h1>
                         <div className="overlay"></div>
+                        
+                        <div className="spn-frame bg-img-cover"></div>
                         <div className="slide-main bg-img-contain"></div>
                       </div>
                     </SwiperSlide>

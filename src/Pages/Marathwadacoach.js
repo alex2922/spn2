@@ -75,35 +75,27 @@ function Marathwadacoach(props) {
               </div>
             </div>
 
-           
+            <div className="counter-parent1">
+              <h3>{data.Marathwada_counter}</h3>
+              <Counter
+                data={props.data}
+                background=""
+                textnum1="600"
+                plus="+"
+                text1={data.Marathwada_countup11}
+                textnum2="300"
+                plus2="+"
+                text2={data.Marathwada_countup12}
+                textnum3="45000"
+                plus3=""
+                text3={data.Marathwada_countup13}
+                textnum4=""
+                plus4=""
+                text4=""
+              />
+            </div>
 
-
-
-
-  <div className="counter-parent1">
-    <h3>{data.Marathwada_counter}</h3>
-<Counter data={props.data}
-  background=""
-  textnum1="600"
-  plus="+"
-  text1={data.Marathwada_countup11}
-  textnum2="300"
-  plus2="+"
-  text2={data.Marathwada_countup12}
-  textnum3="45000"
-  plus3=""
-  text3={data.Marathwada_countup13}
-  textnum4=""
-  plus4=""
-  text4=""
-
-/>
-</div>
-
-<TwoColSec
-
-            
-
+            <TwoColSec
               padding="50px 0px 50px 0px"
               background="#efefef"
               row="row-reverse"
