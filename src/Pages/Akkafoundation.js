@@ -1,10 +1,10 @@
 import React from "react";
 import "../Styles/akkafoundation.scss";
-import img1 from "../photos/Akka foundation/_MG_0997.webp";
-import img2 from "../photos/Akka foundation/_MG_1752.webp";
-import img3 from "../photos/Akka foundation/_MG_8510.webp";
-import img4 from "../photos/Akka foundation/Sambhaji_Patil_Nilanhekar.webp";
-import img5 from "../photos/Akka foundation/Sambhaji_bhaiyya_with_kids.webp";
+import img1 from "../photos/Akka_foundation/_MG_0997.webp";
+import img2 from "../photos/Akka_foundation/_MG_1752.webp";
+import img3 from "../photos/Akka_foundation/_MG_8510.webp";
+import img4 from "../photos/Akka_foundation/Sambhaji_Patil_Nilanhekar.webp";
+import img5 from "../photos/Akka_foundation/Sambhaji_bhaiyya_with_kids.webp";
 import img from "../photos/drushti/g1img.webp";
 import Imageswiper from "../components/Imageswiper";
 import TwoColSec from "../components/TwoColSec";
@@ -47,7 +47,7 @@ function Akkafoundation(props) {
               <div className="ss-cont cont">
                 <div className="ss-left">
                   <div
-                    className="img-box bg-img-cover"
+                    className="img-box-akka bg-img-cover"
                     data-aos="fade-up"
                     data-aos-delay="0"
                     data-aos-duration="1000"
@@ -81,12 +81,22 @@ function Akkafoundation(props) {
 
             <Counter data={props.data} background="#efefef" />
 
+            <TwoColSec
+              padding="50px 0px 50px 0px"
+              background=""
+              row="row-reverse"
+              bg={img}
+              subheading={data.akka12_heading2}
+              subdescription={data.akka12_para2}
+              btn=""
+            />
+
             <div className="akka-found-parent parent ">
               <Swiper
                 spaceBetween={30}
                 centeredSlides={true}
                 autoplay={{
-                  delay: 2500,
+                  delay: 25000000,
                   disableOnInteraction: false,
                 }}
                 pagination={{
@@ -97,95 +107,121 @@ function Akkafoundation(props) {
                 className="mySwiper"
               >
                 <SwiperSlide className="slide-img slide-img1 bg-img-cover">
-                  <div className="overlay"></div>
+                  <div className="overlay-swiper"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">{data.akka_swiper1_heading}</h3>
-                      <p className="swiper-para">
-                      {data.akka_swiper1_para}
-                      </p>
-                      <Link to="https://akkafoundation.in/empower" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
+                      <h3 className="swiper-heading">
+                        {data.akka_swiper1_heading}
+                      </h3>
+                      <p className="swiper-para">{data.akka_swiper1_para}</p>
+                      <Link
+                        to="https://akkafoundation.in/empower"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        {data.akka_read_more}
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-img slide-img2 bg-img-cover">
-                  <div className="overlay"></div>
+                  <div className="overlay-swiper"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">{data.akka_swiper2_heading}</h3>
-                      <p className="swiper-para">
-                      {data.akka_swiper2_para}
-                      </p>
-                      <Link to="https://akkafoundation.in/education" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
+                      <h3 className="swiper-heading">
+                        {data.akka_swiper2_heading}
+                      </h3>
+                      <p className="swiper-para">{data.akka_swiper2_para}</p>
+                      <Link
+                        to="https://akkafoundation.in/education"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        {data.akka_read_more}
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-img slide-img3 bg-img-cover">
-                  <div className="overlay"></div>
+                  <div className="overlay-swiper"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">{data.akka_swiper3_heading}</h3>
-                      <p className="swiper-para">
-                      {data.akka_swiper3_para}
-                      </p>
-                      <Link to="https://akkafoundation.in/environment" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
+                      <h3 className="swiper-heading">
+                        {data.akka_swiper3_heading}
+                      </h3>
+                      <p className="swiper-para">{data.akka_swiper3_para}</p>
+                      <Link
+                        to="https://akkafoundation.in/environment"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        {data.akka_read_more}
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-img slide-img4 bg-img-cover">
-                  <div className="overlay"></div>
+                  <div className="overlay-swiper"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">{data.akka_swiper4_heading}</h3>
-                      <p className="swiper-para">
-                      {data.akka_swiper4_para} 
-                      </p>
-                      <Link to="https://akkafoundation.in/health" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
+                      <h3 className="swiper-heading">
+                        {data.akka_swiper4_heading}
+                      </h3>
+                      <p className="swiper-para">{data.akka_swiper4_para}</p>
+                      <Link
+                        to="https://akkafoundation.in/health"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        {data.akka_read_more}
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-img slide-img5 bg-img-cover">
-                  <div className="overlay"></div>
+                  <div className="overlay-swiper"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">{data.akka_swiper5_heading}</h3>
-                      <p className="swiper-para">
-                      {data.akka_swiper5_para}
-                      </p>
-                      <Link  to="https://akkafoundation.in/art&culture" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
+                      <h3 className="swiper-heading">
+                        {data.akka_swiper5_heading}
+                      </h3>
+                      <p className="swiper-para">{data.akka_swiper5_para}</p>
+                      <Link
+                        to="https://akkafoundation.in/art&culture"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        {data.akka_read_more}
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="slide-img slide-img6 bg-img-cover">
-                  <div className="overlay"></div>
+                  <div className="overlay-swiper"></div>
                   <div className="swiper-section">
                     <div className="left-swiper">
-                      <h3 className="swiper-heading">{data.akka_swiper6_heading}</h3>
-                      <p className="swiper-para">
-                      {data.akka_swiper6_para}
-                      </p>
-                      <Link to="https://akkafoundation.in/project-Anandi" target="_blank" className="btn swiper-btn">{data.akka_read_more}</Link>
+                      <h3 className="swiper-heading">
+                        {data.akka_swiper6_heading}
+                      </h3>
+                      <p className="swiper-para">{data.akka_swiper6_para}</p>
+                      <Link
+                        to="https://akkafoundation.in/project-Anandi"
+                        target="_blank"
+                        className="btn swiper-btn"
+                      >
+                        {data.akka_read_more}
+                      </Link>
                     </div>
                     <div className="right-swiper"></div>
                   </div>
                 </SwiperSlide>
               </Swiper>
             </div>
-
-            <TwoColSec
-              padding="50px 0px 50px 0px"
-              background=""
-              row="row-reverse"
-              bg={img}
-              subheading={data.akka12_heading2}
-              subdescription={data.akka12_para2}
-              btn=""
-            />
 
             <Imageswiper
               titlegallery={data.Marathwada_gallery}

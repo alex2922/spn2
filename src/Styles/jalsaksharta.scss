@@ -1,14 +1,29 @@
-.counter-parent2{
+.img-box-jal {
+    background: url('../photos/Jal_saksharta_rally/Jal_Saksharta_Rally.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    aspect-ratio: 5/4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.counter-parent2 {
     padding: 60px 0px;
 
-    h3{
+
+    h3 {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-bottom: 40px;
         font-size: 30px;
         font-weight: 700;
-      }
+    }
 
-    
+
 }
