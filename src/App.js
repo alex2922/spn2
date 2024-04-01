@@ -36,7 +36,7 @@ function App() {
   const [video, setvideo] = useState(false);
   const [media, setmedia] = useState(false);
   const [personalphoto, setpersonalphoto] = useState(false);
-
+console.log(toggle)
   return (
     <div className="App">
       <BrowserRouter>
@@ -44,7 +44,7 @@ function App() {
         <Togglebtn toggle={toggleJsonData} />
         <ScrollTop />
         <Routes>
-          <Route path="/" element={<Home data={language} />}></Route>
+          <Route path="/" element={<Home data={language} change={toggle}/>}></Route>
           <Route path="/about" element={<About data={language} />}></Route>
           <Route path="" element={<Success data={language} />}></Route>
           <Route

@@ -30,19 +30,21 @@ function Footer(props) {
               <p>{data.Footer_quick}</p>
               <Link  to="/"  onClick={scrollToTop}>{data. Footer_home}</Link>
               <Link  to="/about"  onClick={scrollToTop}>{data. Footer_about}</Link>
-              <Link  to="/gallery"  onClick={scrollToTop}>{data. Footer_gallery}</Link>
+              <Link  to="/gallery"  onClick={scrollToTop}>{data.Header_Gallery}</Link>
               <Link  to="/blog"  onClick={scrollToTop}>{data.Footer_blog}</Link>
               <Link  to="/contact"  onClick={scrollToTop}>{data. Footer_contact}</Link>
               <span className=".span"></span>
             </div>
             <div className="footer-services">
               <p>{data.Footer_story}</p>
-              <Link to="/samrudha" onClick={scrollToTop}>{data.Footer_samrudha}</Link>
-              <Link to="/indraprashtha" onClick={scrollToTop}>{data.Footer_indraprashtha}</Link>
-              <Link to="/harit" onClick={scrollToTop}>{data. Footer_harit}</Link>
-              <Link to="/shivjayanti" onClick={scrollToTop}>{data.Footer_shiv}</Link>
-              <Link to="/anandi" onClick={scrollToTop}>{data.Footer_anandi}</Link>
-              <Link to="drushti" onClick={scrollToTop}>{data. Footer_election_drushti}</Link>
+              <Link to="/Marathwada_Coach_Factory" onClick={scrollToTop}>{data.Header_marathwada}</Link>
+              <Link to="/Jal_Saksharta_Rally" onClick={scrollToTop}>{data.Header_Jal}</Link>
+              <Link to="/72_Taas_Andolan" onClick={scrollToTop}>{data.Header_Taas}</Link>
+              <Link to="/Jan_Jagar_Sanvad" onClick={scrollToTop}>{data.Header_Latur}</Link>
+              <Link to="/Atal_Maharogya_Shibir" onClick={scrollToTop}>{data.Header_Atal}</Link>
+              <Link to="/Namo_Maharojgar_Melava" onClick={scrollToTop}>{data.Header_Namo_maharojgar}</Link>
+              <Link to="/Indraprasth_Jalbhumi_Abhiyan" onClick={scrollToTop}>{data.Header_indraprashtha}</Link>
+              <Link to="/Akka_Foundation" onClick={scrollToTop}>{data.Header_akka}</Link>
               <span className=".span"></span>
             </div>
             <div className="footer-legal">

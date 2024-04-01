@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../Styles/Header.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/header/BJP_election_symbol.png";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoCloseCircleOutline } from "react-icons/io5";
@@ -17,6 +17,8 @@ function Header(props) {
 
 
   const [scrollClass, setScrollClass] = useState('');
+
+  const location = useLocation();
 
 
 
@@ -46,6 +48,8 @@ function Header(props) {
     setNavOpen(false);
   };
 
+  
+
   const menu = (
     <>
       {props.data.map((data) => {
@@ -53,10 +57,11 @@ function Header(props) {
           <>
             <Menu className="dropdown" onClick={handleMenuClick}>
               <Menu.Item key="1">
-                <Link to="/Marathwada_Coach_Factory">{data.Header_marathwada}</Link>
+              
+                <Link to="/Marathwada_Coach_Factory" className={location.pathname === "/Marathwada_Coach_Factory" ? "active" : ""}  >{data.Header_marathwada}</Link>
               </Menu.Item>
               <Menu.Item key="2">
-                <Link to="/Jal_Saksharta_Rally">{data.Header_Jal}</Link>
+                <Link to="/Jal_Saksharta_Rally" activeClassName="active">{data.Header_Jal}</Link>
               </Menu.Item>
               <Menu.Item key="3">
                 <Link to="/72_Taas_Andolan">{data.Header_Taas}</Link>
@@ -96,18 +101,18 @@ function Header(props) {
                 </Link>
 
                 <div className="links">
-                  <Link to="/">{data.Header_home}</Link>
-                  <Link to="/about">{data.Header_about}</Link>
+                  <Link to="/" className={location.pathname === "/" ? "active" : ""}>{data.Header_home}</Link>
+                  <Link to="/about" className={location.pathname === "/about" ? "active" : ""}>{data.Header_about}</Link>
                   <Dropdown overlay={menu} placement="bottomCenter">
-                    <Link to="" className="ant-dropdown-link">
+                    <Link className="ant-dropdown-link" >
                       {data.Header_story}{" "}
                       <span className="header-arrow">
                         <RiArrowDropDownLine />
                       </span>
                     </Link>
                   </Dropdown>
-                  <Link to="/gallery">{data.Header_Gallery}</Link>
-                  <Link to="/blog">{data.Header_Blog}</Link>
+                  <Link to="/gallery" className={location.pathname === "/gallery" ? "active" : ""}>{data.Header_Gallery}</Link>
+                  <Link to="/blog" className={location.pathname === "/blog" ? "active" : ""}>{data.Header_Blog}</Link>
                   <Link to="/contact" className="btn">
                     {data.Header_contact}
                   </Link>

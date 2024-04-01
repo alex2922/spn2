@@ -54,7 +54,7 @@ function HeroSection(props) {
                   {slide1 && (
                     <SwiperSlide>
                       <div className="slide1 slide-img">
-                        <h1>One Voice, One Purpose, Endless Progress</h1>
+                        <h1>{data.Home_slider1}</h1>
                         <div className="overlay"></div>
                         <div className="slide-main bg-img-contain"></div>
                       </div>
@@ -63,7 +63,7 @@ function HeroSection(props) {
                   {slide2 && (
                     <SwiperSlide>
                       <div className="slide1 slide-img">
-                        <h1>One Voice, One Purpose, Endless Progress</h1>
+                        <h1>{data.Home_slider1}</h1>
                         <div className="overlay"></div>
                         <div className="slide-main bg-img-contain"></div>
                       </div>
@@ -72,7 +72,7 @@ function HeroSection(props) {
                   {slide3 && (
                     <SwiperSlide>
                       <div className="slide1 slide-img">
-                        <h1>One Voice, One Purpose, Endless Progress</h1>
+                        <h1>{data.Home_slider1}</h1>
                         <div className="overlay"></div>
                         <div className="slide-main bg-img-contain"></div>
                       </div>

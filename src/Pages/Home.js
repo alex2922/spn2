@@ -25,6 +25,9 @@ import Accr from "./Accr";
 import { Helmet } from 'react-helmet';
 
 function Home(props) {
+
+
+
   const swiperSlidesData = [
     { heading: "Marathwada Coach Factory", link: "/Marathwada_Coach_Factory", bgImage: s1 },
     { heading: "Jal Saksharta Rally", link: "/Jal_Saksharta_Rally", bgImage: s2 },
@@ -35,7 +38,21 @@ function Home(props) {
     { heading: "NaMo Maharojgar Melava, Latur 2023", link: "/Namo_Maharojgar_Melava", bgImage: s7 },
     { heading: "Indraprasth Jalbhumi Abhiyan", link: "Indraprasth_Jalbhumi_Abhiyan", bgImage: s8 },
     { heading: "Akka Foundation", link: "/Akka_Foundation", bgImage: s9 },
+
   ];
+  const swiperSlidesDataMarathi = [
+    { heading: "मराठवाडा रेल्वे कोच कारखाना", link: "/Marathwada_Coach_Factory", bgImage: s1 },
+    { heading: "जल साक्षरता रॅली", link: "/Jal_Saksharta_Rally", bgImage: s2 },
+    { heading: "७२ तास अन्नत्याग आंदोलन ", link: "/72_Taas_Andolan", bgImage: s3 },
+    { heading: "जन जागर संवाद ", link: "/Jan_Jagar_Sanvad", bgImage: s4 },
+    { heading: "अटल महारोग्य शिबिर", link: "/Atal_Maharogya_Shibir", bgImage: s5 },
+    // { heading: "Maharojgar Melava Nilanga", link: "#", bgImage: s6 },
+    { heading: "नमो महारोजगार मेळावा", link: "/Namo_Maharojgar_Melava", bgImage: s7 },
+    { heading: "इंद्रप्रस्थ जलभूमी अभियान", link: "Indraprasth_Jalbhumi_Abhiyan", bgImage: s8 },
+    { heading: "अक्का फाउंडेशन", link: "/Akka_Foundation", bgImage: s9 },
+
+  ];
+
 
   useEffect(() => {
     AOS.init();
@@ -45,7 +62,7 @@ function Home(props) {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Get to Know Sambhaji Patil Nilangekar: Your Dedicated Political Leader</title>
         <meta name="keywords" content="Bharatiya Janata Party,MLA in Nilangekar,MLA in Latur " />
         <meta name="description" content="Learn about the Jal Saksharta Rally in Latur, championed by Sambhaji Patil Nilangekar, promoting water awareness and conservation. Explore how this initiative educates communities and emphasizes key water sources like the Godavari River and Bhandhardara Dam. Join the effort for sustainable water management in the region." />
@@ -69,53 +86,69 @@ function Home(props) {
 
             <div className="success-superparent">
 
-            <h2 className="head" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Success Stories</h2>
+              <h2 className="head" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Success Stories</h2>
 
-           <div className="success-swipe parent" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-              <Swiper
-                slidesPerView={1}
-                spaceBetween={10}
-                pagination={{
-                  clickable: true,
-                }}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                navigation={true}
-                breakpoints={{
-                  640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                  },
-                  768: {
-                    slidesPerView: 4,
-                    spaceBetween: 20,
-                  },
-                  1024: {
-                    slidesPerView: 5,
-                    spaceBetween: 20,
-                  },
-                }}
-                modules={[Pagination, Navigation, Autoplay]}
-                className="mySwiper"
-              >
-                {swiperSlidesData.map((slide, index) => (
-                  <SwiperSlide
-                    key={index}
-                    style={{ backgroundImage: `url(${slide.bgImage})` }}
-                  >
-                    <div className="overlay">
-                      <h2>{slide.heading}</h2>
-                      <Link to={slide.link} className="btn2">
-                        Read More
-                      </Link>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
+              <div className="success-swipe parent" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <Swiper
+                  slidesPerView={1}
+                  spaceBetween={10}
+                  pagination={{
+                    clickable: true,
+                  }}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  navigation={true}
+                  breakpoints={{
+                    640: {
+                      slidesPerView: 2,
+                      spaceBetween: 20,
+                    },
+                    768: {
+                      slidesPerView: 4,
+                      spaceBetween: 20,
+                    },
+                    1024: {
+                      slidesPerView: 5,
+                      spaceBetween: 20,
+                    },
+                  }}
+                  modules={[Pagination, Navigation, Autoplay]}
+                  className="mySwiper"
+                >
+                  {
+                    props.change ?
+
+                      swiperSlidesData.map((slide, index) => (
+                        <SwiperSlide
+                          key={index}
+                          style={{ backgroundImage: `url(${slide.bgImage})` }}
+                        >
+                          <div className="overlay">
+                            <h2>{slide.heading}</h2>
+                            <Link to={slide.link} className="btn2">
+                              Read More
+                            </Link>
+                          </div>
+                        </SwiperSlide>
+                      )) :
+                      swiperSlidesDataMarathi.map((slide, index) => (
+                        <SwiperSlide
+                          key={index}
+                          style={{ backgroundImage: `url(${slide.bgImage})` }}
+                        >
+                          <div className="overlay">
+                            <h2>{slide.heading}</h2>
+                            <Link to={slide.link} className="btn2">
+                              Read More
+                            </Link>
+                          </div>
+                        </SwiperSlide>
+                      ))}
+                </Swiper>
+              </div>
             </div>
-           </div>
 
             <div className="blog-parent1">
               <div className="blog-container cont">
