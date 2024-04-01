@@ -86,13 +86,13 @@ function Marathwadacoach(props) {
   background=""
   textnum1="600"
   plus="+"
-  text1={data.Marathwada_countup1}
+  text1={data.Marathwada_countup11}
   textnum2="300"
   plus2="+"
-  text2={data.Marathwada_countup2}
+  text2={data.Marathwada_countup12}
   textnum3="45000"
   plus3=""
-  text3={data.Marathwada_countup3}
+  text3={data.Marathwada_countup13}
   textnum4=""
   plus4=""
   text4=""

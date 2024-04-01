@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import "../Styles/scrolltop.scss";
-import { BsArrowUpCircleFill } from "react-icons/bs";
+import { FaArrowUp } from "react-icons/fa";
 
 function ScrollTop() {
   const location = useLocation();
@@ -37,7 +37,7 @@ function ScrollTop() {
       className={`scroll-top-btn ${isVisible ? 'show' : 'hide'}`}
       onClick={scrollToTop}
     >
-      <BsArrowUpCircleFill />
+      <FaArrowUp />
     </button>
   );
 }

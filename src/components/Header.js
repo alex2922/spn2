@@ -53,28 +53,28 @@ function Header(props) {
           <>
             <Menu className="dropdown" onClick={handleMenuClick}>
               <Menu.Item key="1">
-                <Link to="/Marathwada_Coach_Factory">Marathwada Coach Factory</Link>
+                <Link to="/Marathwada_Coach_Factory">{data.Header_marathwada}</Link>
               </Menu.Item>
               <Menu.Item key="2">
-                <Link to="/Jal_Saksharta_Rally">Jal Saksharta Rally</Link>
+                <Link to="/Jal_Saksharta_Rally">{data.Header_Jal}</Link>
               </Menu.Item>
               <Menu.Item key="3">
-                <Link to="/72_Taas_Andolan">72 Taas Andolan</Link>
+                <Link to="/72_Taas_Andolan">{data.Header_Taas}</Link>
               </Menu.Item>
               <Menu.Item key="4">
-                <Link to="/Jan_Jagar_Sanvad">Jan Jagar Sanvad</Link>
+                <Link to="/Jan_Jagar_Sanvad">{data.Header_Latur}</Link>
               </Menu.Item>
               <Menu.Item key="5">
-                <Link to="/Atal_Maharogya_Shibir">Atal Maharogya Shibir</Link>
+                <Link to="/Atal_Maharogya_Shibir">{data.Header_Atal}</Link>
               </Menu.Item>
               <Menu.Item key="6">
-                <Link to="/Namo_Maharojgar_Melava">Namo Maharojgar Melava, Latur 2023</Link>
+                <Link to="/Namo_Maharojgar_Melava">{data.Header_Namo_maharojgar}</Link>
               </Menu.Item>
               <Menu.Item key="7">
-                <Link to="/Indraprasth_Jalbhumi_Abhiyan">Indraprasth Jalbhumi Abhiyan</Link>
+                <Link to="/Indraprasth_Jalbhumi_Abhiyan">{data.Header_indraprashtha}</Link>
               </Menu.Item>
               <Menu.Item key="8">
-                <Link to="/Akka_Foundation">Akka Foundation</Link>
+                <Link to="/Akka_Foundation">{data.Header_akka}</Link>
               </Menu.Item>
             </Menu>
           </>
@@ -99,7 +99,7 @@ function Header(props) {
                   <Link to="/">{data.Header_home}</Link>
                   <Link to="/about">{data.Header_about}</Link>
                   <Dropdown overlay={menu} placement="bottomCenter">
-                    <Link to="/success" className="ant-dropdown-link">
+                    <Link to="" className="ant-dropdown-link">
                       {data.Header_story}{" "}
                       <span className="header-arrow">
                         <RiArrowDropDownLine />
@@ -141,19 +141,19 @@ function Header(props) {
 
 
                 <div className="toprow" onClick={() => setaccordian(!accordian)}>
-                  <Link to="/success"> {data.Header_story}+</Link>
+                  <Link to=""> {data.Header_story}+</Link>
                 </div>
                 {accordian &&
                   <div className="dropdown-mob">
-                    < Link to="/success" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_story}</Link>
-                    <Link to="/Marathwada" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_marathwada}</Link>
-                    <Link to="/Jalsaksharta" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Jal}</Link>
-                    <Link to="/Taas" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Taas}</Link>
-                    <Link to="/Latur" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Latur}</Link>
-                    <Link to="/atal" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Atal}</Link>
-                    <Link to="/Namo" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Namo_maharojgar}</Link>
-                    <Link to="/indra" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_indraprashtha}</Link>
-                    <Link to="/akka" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Namo_maharojgar}</Link>
+                    {/* < Link to="" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_story}</Link> */}
+                    <Link to="/Marathwada_Coach_Factory" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_marathwada}</Link>
+                    <Link to="/Jal_Saksharta_Rally" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Jal}</Link>
+                    <Link to="/72_Taas_Andolan" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Taas}</Link>
+                    <Link to="/Jan_Jagar_Sanvad" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Latur}</Link>
+                    <Link to="/Atal_Maharogya_Shibir" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Atal}</Link>
+                    <Link to="/Namo_Maharojgar_Melava" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Namo_maharojgar}</Link>
+                    <Link to="/Indraprasth_Jalbhumi_Abhiyan" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_indraprashtha}</Link>
+                    <Link to="/Akka_Foundation" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Namo_maharojgar}</Link>
                   </div>
 
                 }

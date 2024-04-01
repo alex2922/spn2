@@ -6,10 +6,10 @@ const english = [
       Marathwada_coach_factory_heading:"Marathwada Railway Coach Factory",
       Marathwada_coach_factory_para:"The Marathwada Railway Coach Factory stands as the largest government project in the region, a testament to the tireless efforts of MLA Sambhaji Patil Nilangekar. This significant initiative, secured through persistent advocacy by Sambhaji Patil, has garnered praise from senior leaders and officials who credit him for its establishment.      Initiated by the Central Government and Ministry of Railways, this factory marks a pioneering achievement as the country's first facility dedicated to manufacturing AC metro coaches. With a vision for regional development, it promises to address unemployment challenges in Marathwada while generating substantial employment opportunities and fostering industrial-commercial growth.       ",
 
-      Marathwada_countup1:"Crore Investment exceeding ",
+      Marathwada_countup11:"Crore Investment exceeding ",
       
-      Marathwada_countup2:"Acres  ",
-      Marathwada_countup3:"Direct and Indirect jobs",
+      Marathwada_countup12:"Acres  ",
+      Marathwada_countup13:"Direct and Indirect jobs",
 
       Marathwada_heading2:"Promotion of Economic Development in Marathwada",
       Marathwada_para2:"The groundbreaking ceremony, graced by Union Minister Shri. Piyush Goyal and then-Chief Minister Devendra Fadnavis, took place on March 31, 2018. Remarkably, within a span of just six years, the factory was completed, culminating in its inauguration on March 12, 2024, by Prime Minister Narendra Modi.      Even amidst the challenges of the COVID-19 pandemic, the factory demonstrated resilience, achieving the milestone of completing its first railway coach shell as scheduled in 2020. Recognizing its capacity and efficiency, the central government has announced plans to manufacture 120 Vande Bharat Express trains in this facility, heralding a significant boost to Marathwada's industrial landscape.  The Marathwada Railway Coach Factory epitomizes progress and opportunity, symbolizing a transformative leap in the region's industrial journey.       ",
@@ -83,7 +83,7 @@ const english = [
     Namo_countup3:"  ",
     
 
-    Namo_heading2:"•	Ensuring employment for everyone is our goal!",
+    Namo_heading2:"Ensuring employment for everyone is our goal!",
     Namo_para2:"The event also witnessed the presence of HR representatives from over 180 companies, further boosting employment prospects for the youth. To cater to the specific needs of women and farmers, dedicated wings were established within the ‘Mahamela’, providing industry and business guidance tailored to their requirements. The enthusiastic participation of young women from Marathwada added to the success of this grand gathering.",
 
 
@@ -133,7 +133,7 @@ const english = [
 
 
     //  dropdown header===========================
-    
+
 
 
 
@@ -765,7 +765,7 @@ harit_gallery_title:"Harit Latur Gallery",
     Header_marathwada: "Marathwada Coach Factory",
     Header_Jal: "Jal Saksharta Rally",
     Header_Taas: "72 Taas Andolan",
-    Header_Latur: "Latur Vachava Andolan",
+    Header_Latur: "Jan Jagar Samvad",
     Header_Atal: "Atal Maharogya Shibir",
     Header_Namo_maharojgar: "Namo Maharojgar Melava, Latur 2023",
     Header_indraprashtha: "Indraprasth Jalbhumi Abhiyan",
@@ -774,7 +774,7 @@ harit_gallery_title:"Harit Latur Gallery",
     Header_Blog: "Blogs",
     Header_contact: "Contact us",
 
-    Header_indraprashtha: "Indraprastha Jalbhumi Mission",
+    Header_indraprashtha: "Indraprastha Jalbhumi Abhiyan",
 
     Header_shiv: "Shivjayanti",
     Header_anandi: "Project Anandi",

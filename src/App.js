@@ -46,7 +46,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home data={language} />}></Route>
           <Route path="/about" element={<About data={language} />}></Route>
-          <Route path="/success" element={<Success data={language} />}></Route>
+          <Route path="" element={<Success data={language} />}></Route>
           <Route
             path="/Marathwada_Coach_Factory"
             element={<Marathwadacoach data={language} />}
