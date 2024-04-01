@@ -54,8 +54,6 @@
                 text-transform: capitalize;
             }
         }
-
-
     }
 
     .count-box2 {
@@ -63,6 +61,7 @@
         align-items: center;
         justify-content: center;
         gap: 60px;
+        flex-wrap: wrap;
 
         .counter-box {
             display: flex;

@@ -27,7 +27,7 @@ function Laturvachava(props) {
               <div className="ss-cont cont">
                 <div className="ss-left">
                   <div
-                    className="img-box bg-img-cover"
+                    className="img-box-jan-jagar bg-img-cover"
                     data-aos="fade-up"
                     data-aos-delay="0"
                     data-aos-duration="1000"
