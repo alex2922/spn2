@@ -1,6 +1,10 @@
 import React from "react";
 import "../Styles/laturvachava.scss";
-import img1 from "../photos/drushti/g1img.webp";
+import img1 from "../photos/jan_jagar_sanwad/sanwad1.png";
+import img2 from "../photos/jan_jagar_sanwad/sanwad2.png";
+import img3 from "../photos/jan_jagar_sanwad/sanwad3.png";
+import img4 from "../photos/jan_jagar_sanwad/sanwad4.png";
+import img5 from "../photos/jan_jagar_sanwad/sanwad5.png";
 import img from "../photos/drushti/jan_jagar_sanwad.webp";
 import Imageswiper from "../components/Imageswiper";
 
@@ -93,10 +97,10 @@ function Laturvachava(props) {
               titlegallery={data.Marathwada_gallery}
               background=""
               img1={img1}
-              img2={img1}
-              img3={img1}
-              img4={img1}
-              img5={img1}
+              img2={img2}
+              img3={img3}
+              img4={img4}
+              img5={img5}
             />
           </>
         );
