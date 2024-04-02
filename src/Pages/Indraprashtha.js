@@ -8,7 +8,7 @@ import img5 from "../photos/indraprasta/img6.webp";
 import img6 from "../photos/indraprasta/img7.webp";
 import img7 from "../photos/indraprasta/img8.webp";
 import img8 from "../photos/indraprasta/img9.webp";
-import img from "../photos/drushti/g1img.webp";
+import img from "../photos/drushti/Indraprasta_jalbhumi_abhiyan.webp";
 import Imageswiper from "../components/Imageswiper";
 
 import TwoColSec from "../components/TwoColSec";

@@ -9,7 +9,7 @@ import img5 from "../photos/coach_factory/img_5.webp";
 import img6 from "../photos/coach_factory/img_7.webp";
 import img7 from "../photos/coach_factory/img_8.webp";
 import img8 from "../photos/coach_factory/img_9.webp";
-import img from "../photos/drushti/g1img.webp";
+import img from "../photos/drushti/Marathwada_coach_factory.jpg";
 import TwoColSec from "../components/TwoColSec";
 import { Helmet } from "react-helmet";
 import Counter from "../components/Counter";

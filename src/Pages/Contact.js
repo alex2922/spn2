@@ -134,8 +134,7 @@ function Contact(props) {
                         </div>
                         <a href="mailto:info@sambhajipatilnilangekar.com" target="_black" className="item-details">
                           <h4>{data.Contact_email}</h4>
-                          <p>info@sambhajipatilnilangekar.com</p>
-                          
+                          <p className="contact-p">info@sambhajipatilnilangekar.com</p>
                         </a>
                         
                       </div>

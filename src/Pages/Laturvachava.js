@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/laturvachava.scss";
 import img1 from "../photos/drushti/g1img.webp";
-import img from "../photos/drushti/g1img.webp";
+import img from "../photos/drushti/jan_jagar_sanwad.webp";
 import Imageswiper from "../components/Imageswiper";
 
 import TwoColSec from "../components/TwoColSec";

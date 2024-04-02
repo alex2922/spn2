@@ -8,7 +8,7 @@ import img5 from "../photos/Jal_saksharta_rally/10.webp";
 import img6 from "../photos/Jal_saksharta_rally/16.webp";
 import img7 from "../photos/Jal_saksharta_rally/19.webp";
 import img8 from "../photos/Jal_saksharta_rally/_MG_6713.webp";
-import img from "../assets/home/s2.png";
+import img from "../assets/home/Jal_Saksharta_Rally.webp";
 import Imageswiper from "../components/Imageswiper";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";

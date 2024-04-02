@@ -5,7 +5,7 @@ import img2 from "../photos/Akka_foundation/_MG_1752.webp";
 import img3 from "../photos/Akka_foundation/_MG_8510.webp";
 import img4 from "../photos/Akka_foundation/Sambhaji_Patil_Nilanhekar.webp";
 import img5 from "../photos/Akka_foundation/Sambhaji_bhaiyya_with_kids.webp";
-import img from "../photos/drushti/g1img.webp";
+import img from "../photos/drushti/Akka_foundation.webp";
 import Imageswiper from "../components/Imageswiper";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";

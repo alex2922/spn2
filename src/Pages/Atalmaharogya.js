@@ -8,7 +8,7 @@ import img5 from "../photos/Atal_Mahaarogya_Shibir/IMG_7558.JPG";
 import img6 from "../photos/Atal_Mahaarogya_Shibir/IMG_7717.JPG";
 import img7 from "../photos/Atal_Mahaarogya_Shibir/IMG_7736.JPG";
 import img8 from "../photos/Atal_Mahaarogya_Shibir/359A2174.webp";
-import img from "../photos/drushti/g1img.webp";
+import img from "../photos/drushti/Atal_Maharogya_Shibir.webp";
 import Imageswiper from "../components/Imageswiper";
 
 import TwoColSec from "../components/TwoColSec";

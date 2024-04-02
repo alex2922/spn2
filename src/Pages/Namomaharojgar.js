@@ -6,7 +6,7 @@ import img3 from "../photos/Atal_Mahaarogya_Shibir/359A7724.webp";
 import img4 from "../photos/Atal_Mahaarogya_Shibir/359A7739.webp";
 import img5 from "../photos/Atal_Mahaarogya_Shibir/IMG_7558.JPG";
 import img6 from "../photos/Atal_Mahaarogya_Shibir/IMG_7717.JPG";
-import img from "../photos/drushti/g1img.webp";
+import img from "../photos/drushti/Namo_maharojgar_melava.webp";
 import Imageswiper from "../components/Imageswiper";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";

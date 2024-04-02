@@ -8,7 +8,7 @@ import img5 from "../photos/72_taas_andolan/044A7351.webp";
 import img6 from "../photos/72_taas_andolan/044A7363.webp";
 import img7 from "../photos/72_taas_andolan/044A7368.webp";
 import img8 from "../photos/72_taas_andolan/044A7379.webp";
-import img from "../photos/drushti/g1img.webp";
+import img from "../photos/drushti/72_Taas_Andolan.webp";
 import Imageswiper from "../components/Imageswiper";
 import Para from "../components/Para";
 import TwoColSec from "../components/TwoColSec";
