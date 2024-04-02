@@ -23,7 +23,7 @@ function Imageswiper(props) {
                         slidesPerView={4}
                         spaceBetween={20}
                         autoplay={{
-                            delay: 25000000,
+                            delay: 2500,
                             disableOnInteraction: false,
                         }}
                         pagination={{
