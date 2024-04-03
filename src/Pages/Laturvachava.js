@@ -3,8 +3,12 @@ import "../Styles/laturvachava.scss";
 import img1 from "../photos/jan_jagar_sanwad/sanwad1.png";
 import img2 from "../photos/jan_jagar_sanwad/sanwad2.png";
 import img3 from "../photos/jan_jagar_sanwad/sanwad3.png";
-import img4 from "../photos/jan_jagar_sanwad/sanwad4.png";
+import img4 from "../photos/jan_jagar_sanwad/img8.webp";
 import img5 from "../photos/jan_jagar_sanwad/sanwad5.png";
+import img6 from "../photos/jan_jagar_sanwad/img6.webp";
+import img7 from "../photos/jan_jagar_sanwad/img7.webp";
+import img8 from "../photos/jan_jagar_sanwad/sanwad4.png";
+import img9 from "../photos/jan_jagar_sanwad/img9.webp";
 import img from "../photos/drushti/jan_jagar_sanwad.webp";
 import Imageswiper from "../components/Imageswiper";
 
@@ -98,9 +102,13 @@ function Laturvachava(props) {
               background=""
               img1={img1}
               img2={img2}
-              img3={img3}
+            //   img3={img3}
               img4={img4}
               img5={img5}
+              img6={img6}
+              img7={img7}
+              img8={img8}
+              img9={img9}
             />
           </>
         );
