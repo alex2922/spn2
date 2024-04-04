@@ -31,11 +31,11 @@ function Home(props) {
   const swiperSlidesData = [
     { heading: "Marathwada Coach Factory", link: "/Marathwada_Coach_Factory", bgImage: s1 },
     { heading: "Jal Saksharta Rally", link: "/Jal_Saksharta_Rally", bgImage: s2 },
-    { heading: "72 Taas Andolan", link: "/72_Taas_Andolan", bgImage: s3 },
+    { heading: "72 Taas Annatyag Andolan", link: "/72_Taas_Andolan", bgImage: s3 },
     { heading: "Latur Vachava Andolan", link: "/Jan_Jagar_Sanvad", bgImage: s4 },
     { heading: "Atal Maharogya Shibir", link: "/Atal_Maharogya_Shibir", bgImage: s5 },
     // { heading: "Maharojgar Melava Nilanga", link: "#", bgImage: s6 },
-    { heading: "NaMo Maharojgar Melava, Latur 2023", link: "/Namo_Maharojgar_Melava", bgImage: s7 },
+    { heading: "2023 NaMo Maharojgar Melava, Latur ", link: "/Namo_Maharojgar_Melava", bgImage: s7 },
     { heading: "Indraprasth Jalbhumi Abhiyan", link: "Indraprasth_Jalbhumi_Abhiyan", bgImage: s8 },
     { heading: "Akka Foundation", link: "/Akka_Foundation", bgImage: s9 },
 
@@ -96,7 +96,7 @@ function Home(props) {
                     clickable: true,
                   }}
                   autoplay={{
-                    delay: 2500,
+                    delay: 250000000000000000000000,
                     disableOnInteraction: false,
                   }}
                   navigation={true}
