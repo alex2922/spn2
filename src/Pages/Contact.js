@@ -1,42 +1,51 @@
 import React, { useState } from "react";
 import "../Styles/contact.scss";
 import { SlLocationPin } from "react-icons/sl";
-import { getDatabase, ref, set, push } from "firebase/database";
-import { app } from "../Firebase";
 import { notification } from "antd";
 import { FiSmartphone } from "react-icons/fi";
 
 import { AiOutlineMail } from "react-icons/ai";
-
+import axios from "axios";
+import { ToastContainer, toast, Flip } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Contact(props) {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
-
   const onHandleSubmit = (e) => {
     e.preventDefault();
-    const db = getDatabase(app);
-    const contactRef = ref(db, "contact");
-    const newcontactRef = push(contactRef);
-    set(newcontactRef, {
-      Client_Fname: fname,
-      Client_Lname: lname,
-      Client_Phone: phone,
-      Client_Email: email,
-      Client_Message: msg,
-    });
+    axios.post("http://127.0.0.1:8000/api/contacts/",
+      {
+        firstname: fname,
+        lastname: lname,
+        email: email,
+        contact: phone,
+        message: msg
+      })
+      .then(res => {
+        console.log(res.data)
+        setFname("");
+        setLname("");
+        setPhone("");
+        setEmail("");
+        setMsg("");
 
-    console.log( fname,lname ,phone ,email ,msg);
-
-    setFname("");
-    setLname("");
-    setPhone("");
-    setEmail("");
-    setMsg("");
+        toast.success(props.toggle ? 'Thank you for contacting us!' : 'आपल्या प्रतिसादाबद्दल मन:पूर्वक धन्यवाद!', {
+          position: "top-right",
+          autoClose: 2500,
+          hideProgressBar: true,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          transition: Flip,
+        });
+      })
+      .catch(err => console.log(err))
   };
-
 
   return (
     <>
@@ -54,6 +63,7 @@ function Contact(props) {
                     <form action="#" onSubmit={onHandleSubmit}>
                       <div className="input-div">
                         <input
+                          required
                           type="text"
                           placeholder={data.Contact_first_name}
                           value={fname}
@@ -62,6 +72,7 @@ function Contact(props) {
                           }}
                         />
                         <input
+                          required
                           type="text"
                           placeholder={data.Contact_last_name}
                           value={lname}
@@ -72,7 +83,8 @@ function Contact(props) {
                       </div>
                       <div className="input-div">
                         <input
-                          type="tel"
+                          required
+                          type="number"
                           placeholder={data.Contact_phone}
                           value={phone}
                           onChange={(e) => {
@@ -80,6 +92,7 @@ function Contact(props) {
                           }}
                         />
                         <input
+                          required
                           type="email"
                           placeholder={data.Contact_email}
                           value={email}
@@ -136,7 +149,7 @@ function Contact(props) {
                           <h4>{data.Contact_email}</h4>
                           <p className="contact-p">info@sambhajipatilnilangekar.com</p>
                         </a>
-                        
+
                       </div>
                     </div>
                   </div>
@@ -146,6 +159,21 @@ function Contact(props) {
           </>
         );
       })}
+
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        limit={1}
+        hideProgressBar
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Flip}
+      />
     </>
   );
 }

@@ -23,7 +23,7 @@ import s8 from "../assets/home/Indraprastha_jalbhumi.jpg";
 import s9 from "../assets/home/Akka_foundation.jpg";
 import Accr from "./Accr";
 import { Helmet } from 'react-helmet';
-
+import axios from "axios";
 function Home(props) {
 
 
@@ -56,10 +56,25 @@ function Home(props) {
 
   useEffect(() => {
     AOS.init();
-  }, []);
+    fetchData();
+  }, [props.change]);
 
 
-
+  const [blogdata, setdata] = useState([])
+  const fetchData = () => {
+    axios.get(props.change ? "http://127.0.0.1:8000/api/blogs/category/1/" : "http://127.0.0.1:8000/api/blogs/category/2/")
+      .then(res => setdata(res.data))
+      .catch(err => console.log(err))
+  }
+  console.log(blogdata)
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = (date.getMonth() + 1).toString().padStart(2, '0'); // Months are zero-based
+    const year = date.getFullYear().toString();
+    
+    return `${day}/${month}/${year}`;
+  }
   return (
     <>
       <Helmet>
@@ -96,7 +111,7 @@ function Home(props) {
                     clickable: true,
                   }}
                   autoplay={{
-                    delay: 250000000000000000000000,
+                    delay: 2500,
                     disableOnInteraction: false,
                   }}
                   navigation={true}
@@ -155,53 +170,29 @@ function Home(props) {
                 <div className="blog-headding">
                   <h2>Blogs</h2>
                 </div>
-                <Link to="/blog" className="blog-card">
-                  <div className="blog-card-img ">
-                    <img
-                      src={img1}
-                      alt="blog-img"
-                      className="bg-img-cover blog-img"
-                    />
-                    <h4 className="blogdate">4/03/2024</h4>
-                  </div>
+                {
+                  blogdata && blogdata.slice(0,3).reverse().map((data) => {
+                    return (
+                      <Link to={`/blogs/${data.id}`} className="blog-card">
+                        <div className="blog-card-img ">
+                          <div
+                           
+                            style={{background: `url(${data.image})`}}
+                            alt="blog-img"
+                            className="bg-img-cover blog-img"
+                          ></div>
+                          <h4 className="blogdate">{formatDate(data.date)}</h4>
+                        </div>
 
-                  <div className="blog-card-bottom">
-                    <h3 className="blog-title">
-                      Pride of Modern India: “Atal Setu”
-                    </h3>
-                  </div>
-                </Link>
-                <Link to="/blog" v className="blog-card">
-                  <div className="blog-card-img ">
-                    <img
-                      src={img1}
-                      alt="blog-img"
-                      className="bg-img-cover blog-img"
-                    />
-                    <h4 className="blogdate">4/03/2024</h4>
-                  </div>
-                  <div className="blog-card-bottom">
-                    <h3 className="blog-title">
-                      Pride of Modern India: “Atal Setu”
-                    </h3>
-                  </div>
-                </Link>
-
-                <Link to="/blog" className="blog-card">
-                  <div className="blog-card-img ">
-                    <img
-                      src={img1}
-                      alt="blog-img"
-                      className="bg-img-cover blog-img"
-                    />
-                    <h4 className="blogdate">4/03/2024</h4>
-                  </div>
-                  <div className="blog-card-bottom">
-                    <h3 className="blog-title">
-                      Pride of Modern India: “Atal Setu”
-                    </h3>
-                  </div>
-                </Link>
+                        <div className="blog-card-bottom">
+                          <p className="blog-title">
+                            {data.title.slice(0,30) } ...
+                          </p>
+                        </div>
+                      </Link>
+                    )
+                  })
+                }
               </div>
               <div className="loadmore-btn">
                 <Link to="/blog" className="loadmore btn">

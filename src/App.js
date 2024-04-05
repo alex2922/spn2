@@ -23,6 +23,7 @@ import Atal from "../src/Pages/Atalmaharogya";
 import Namo from "../src/Pages/Namomaharojgar";
 import Indra from "../src/Pages/Indraprashtha";
 import Akka from "../src/Pages/Akkafoundation";
+import Blog_template from "./Pages/Blog_template";
 
 function App() {
   const [language, setlanguage] = useState(english);
@@ -83,10 +84,11 @@ console.log(toggle)
               />
             }
           />
-          <Route path="/blog" element={<Blog data={language} />}></Route>
-          <Route path="/contact" element={<Contact data={language} />}></Route>
+          <Route path="/blog" element={<Blog data={language} toggle={toggle}/>}></Route>
+          <Route path="/contact" element={<Contact data={language} toggle={toggle}/>}></Route>
           <Route path="/cookies" element={<Cookies data={language} />}></Route>
           <Route path="/privacy_policy" element={<PrivacyPolicy data={language} />}></Route>
+          <Route path="/blogs/:id" element={<Blog_template data={language} />}></Route>
         </Routes>
 
         <Footer data={language} />
