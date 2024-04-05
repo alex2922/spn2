@@ -93,7 +93,7 @@ function Header(props) {
       {props.data.map((data) => {
         return (
           <>
-            <div className={scrollClass ? " parent header scrolled" : "parent header"} data-aos-duration="1000" data-aos-easing="ease-out" data-aos="fade-down"   >
+            <div className={scrollClass ? " parent header scrolled" : "parent header"}  >
               <div className="header-cont cont">
                 <Link to="/" className="logo">
                   <img src={logo} alt="logo" />
@@ -158,7 +158,7 @@ function Header(props) {
                     <Link to="/Atal_Maharogya_Shibir" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Atal}</Link>
                     <Link to="/Namo_Maharojgar_Melava" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Namo_maharojgar}</Link>
                     <Link to="/Indraprasth_Jalbhumi_Abhiyan" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_indraprashtha}</Link>
-                    <Link to="/Akka_Foundation" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_Namo_maharojgar}</Link>
+                    <Link to="/Akka_Foundation" onClick={() => { setNavOpen(false); { setaccordian(false) } }}>{data.Header_akka}</Link>
                   </div>
 
                 }

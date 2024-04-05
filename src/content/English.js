@@ -443,6 +443,7 @@ harit_gallery_title:"Harit Latur Gallery",
     Marathwada_gallery: "Snapshots",
     // home_page=========================
     Home_slider1:"One voice, one purpose, endless progress",
+    Home_slider2:"Farmer's Leader",
     
 
 
@@ -766,7 +767,7 @@ harit_gallery_title:"Harit Latur Gallery",
     Header_Taas: "72 Taas Andolan",
     Header_Latur: "Jan Jagar Samvad",
     Header_Atal: "Atal Maharogya Shibir",
-    Header_Namo_maharojgar: "Namo Maharojgar Melava, Latur 2023",
+    Header_Namo_maharojgar: "Namo Maharojgar Melava",
     Header_indraprashtha: "Indraprasth Jalbhumi Abhiyan",
     Header_akka: "Akka Foundation",
     Header_Gallery: "Gallery",

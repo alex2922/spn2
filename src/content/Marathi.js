@@ -152,6 +152,7 @@ const marathi = [
 
         // home_page=========================
         Home_slider1:"अविरत विकासाचा बुलंद आवाज!",
+        Home_slider2:"शेतकरी नेता",
         
         
         Home_subheading:"संक्षिप्त परिचय",

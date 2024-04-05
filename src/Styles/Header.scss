@@ -7,17 +7,17 @@
   position: fixed;
   top: 0px;
   z-index: 5;
-    background: rgba(0, 0, 0, 0.148);
-    backdrop-filter: blur(5px);
-  
+  background: rgba(0, 0, 0, 0.148);
+  backdrop-filter: blur(5px);
 
 
-  &.scrolled{
+
+  &.scrolled {
     background: var(--white);
     box-shadow: var(--shadow);
 
-    .header-cont .links a:not(.btn){
-        color: var(--text) !important;
+    .header-cont .links a:not(.btn) {
+      color: var(--text) !important;
     }
 
   }
@@ -38,9 +38,11 @@
       height: 100%;
       display: flex;
       align-items: center;
+
       img {
         height: 80%;
       }
+
       h2 {
         font-weight: 700;
         margin-left: 10px;
@@ -63,7 +65,8 @@
         font-weight: 500;
         color: var(--white);
 
-        &:hover,&.active {
+        &:hover,
+        &.active {
           color: var(--accent);
         }
       }
@@ -81,12 +84,14 @@
           display: flex;
           align-items: center;
           justify-content: center;
+
           svg {
             font-size: 30px;
           }
         }
       }
     }
+
     .menu {
       // display: none;
       height: 50px;
@@ -98,7 +103,7 @@
     }
   }
 
- 
+
 }
 
 .dropdown {
@@ -125,10 +130,12 @@
   &.navopen {
     width: 100vw;
     right: 0px;
+
     .close {
       font-size: 40px;
       display: flex !important;
     }
+
     .moblinks {
       a {
         font-size: 20px !important;
@@ -156,6 +163,10 @@
     gap: calc(var(--gap) * 1);
     height: 100%;
     overflow-y: scroll;
+    z-index: 20;
+    position: fixed;
+    top: 0%;
+    
 
     a:not(.btn) {
       text-decoration: none;
@@ -170,19 +181,47 @@
     }
   }
 
-  .dropdown-mob{
-  max-height: 300px; /* Adjust the max-height as needed */
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  background: #efefef;
-  color: white;
+  .dropdown-mob {
+    max-height: 300px;
+    /* Adjust the max-height as needed */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: #efefef;
+    color: white;
+
+  }
+  @media (max-width: 900px) {
+    .moblinks {
+      padding-top: 60px; /* Adjust padding if needed */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    /* Add styles as needed for smaller devices */
   }
 
-  
+  @media only screen and (min-width: 900px) {
+    .moblinks {
+      display: none !important;
+    }
+  }
+
+  /* Hide scrollbar for desktop view */
+  @media (min-width: 1000px) {
+    .dropdown-mob {
+      overflow-y: hidden !important;
+    }
+
+    .dropdown-mob:hover {
+      overflow-y: auto !important;
+    }
+  }
+
+
 }
 
 
@@ -191,6 +230,7 @@
   .menu {
     display: flex !important;
   }
+
   .links {
     display: none !important;
   }
@@ -205,14 +245,28 @@
     height: 100% !important;
     display: flex !important;
     align-items: center !important;
+
     img {
       height: 80% !important;
     }
+
     h2 {
       font-weight: 700 !important;
-      font-size: 5vw !important;
+      font-size: 4vw !important;
       text-align: left !important;
       line-height: 20px;
+      width: fit-content !important;
+
+    }
+
+
+  }
+
+  .dropdown-mob {
+    a {
+      font-size: 10px;
+
+
     }
   }
 }
