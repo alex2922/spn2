@@ -160,8 +160,9 @@
         }
 
         .ss-right {
-            width: clamp(350px, 50%, 60%) !important;
+            width: clamp(350px, 50%, 80%) !important;
             align-items: center !important;
+            height: 700px !important;
         }
     }
 }

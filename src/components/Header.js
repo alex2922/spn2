@@ -11,15 +11,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
-
-
 function Header(props) {
 
 
   const [scrollClass, setScrollClass] = useState('');
 
   const location = useLocation();
-
 
 
   useEffect(() => {
