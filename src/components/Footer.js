@@ -127,7 +127,7 @@ function Footer(props) {
           <div className="footer-copyright">
           <p className="bottom-text">
             
-              Copyright©2024.All Rights Reserved | Sambhaji Patil Nilangekar | Designed &
+              Copyright©2024.All Rights Reserved | <a href="/">Sambhaji Patil Nilangekar</a> | Designed &
               Developed by{" "}
               <Link to="https://diwise.uk/" target="_blank">
                 Diwise
