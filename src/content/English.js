@@ -72,6 +72,7 @@ const english = [
      Home_subdescription:"Although there is family legacy, behind it Sambhaji Patil Nilangekar took a new step. In 2004, through the Bharatiya Janata Party, he first brought his mother Smt. Rupatai Patil Nilangekar (Akka) into the fray of the Lok Sabha elections. By winning, he created history in Latur district. At the same time, Sambhaji Patil Nilangekar contested the assembly elections. He also created a history by winning. He was the youngest MLA in the legislature at that time. After working in the Bharatiya Janata Party at the district level, the party promoted Sambhaji Patil Nilangekar after seeing his style of work.",
 
      Home_btn:"Read More",
+     
 
 
        // Marathwda coach factory===========================================
