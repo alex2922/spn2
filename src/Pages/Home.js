@@ -101,7 +101,7 @@ function Home(props) {
 
             <div className="success-superparent">
 
-              <h2 className="head" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">Success Stories</h2>
+              <h2 className="head" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">{data. Header_story}</h2>
 
               <div className="success-swipe parent" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <Swiper
