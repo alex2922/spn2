@@ -8,7 +8,7 @@ import axios from "axios";
 function Blogs(props) {
     const [blogdata, setdata] = useState([])
     const fetchData = () => {
-        axios.get(props.toggle ? "http://127.0.0.1:8000/api/blogs/category/1/" : "http://127.0.0.1:8000/api/blogs/category/2/")
+        axios.get(props.toggle ? "https://backend.sambhajipatilnilangekar.com/api/blogs/category/1/" : "https://backend.sambhajipatilnilangekar.com/api/blogs/category/2/")
             .then(res => setdata(res.data))
             .catch(err => console.log(err))
     }

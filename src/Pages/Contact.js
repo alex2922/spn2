@@ -16,7 +16,7 @@ function Contact(props) {
   const [msg, setMsg] = useState("");
   const onHandleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://127.0.0.1:8000/api/contacts/",
+    axios.post("https://backend.sambhajipatilnilangekar.com/api/contacts/",
       {
         firstname: fname,
         lastname: lname,

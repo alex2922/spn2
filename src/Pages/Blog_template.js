@@ -13,7 +13,7 @@ function Blog_template() {
     const { id } = useParams()
     const [blogdata, setblogdata] = useState([])
     const fetchData = () => {
-        axios.get(`http://127.0.0.1:8000/api/blogs/${id}/`)
+        axios.get(`https://backend.sambhajipatilnilangekar.com/api/blogs/${id}/`)
             .then(res => setblogdata(res.data))
             .catch(err => console.log(err))
     }
