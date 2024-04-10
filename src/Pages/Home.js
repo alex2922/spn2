@@ -62,7 +62,7 @@ function Home(props) {
 
   const [blogdata, setdata] = useState([])
   const fetchData = () => {
-    axios.get(props.change ? "https://backend.sambhajipatilnilangekar.com/api/blogs/category/1/" : "https://backend.sambhajipatilnilangekar.com/api/blogs/category/2/")
+    axios.get(props.change ? "https://backend.sambhajipatilnilangekar.com/api/blogs/category/3/" : "https://backend.sambhajipatilnilangekar.com/api/blogs/category/2/")
       .then(res => setdata(res.data))
       .catch(err => console.log(err))
   }
