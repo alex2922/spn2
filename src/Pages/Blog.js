@@ -38,7 +38,7 @@ function Blogs(props) {
                                 <Link to={`/blogs/${data.id}`} className="blog-card">
                                     <div className="blog-card-img ">
                                         <img src={data.image} alt='blog-img' className='bg-img-cover blog-img' />
-                                        <h4 className="blogdate">4/03/2024</h4>
+                                        <h4 className="blogdate">{formatDate(data.date)}</h4>
                                     </div>
 
                                     <div className="blog-card-bottom">
