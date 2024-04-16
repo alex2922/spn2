@@ -24,6 +24,7 @@ import Namo from "../src/Pages/Namomaharojgar";
 import Indra from "../src/Pages/Indraprashtha";
 import Akka from "../src/Pages/Akkafoundation";
 import Blog_template from "./Pages/Blog_template";
+import SamplePage from "./components/SamplePage";
 
 function App() {
   const [language, setlanguage] = useState(english);
@@ -49,8 +50,8 @@ console.log(toggle)
           <Route path="/about" element={<About data={language} />}></Route>
           <Route path="" element={<Success data={language} />}></Route>
           <Route
-            path="/Marathwada_Coach_Factory"
-            element={<Marathwadacoach data={language} />}
+            path="/sample_page"
+            element={<SamplePage data={language} />}
           ></Route>
           <Route
             path="/Jal_Saksharta_Rally"

@@ -55,7 +55,7 @@ function Header(props) {
             <Menu className="dropdown" onClick={handleMenuClick}>
               <Menu.Item key="1">
               
-                <Link to="/Marathwada_Coach_Factory" className={location.pathname === "/Marathwada_Coach_Factory" ? "active" : ""}  >{data.Header_marathwada}</Link>
+                <Link to="/sample_page" className={location.pathname === "/sample_page" ? "active" : ""}  >{data.Header_marathwada}</Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Link to="/Jal_Saksharta_Rally" activeClassName="active">{data.Header_Jal}</Link>

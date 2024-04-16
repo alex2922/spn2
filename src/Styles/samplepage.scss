@@ -1,0 +1,251 @@
+.sample-page-parent {
+    height: 600px;
+    background-image: url("../assets/home/s4.png");
+
+
+
+
+
+
+
+    .sample-page-cont {
+        display: flex;
+        gap: var(--gap);
+        width: 100%;
+        height: 100%;
+        
+
+
+
+        .sample-page-right {
+            display: flex;
+            flex-direction: column;
+            gap: var(--gap);
+            border-radius: var(--rad);
+
+            width: 50%;
+          
+            background-image: linear-gradient(to right , var(--accent), rgba(0, 0, 0, 0));
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            padding: 0px 50px;
+           
+
+            h2 {
+                width: 100%;
+                color: var(--white);
+                line-height: 70px;
+                font-size: 62px;
+                text-align: left;
+            }
+
+           
+
+        }
+
+.sample-page-left{
+    width: 50%;
+    background-image: url("../assets/home/123.png");
+   
+}
+       
+          
+
+        
+    }
+.second-sample{
+    flex-direction: row-reverse;
+.second-sample-page{
+    background-image: linear-gradient(to left , var(--accent), rgba(0, 0, 0, 0));
+
+    h2{
+        text-align: right;
+    }
+}
+    
+}
+}
+
+@media only screen and (max-width:1000px){
+    .sample-page-cont{
+        flex-direction: column-reverse !important;
+
+        .sample-page-right{
+            width: 100% !important;
+            height: 50% !important;
+            background-image: linear-gradient(to top , var(--accent), rgba(0, 0, 0, 0)) !important;
+            position: absolute !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px !important;
+
+
+            h2{
+                font-size: 40px !important;
+            }
+        }
+
+        .sample-page-left{
+            width: 100% !important;
+            height: 100% !important;
+            background-position: cover !important;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            position:  !important;
+        }
+    }
+}
+
+
+.sample-counters {
+    height: 650px;
+    padding: 60px 0px;
+
+
+
+
+    .sample-logo {
+        height: 500px;
+        background-image: url("../assets/header/BJP_election_symbol.png");
+
+
+
+        .counter-overlay {
+            height: 500px;
+            background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.753), rgba(255, 255, 255, 0.774));
+
+            .counters-content {
+                display: flex;
+                flex-direction: column;
+                gap: var(--gap);
+
+
+
+                .counter-tag {
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+
+                    justify-content: center;
+
+
+
+                    h3 {
+                        font-size: 40px;
+                        font-weight: 700;
+                    }
+                }
+
+                .counters-numbers {
+                    width: 100%;
+                    display: flex;
+                    gap: var(--gap);
+                    
+
+
+                    .counter-list {
+                        width: 400px;
+                        height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+
+                        .counting {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            width: 400px;
+                            height: 100px;
+
+
+                            h1 {
+                                font-size: 62px;
+                                color: black;
+                            }
+                        }
+
+                        p {
+                            color: black;
+                            font-size: 22px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.container {
+   height: 700px;
+  }
+  
+  .heading {
+    padding: 1rem 0;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  
+  
+  .swiper-slide  {
+    width: 400px;
+    height: 500px;
+  
+    border-radius: var(--rad);
+
+    
+  }
+  
+  
+.slider1 {
+    width: 400px;
+    height: 500px;
+    border-radius: var(--rad);
+   
+   background-image: url("../photos/coach_factory/img_1.webp");
+
+
+  
+  }
+ .slide2{
+    background-image: url("../photos/coach_factory/img_2.webp");
+ }
+ .slide3{
+    background-image: url("../photos/coach_factory/img_3.webp");
+ }
+ .slide4{
+    background-image: url("../photos/coach_factory/img_4.jpeg");
+ }
+ .slide5{
+    background-image: url("../photos/coach_factory/img_5.webp");
+ }
+ .slide6{
+    background-image: url("../photos/coach_factory/img_6.webp");
+ }
+ .slide7{
+    background-image: url("../photos/coach_factory/img_7.webp");
+ }
+
+ 
+
+  
+  .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    display: none;
+  }
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    display: none;
+  }
+
+  .swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
