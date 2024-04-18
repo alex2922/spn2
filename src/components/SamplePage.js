@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import Counter from "../components/Counter";
 
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 // images
@@ -45,7 +46,7 @@ function SamplePage(props) {
                             </div>
                        
                     </div>
-                    <div className="sample-counters parent">
+                    {/* <div className="sample-counters parent">
                         <div className="sample-logo bg-img-contain">
                               <div className="counter-overlay">
                               <div className="counters-content cont">
@@ -75,7 +76,27 @@ function SamplePage(props) {
                               </div>
                               </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <div className="counter-parent1">
+              <h3>{data.Marathwada_counter}</h3>
+              <Counter
+
+                data={props.data}
+                background=""
+                textnum1="600"
+                plus="+"
+                text1={data.Marathwada_countup11}
+                textnum2="300"
+                plus2="+"
+                text2={data.Marathwada_countup12}
+                textnum3="45000"
+                plus3=""
+                text3={data.Marathwada_countup13}
+                textnum4=""
+                plus4=""
+                text4=""
+              />
+            </div>
 <div className="sample-page-parent bg-img-cover parent">
                        
                             <div className="sample-page-cont second-sample ">

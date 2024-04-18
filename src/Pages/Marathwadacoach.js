@@ -113,7 +113,7 @@ function Marathwadacoach(props) {
               img3={img3}
               img4={img4}
               img5={img5}
-              //   img6={img6}
+                img6={img6}
               img7={img7}
               img8={img8}
             />
