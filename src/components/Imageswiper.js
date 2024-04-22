@@ -20,7 +20,7 @@ function Imageswiper(props) {
                     <h2 className='titles'>{props.titlegallery}</h2>
 
                     <Swiper
-                        slidesPerView={4}
+                        slidesPerView={3}
                         spaceBetween={20}
                         autoplay={{
                             delay: 2500,
@@ -54,7 +54,7 @@ function Imageswiper(props) {
                                 spaceBetween: 20,
                             },
                             1200: {
-                                slidesPerView: 4,
+                                slidesPerView: 3,
                                 spaceBetween: 20,
                             },
                         }}

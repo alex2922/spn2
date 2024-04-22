@@ -1,3 +1,105 @@
+.jal-parent {
+    // margin-top: 60px;
+    height: 600px;
+    width: 100%;
+    // background: url('../assets/SPN\ Website\ Banner\ 1920-600\ -2.jpg');
+    background: url('../assets/jal.jpeg');
+    position: relative;
+    // align-items: center;
+
+    display: flex;
+    justify-content: center;
+
+
+    .jal-overlay {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(0deg, #000000d2, #00000000);
+        position: absolute;
+
+    }
+
+
+
+
+
+
+    .jal-headding1 {
+        position: absolute;
+        z-index: 2;
+        color: white;
+        padding-left: 30px;
+        // align-items: center;
+        bottom: 20px;
+
+        font-size: 45px;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+
+.jal2-parent {
+    height: 600px;
+    width: 100%;
+    background: url('../assets/jal3.jpg');
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .jal2-overlay {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg,
+                rgba(0, 0, 0, 0.71) 50%,
+                rgba(0, 0, 0, 0.184));
+        z-index: 1;
+        position: absolute;
+
+    }
+
+    .jal2-content {
+        width: 100%;
+        display: flex;
+        z-index: 5;
+        position: absolute;
+        // justify-content: center;
+        align-items: center;
+
+        .jal2-left {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            gap: 15px;
+            padding-left: 100px;
+
+            .jal-headding {
+                font-size: 30px;
+            }
+            .jal2-text,
+            .jal-headding {
+                color: rgb(255, 255, 255);
+
+
+
+            }
+
+        }
+
+        .jal2-right{
+            width: 60%;
+            height: 100%;
+        }
+    }
+
+}
+
+
+
 .img-box-jal {
     background: url('../photos/Jal_saksharta_rally/Jal_Saksharta_Rally.jpg');
     display: flex;

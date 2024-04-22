@@ -27,7 +27,15 @@ function Jalsaksharta(props) {
       {props.data.map((data) => {
         return (
           <>
-            <div className="header-bg-box"></div>
+
+            <div className="jal-parent parent bg-img-cover">
+              <div className="jal-overlay"></div>
+              <h2 className="jal-headding1">Jal Saksharta Rally!</h2>
+            </div>
+            {/* <div className="header-bg-box"></div> */}
+
+
+            {/* 
             <div className="ss parent  bg-img-contain">
               <div className="overlay bg-img-cover"></div>
 
@@ -64,10 +72,10 @@ function Jalsaksharta(props) {
                   </p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="counter-parent2">
-            <h3>{data.Marathwada_counter}</h3>
+              <h3>{data.Marathwada_counter}</h3>
               <Counter
                 data={props.data}
                 background=""
@@ -92,7 +100,21 @@ function Jalsaksharta(props) {
               />
             </div>
 
-            <TwoColSec
+            <div className="jal2-parent parent bg-img-cover">
+              <div className="jal2-overlay"></div>
+              <div className="jal2-content">
+                <div className="jal2-left"> <h2 className="jal-headding">FAIR WATER – THIS IS OUR DEMAND!</h2>
+                  <p className="jal2-text">
+                    During this 'Jal Saksharta Rally', the state government was demanded to urgently take three immediate, medium-term, and long-term solutions to permanently solve the problem of water scarcity in Latur. In which, three measures were suggested - maintenance of retention ponds in the district, increasing the storage capacity of the dams that supply water to the districts by removing the silt and out of the 167 TMC of water supplied to Marathwada, Latur's share of water should be distributed to the source and not brought through the diverting water from the Godavari River to the Manjra valley via the Bhandardara route. So that everyone will get water in a fair and healthy manner without any water dispute in any district.</p></div>
+                <div className="jal2-right"></div>
+              </div>
+
+
+            </div>
+
+
+
+            {/* <TwoColSec
               padding="50px 0px 50px 0px"
               background="#efefef"
               row="row-reverse"
@@ -100,7 +122,7 @@ function Jalsaksharta(props) {
               subheading={data.Jal_heading2}
               subdescription={data.Jal_para2}
               btn=""
-            />
+            /> */}
 
             <Imageswiper
               titlegallery={data.Marathwada_gallery}
