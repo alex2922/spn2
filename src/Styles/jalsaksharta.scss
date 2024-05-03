@@ -146,3 +146,34 @@
         // display: none;
      }
 }
+
+.box-counter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    gap: 20px;
+    width: fit-content;
+    .icon{
+        height: 50px;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        border-radius: 15px;
+    }   
+    .content{
+        display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    h2,p{
+        line-height: 100%;
+    }
+    }
+}

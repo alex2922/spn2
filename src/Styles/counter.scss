@@ -90,17 +90,18 @@
 
         .counter-box {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            // align-items: center;
+            // justify-content: center;
             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            height: 150px;
+            height: 100px;
             width: 300px;
             gap: calc(var(--gap) * 2);
-            padding: 0px 20px;
+            padding: 40px;
 
             .icon-full-box {
                 width: 30%;
+                height: 70px;
                 .small-box {
                     height: 70px;
                     width: 70px;
@@ -123,7 +124,7 @@
                 flex-direction: column;
                 width: 70%;
                 align-items: flex-start;
-                justify-content: center;
+                // justify-content: center;
 
                 .counter-number {
                     font-size: 40px;
@@ -131,13 +132,14 @@
                 }
 
                 .counter-text {
-                    font-size: 20px;
+                    // font-size: 20px;
                     font-weight: 600;
                     max-width: 20ch;
                     line-height: 25px;
                     text-transform: capitalize;
                     color: rgba(0, 0, 0, 0.678);
                 }
+              
             }
         }
     }
