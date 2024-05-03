@@ -15,6 +15,9 @@ function Counter(props) {
               <div className="count-box">
                 {props.textnum1 && (
                   <div className="counter-box">
+                    <div className="small-box">
+                      icon
+                    </div>
                     <span className="counter-number">
                       <CountUp end={props.textnum1} />
                       {props.plus}

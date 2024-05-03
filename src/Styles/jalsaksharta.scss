@@ -19,11 +19,6 @@
 
     }
 
-
-
-
-
-
     .jal-headding1 {
         position: absolute;
         z-index: 2;
@@ -31,7 +26,6 @@
         padding-left: 30px;
         // align-items: center;
         bottom: 20px;
-
         font-size: 45px;
         font-weight: 700;
         text-align: center;
@@ -42,7 +36,7 @@
 .jal2-parent {
     height: 600px;
     width: 100%;
-    background: url('../assets/jal3.jpg');
+    // background: url('../assets/jal3.jpg');
     position: relative;
     display: flex;
     justify-content: center;
@@ -51,31 +45,34 @@
     .jal2-overlay {
         height: 100%;
         width: 100%;
-        background: linear-gradient(90deg,
-                rgba(0, 0, 0, 0.71) 50%,
-                rgba(0, 0, 0, 0.184));
+        // background: linear-gradient(90deg,
+        //         rgba(0, 0, 0, 0.71) 50%,
+        //         rgba(0, 0, 0, 0.184));
+        background-color: rgba(0, 0, 0, 0.575);
         z-index: 1;
         position: absolute;
 
     }
 
     .jal2-content {
-        width: 100%;
+        width: 70%;
         display: flex;
+        flex-direction: column;
         z-index: 5;
         position: absolute;
-        // justify-content: center;
+        justify-content: center;
         align-items: center;
-
-        .jal2-left {
-            width: 40%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            // align-items: center;
-            gap: 15px;
-            padding-left: 100px;
+        // background-color: var(--accent);
+        top: 80%;
+        gap: var(--gap);
+        padding: 20px;
+        border-radius: var(--rad);
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        background-color: rgba(17, 25, 40, 0.75);
+        // background-color: #a81c1cbb;
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
 
             .jal-headding {
                 font-size: 30px;
@@ -84,16 +81,8 @@
             .jal-headding {
                 color: rgb(255, 255, 255);
 
-
-
-            }
-
         }
 
-        .jal2-right{
-            width: 60%;
-            height: 100%;
-        }
     }
 
 }
