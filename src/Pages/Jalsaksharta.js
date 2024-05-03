@@ -18,6 +18,8 @@ import BgVideo1 from "../assets/BgVideo.webm";
 import posterImage from "../photos/Jal_saksharta_rally/09.webp"
 
 function Jalsaksharta(props) {
+
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
   return (
     <>
       <Helmet>
@@ -111,7 +113,7 @@ function Jalsaksharta(props) {
             </div>
 
             <div className="jal2-parent parent bg-img-cover">
-              <div className="jal2-overlay"></div>
+              {/* <div className="jal2-overlay"></div> */}
               <video
                 autoPlay
                 loop
@@ -120,11 +122,12 @@ function Jalsaksharta(props) {
                 style={{ position: "absolute", objectFit: "cover" }}
                 height="100%"
                 width="100%"
-                poster={posterImage}
-                controls="controls"
+             
+           
+          
               >
                 <source src={BgVideo1} type="video/webm" />
-                {/* <source src={BgVideo} type="video/ogg" /> */}
+                <source src={BgVideo} type="video/ogg" />
               </video>
               <div className="jal2-content">
                 {/* <div className="jal2-left">  */}

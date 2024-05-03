@@ -163,7 +163,7 @@
         align-items: center;
         gap: calc(var(--gap) * 1);
         height: 100%;
-        overflow-y: scroll;
+        overflow-y: hidden  ;
 
         a:not(.btn) {
             text-decoration: none;
@@ -224,5 +224,9 @@
             text-align: left !important;
             line-height: 20px;
         }
+    }
+
+    .moblinks{
+overflow-y: scroll !important;
     }
 }
