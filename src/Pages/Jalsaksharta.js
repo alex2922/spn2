@@ -17,6 +17,7 @@ import BgVideo from "../assets/BgVideo.ogg";
 import BgVideo1 from "../assets/BgVideo.webm";
 import posterImage from "../photos/Jal_saksharta_rally/09.webp"
 
+
 function Jalsaksharta(props) {
 
   const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);

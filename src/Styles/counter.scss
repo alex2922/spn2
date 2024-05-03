@@ -48,7 +48,7 @@
                     border-radius: var(--rad);
 
                     svg {
-                        font-size: 50px;
+                        font-size: 40px;
                         color: var(--accent);
                     }
                 }
@@ -100,19 +100,21 @@
 
             .icon-full-box {
                 width: 30%;
+                .small-box {
+                    height: 70px;
+                    width: 70px;
+                    background: #580b0b25;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: var(--rad);
 
-                height: 70px;
-                width: 70px;
-                background: #580b0b25;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: var(--rad);
-
-                svg {
-                    font-size: 50px;
-                    color: var(--accent);
+                    svg {
+                        font-size: 40px;
+                        color: var(--accent);
+                    }
                 }
+              
             }
 
             .count-text {

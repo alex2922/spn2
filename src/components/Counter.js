@@ -1,5 +1,11 @@
 import React from "react";
 import { CiCalendarDate } from "react-icons/ci";
+import { IoCalendarNumber } from "react-icons/io5";
+import { GiVillage } from "react-icons/gi";
+import { RiMotorbikeFill } from "react-icons/ri";
+import { FaHouse } from "react-icons/fa6";
+import { BsEnvelopePaperFill } from "react-icons/bs";
+import { ImOffice } from "react-icons/im";
 import CountUp from "react-countup";
 import "../Styles/counter.scss";
 
@@ -18,7 +24,7 @@ function Counter(props) {
                   <div className="counter-box">
                     <div className="icon-full-box">
                       <div className="small-box">
-                        <CiCalendarDate />
+                      <IoCalendarNumber />
                       </div>
                     </div>
                     <div className="count-text">
@@ -34,7 +40,7 @@ function Counter(props) {
                   <div className="counter-box">
                     <div className="icon-full-box">
                       <div className="small-box">
-                        <CiCalendarDate />
+                        <GiVillage />
                       </div>
                     </div>
                     <div className="count-text">
@@ -50,7 +56,7 @@ function Counter(props) {
                   <div className="counter-box">
                     <div className="icon-full-box">
                       <div className="small-box">
-                        <CiCalendarDate />
+                      <RiMotorbikeFill />
                       </div>
                     </div>
                     <div className="count-text">
@@ -69,7 +75,7 @@ function Counter(props) {
                   <div className="counter-box">
                     <div className="icon-full-box">
                       <div className="small-box">
-                        <CiCalendarDate />
+                      <FaHouse />
                       </div>
                     </div>
                     <div className="count-text">
@@ -85,7 +91,7 @@ function Counter(props) {
                   <div className="counter-box">
                     <div className="icon-full-box">
                       <div className="small-box">
-                        <CiCalendarDate />
+                      <ImOffice />
                       </div>
                     </div>
                     <div className="count-text">
@@ -101,7 +107,7 @@ function Counter(props) {
                   <div className="counter-box">
                     <div className="icon-full-box">
                       <div className="small-box">
-                        <CiCalendarDate />
+                      <BsEnvelopePaperFill />
                       </div>
                     </div>
                     <div className="count-text">
