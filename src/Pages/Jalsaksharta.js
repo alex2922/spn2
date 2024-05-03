@@ -86,7 +86,7 @@ function Jalsaksharta(props) {
               </div>
             </div> */}
 
-            <div className="counter-parent2">
+            <div className="counter-parent2 ">
               <h3>{data.Marathwada_counter}</h3>
               <Counter
                 data={props.data}
@@ -113,7 +113,7 @@ function Jalsaksharta(props) {
             </div>
 
             <div className="jal2-parent parent bg-img-cover">
-              {/* <div className="jal2-overlay"></div> */}
+              <div className="jal2-overlay"></div>
               <video
                 autoPlay
                 loop
