@@ -1,4 +1,5 @@
 import React from "react";
+import { CiCalendarDate } from "react-icons/ci";
 import CountUp from "react-countup";
 import "../Styles/counter.scss";
 
@@ -15,32 +16,50 @@ function Counter(props) {
               <div className="count-box">
                 {props.textnum1 && (
                   <div className="counter-box">
-                    <div className="small-box">
-                      icon
+                    <div className="icon-full-box">
+                      <div className="small-box">
+                        <CiCalendarDate />
+                      </div>
                     </div>
-                    <span className="counter-number">
-                      <CountUp end={props.textnum1} />
-                      {props.plus}
-                    </span>
-                    <span className="counter-text">{props.text1}</span>
+                    <div className="count-text">
+                      <span className="counter-number">
+                        <CountUp end={props.textnum1} />
+                        {props.plus}
+                      </span>
+                      <span className="counter-text">{props.text1}</span>
+                    </div>
                   </div>
                 )}
                 {props.textnum2 && (
                   <div className="counter-box">
-                    <span className="counter-number">
-                      <CountUp end={props.textnum2} />
-                      {props.plus2}
-                    </span>
-                    <span className="counter-text">{props.text2}</span>
+                    <div className="icon-full-box">
+                      <div className="small-box">
+                        <CiCalendarDate />
+                      </div>
+                    </div>
+                    <div className="count-text">
+                      <span className="counter-number">
+                        <CountUp end={props.textnum2} />
+                        {props.plus2}
+                      </span>
+                      <span className="counter-text">{props.text2}</span>
+                    </div>
                   </div>
                 )}
                 {props.textnum3 && (
                   <div className="counter-box">
-                    <span className="counter-number">
-                      <CountUp end={props.textnum3} />
-                      {props.plus3}
-                    </span>
-                    <span className="counter-text">{props.text3}</span>
+                    <div className="icon-full-box">
+                      <div className="small-box">
+                        <CiCalendarDate />
+                      </div>
+                    </div>
+                    <div className="count-text">
+                      <span className="counter-number">
+                        <CountUp end={props.textnum3} />
+                        {props.plus3}
+                      </span>
+                      <span className="counter-text">{props.text3}</span>
+                    </div>
                   </div>
                 )}
               </div>
@@ -48,29 +67,50 @@ function Counter(props) {
               <div className="count-box2">
                 {props.textnum4 && (
                   <div className="counter-box">
-                    <span className="counter-number">
-                      <CountUp end={props.textnum4} />
-                      {props.plus4}
-                    </span>
-                    <span className="counter-text">{props.text4}</span>
+                    <div className="icon-full-box">
+                      <div className="small-box">
+                        <CiCalendarDate />
+                      </div>
+                    </div>
+                    <div className="count-text">
+                      <span className="counter-number">
+                        <CountUp end={props.textnum4} />
+                        {props.plus4}
+                      </span>
+                      <span className="counter-text">{props.text4}</span>
+                    </div>
                   </div>
                 )}
                 {props.textnum5 && (
                   <div className="counter-box">
-                    <span className="counter-number">
-                      <CountUp end={props.textnum5} />
-                      {props.plus5}
-                    </span>
-                    <span className="counter-text">{props.text5}</span>
+                    <div className="icon-full-box">
+                      <div className="small-box">
+                        <CiCalendarDate />
+                      </div>
+                    </div>
+                    <div className="count-text">
+                      <span className="counter-number">
+                        <CountUp end={props.textnum5} />
+                        {props.plus5}
+                      </span>
+                      <span className="counter-text">{props.text5}</span>
+                    </div>
                   </div>
                 )}
                 {props.textnum6 && (
                   <div className="counter-box">
-                    <span className="counter-number">
-                      <CountUp end={props.textnum6} />
-                      {props.plus6}
-                    </span>
-                    <span className="counter-text">{props.text6}</span>
+                    <div className="icon-full-box">
+                      <div className="small-box">
+                        <CiCalendarDate />
+                      </div>
+                    </div>
+                    <div className="count-text">
+                      <span className="counter-number">
+                        <CountUp end={props.textnum6} />
+                        {props.plus6}
+                      </span>
+                      <span className="counter-text">{props.text6}</span>
+                    </div>
                   </div>
                 )}
               </div>

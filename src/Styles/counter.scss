@@ -2,10 +2,6 @@
 //    height: auto;
 //    padding: 60px 0px;
 
-
-
-
-
 //     .conter-container {
 
 //         display: flex;
@@ -14,7 +10,6 @@
 //         flex-direction: column;
 //         gap: 60px;
 .counter-box-container {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,25 +28,54 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
-            box-shadow: var(--shadow);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            height: 200px;
+            height: 150px;
             width: 300px;
+            gap: calc(var(--gap) * 2);
+            padding: 0px 20px;
 
-            .counter-number {
-                font-size: 50px;
-                font-weight: 600;
+            .icon-full-box {
+                width: 30%;
+
+                .small-box {
+                    height: 70px;
+                    width: 70px;
+                    background: #580b0b25;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: var(--rad);
+
+                    svg {
+                        font-size: 50px;
+                        color: var(--accent);
+                    }
+                }
             }
 
-            .counter-text {
-                font-size: 20px;
-                font-weight: 600;
-                text-align: center;
-                padding: 0px 5px;
-                max-width: 20ch;
-                line-height: 24px;
-                text-transform: capitalize;
+            .count-text {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                align-items: flex-start;
+                justify-content: center;
+
+                .counter-number {
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                .counter-text {
+                    font-size: 20px;
+                    font-weight: 600;
+                    // text-align: center;
+                    // padding: 0px 5px;
+                    max-width: 20ch;
+                    line-height: 25px;
+                    text-transform: capitalize;
+                    color: rgba(0, 0, 0, 0.678);
+                }
             }
         }
     }
@@ -67,20 +91,50 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            height: 200px;
+            height: 150px;
             width: 300px;
-            box-shadow: var(--shadow);
+            gap: calc(var(--gap) * 2);
+            padding: 0px 20px;
 
-            .counter-number {
-                font-size: 50px;
-                font-weight: 600;
+            .icon-full-box {
+                width: 30%;
+
+                height: 70px;
+                width: 70px;
+                background: #580b0b25;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: var(--rad);
+
+                svg {
+                    font-size: 50px;
+                    color: var(--accent);
+                }
             }
 
-            .counter-text {
-                font-size: 18px;
-                font-weight: 600;
+            .count-text {
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                align-items: flex-start;
+                justify-content: center;
+
+                .counter-number {
+                    font-size: 40px;
+                    font-weight: 700;
+                }
+
+                .counter-text {
+                    font-size: 20px;
+                    font-weight: 600;
+                    max-width: 20ch;
+                    line-height: 25px;
+                    text-transform: capitalize;
+                    color: rgba(0, 0, 0, 0.678);
+                }
             }
         }
     }
