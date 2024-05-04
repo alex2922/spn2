@@ -16,6 +16,7 @@ import Para from "../components/Para";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
+import { ImClock2 } from "react-icons/im";
 
 function Taasandolan(props) {
   return (
@@ -87,6 +88,7 @@ function Taasandolan(props) {
               <Counter
                 data={props.data}
                 background=""
+                icon1={<ImClock2 />}
                 textnum1="72"
                 plus=""
                 text1={data.Taas_countup1}

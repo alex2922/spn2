@@ -13,6 +13,9 @@ import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
+import { RiBuildingFill } from "react-icons/ri";
+import { FaComputer } from "react-icons/fa6";
+import { GiFactory } from "react-icons/gi";
 
 function Namomaharojgar(props) {
   return (
@@ -79,8 +82,10 @@ function Namomaharojgar(props) {
               <Counter
                 data={props.data}
                 background=""
+                icon1={<GiFactory />}
                 textnum1="240"
                 plus="+"
+                icon2={<FaComputer />}
                 text1={data.Namo_countup1}
                 textnum2="7000"
                 plus2="+"

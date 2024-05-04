@@ -10,27 +10,38 @@ import img7 from "../photos/Atal_Mahaarogya_Shibir/IMG_7736.JPG";
 import img8 from "../photos/Atal_Mahaarogya_Shibir/359A2174.webp";
 import img from "../photos/drushti/Atal_Maharogya_Shibir.webp";
 import Imageswiper from "../components/Imageswiper";
-import 'react-tooltip/dist/react-tooltip.css'
-import { Tooltip } from 'react-tooltip'
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
+import { FaBed } from "react-icons/fa6";
+import { FaUserDoctor } from "react-icons/fa6";
 
 function Atalmaharogya(props) {
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Atal Maharogya Shibir</title>
-        <meta name="keywords" content="Atal Maharogya Shibira,health camp,Asha volunteers," />
-        <meta name="description" content="Discover quality healthcare at the Atal Maharogya Shibira health camp, where Asha volunteers extend their dedicated support. Benefit from essential medical services and compassionate care, prioritizing the well-being of every individual." />
-        <link rel="canonical" href="https://sambhajipatilnilangekar.in/Atal_Maharogya_Shibir" />
+        <meta
+          name="keywords"
+          content="Atal Maharogya Shibira,health camp,Asha volunteers,"
+        />
+        <meta
+          name="description"
+          content="Discover quality healthcare at the Atal Maharogya Shibira health camp, where Asha volunteers extend their dedicated support. Benefit from essential medical services and compassionate care, prioritizing the well-being of every individual."
+        />
+        <link
+          rel="canonical"
+          href="https://sambhajipatilnilangekar.in/Atal_Maharogya_Shibir"
+        />
       </Helmet>
       <Helmet>
         <title>Atal Maharogya Shibir</title>
         <meta
           name="keywords"
           content="MLA Sambhaji Patil Nilangekar,State government-sponsored health camp,Atal Maharogya Shibira,October 1st to 7th, 2018,Free surgeries,
-                    Medical treatments,Community health initiative,Medical assistance,Asha volunteers"
+                      Medical treatments,Community health initiative,Medical assistance,Asha volunteers"
         />
         <meta
           name="description"
@@ -89,6 +100,7 @@ function Atalmaharogya(props) {
               <Counter
                 data={props.data}
                 background=""
+                icon1={<FaBed />}
                 textnum1="1"
                 plus="+"
                 text1={data.Atal_countup1}
@@ -97,6 +109,7 @@ function Atalmaharogya(props) {
                 text2={data.Atal_countup2}
                 textnum3="45000"
                 plus3=""
+                icon3={<FaUserDoctor />}
                 text3={data.Atal_countup3}
                 textnum4=""
                 plus4=""

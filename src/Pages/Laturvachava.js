@@ -16,6 +16,8 @@ import { Tooltip } from 'react-tooltip'
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
 import { Helmet } from 'react-helmet';
+import { FaPeopleRoof } from "react-icons/fa6";
+import { BiSolidFileBlank } from "react-icons/bi";
 
 function Laturvachava(props) {
   return (
@@ -74,8 +76,10 @@ function Laturvachava(props) {
               <Counter
                 data={props.data}
                 background=""
+                icon1={<FaPeopleRoof />}
                 textnum1="450"
                 plus=""
+                icon2={<BiSolidFileBlank />}
                 text1={data.Latur_countup1}
                 textnum2="9"
                 plus2=""

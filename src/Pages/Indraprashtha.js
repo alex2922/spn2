@@ -16,6 +16,9 @@ import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
 import { Helmet } from 'react-helmet';
 import { GiVillage } from "react-icons/gi";
+import { ImMeter2 } from "react-icons/im";
+import { FaOilWell } from "react-icons/fa6";
+
 
 function Indraprashtha(props) {
   return (
@@ -74,16 +77,18 @@ function Indraprashtha(props) {
               <Counter
                 data={props.data}
                 background=""
-                 icon1={<GiVillage />}
+                icon1={<GiVillage />}
                 textnum1="945"
                 plus="+"
                 
                 text1={data.Indraprashtha11_countup1}
                 textnum2="2800"
                 plus2="+"
+                icon2={<FaOilWell />}
                 text2={data.Indraprashtha11_countup2}
                 textnum3="8"
                 plus3=""
+                icon3={<ImMeter2 />}
                 text3={data.Indraprashtha11_countup3}
                 textnum4=""
                 plus4=""
