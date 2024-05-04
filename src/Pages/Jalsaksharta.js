@@ -15,7 +15,7 @@ import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
 import BgVideo from "../assets/BgVideo.ogg";
 import BgVideo1 from "../assets/BgVideo.webm";
-import posterImage from "../photos/Jal_saksharta_rally/09.webp"
+import posterImage from "../photos/Jal_saksharta_rally/09.webp";
 import { RiMotorbikeFill } from "react-icons/ri";
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
@@ -26,11 +26,9 @@ import { PiRoadHorizonFill } from "react-icons/pi";
 import { ImOffice } from "react-icons/im";
 import { BsEnvelopePaperFill } from "react-icons/bs";
 function Jalsaksharta(props) {
-  const data2 = 
-    {
-      text:"arn about the Jal Saksharta Rally in Latur, championed by Sambhaji Patil Nilangekar, promoting water awareness and conservation. Explore how this initiative educates communities and emphasize"
-    }
-  
+  const data2 = {
+    text: "arn about the Jal Saksharta Rally in Latur, championed by Sambhaji Patil Nilangekar, promoting water awareness and conservation. Explore how this initiative educates communities and emphasize",
+  };
 
   const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
   return (
@@ -136,11 +134,17 @@ function Jalsaksharta(props) {
                 <div className="content">
                   <h2>heading</h2>
                   <Tooltip id="my-tooltip" />
-                 { data2.text.length  > 20 ?  <p 
-                 data-tooltip-id="my-tooltip"
-                 data-tooltip-content={data2.text}
-                 data-tooltip-place="top">{data2.text.slice(0,20)}...  </p>:
-                  <p>{data2.text}</p>}
+                  {data2.text.length > 20 ? (
+                    <p
+                      data-tooltip-id="my-tooltip"
+                      data-tooltip-content={data2.text}
+                      data-tooltip-place="top"
+                    >
+                      {data2.text.slice(0, 20)}...{" "}
+                    </p>
+                  ) : (
+                    <p>{data2.text}</p>
+                  )}
                 </div>
               </div> */}
             </div>
@@ -155,9 +159,6 @@ function Jalsaksharta(props) {
                 style={{ position: "absolute", objectFit: "cover" }}
                 height="100%"
                 width="100%"
-             
-           
-          
               >
                 <source src={BgVideo1} type="video/webm" />
                 <source src={BgVideo} type="video/ogg" />
