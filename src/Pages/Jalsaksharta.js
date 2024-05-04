@@ -20,7 +20,11 @@ import { RiMotorbikeFill } from "react-icons/ri";
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
 
-
+import { IoCalendarNumber } from "react-icons/io5";
+import { GiVillage } from "react-icons/gi";
+import { PiRoadHorizonFill } from "react-icons/pi";
+import { ImOffice } from "react-icons/im";
+import { BsEnvelopePaperFill } from "react-icons/bs";
 function Jalsaksharta(props) {
   const data2 = 
     {
@@ -97,30 +101,37 @@ function Jalsaksharta(props) {
 
             <div className="counter-parent2 ">
               <h3>{data.Marathwada_counter}</h3>
+              <Tooltip id="my-tooltip" />
               <Counter
                 data={props.data}
                 background=""
+                icon1={<IoCalendarNumber />}
                 textnum1="8"
                 plus=""
+                icon2={<GiVillage />}
                 text1={data.Jal_countup1}
                 textnum2="10"
                 plus2=""
+                icon3={<PiRoadHorizonFill />}
                 text2={data.Jal_countup2}
                 textnum3="1287"
                 plus3=""
+                icon4={<GiVillage />}
                 text3={data.Jal_countup3}
                 textnum4="354"
                 plus4=""
+                icon5={<ImOffice />}
                 text4={data.Jal_countup4}
                 textnum5="482"
                 plus5=""
+                icon6={<BsEnvelopePaperFill />}
                 text5={data.Jal_countup5}
                 textnum6="1025"
                 plus6=""
                 text6={data.Jal_countup6}
               />
 
-              <div className="box-counter">
+              {/* <div className="box-counter">
                 <div className="icon"><RiMotorbikeFill /></div>
                 <div className="content">
                   <h2>heading</h2>
@@ -131,7 +142,7 @@ function Jalsaksharta(props) {
                  data-tooltip-place="top">{data2.text.slice(0,20)}...  </p>:
                   <p>{data2.text}</p>}
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="jal2-parent parent bg-img-cover">

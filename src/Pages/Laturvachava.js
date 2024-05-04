@@ -11,7 +11,8 @@ import img8 from "../photos/jan_jagar_sanwad/sanwad4.png";
 import img9 from "../photos/jan_jagar_sanwad/img9.webp";
 import img from "../photos/drushti/jan_jagar_sanwad.webp";
 import Imageswiper from "../components/Imageswiper";
-
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip } from 'react-tooltip'
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
 import { Helmet } from 'react-helmet';
@@ -69,6 +70,7 @@ function Laturvachava(props) {
 
             <div className="counter-parent1">
               <h3>{data.Marathwada_counter}</h3>
+              <Tooltip id="my-tooltip" />
               <Counter
                 data={props.data}
                 background=""

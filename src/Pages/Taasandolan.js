@@ -10,6 +10,8 @@ import img7 from "../photos/72_taas_andolan/044A7368.webp";
 import img8 from "../photos/72_taas_andolan/044A7379.webp";
 import img from "../photos/drushti/72_Taas_Andolan.webp";
 import Imageswiper from "../components/Imageswiper";
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip } from 'react-tooltip'
 import Para from "../components/Para";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
@@ -81,6 +83,7 @@ function Taasandolan(props) {
 
             <div className="counter-parent4">
               <h3>{data.Marathwada_counter}</h3>
+              <Tooltip id="my-tooltip" />
               <Counter
                 data={props.data}
                 background=""

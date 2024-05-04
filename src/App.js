@@ -26,6 +26,17 @@ import Akka from "../src/Pages/Akkafoundation";
 import Blog_template from "./Pages/Blog_template";
 import SamplePage from "./components/SamplePage";
 
+
+// icons
+
+import { IoCalendarNumber } from "react-icons/io5";
+import { GiVillage } from "react-icons/gi";
+
+
+import { BsEnvelopePaperFill } from "react-icons/bs";
+import { ImOffice } from "react-icons/im";
+import { PiRoadHorizonFill } from "react-icons/pi";
+
 function App() {
   const [language, setlanguage] = useState(english);
   const [toggle, settoggle] = useState(true);
@@ -33,6 +44,16 @@ function App() {
     setlanguage(language === english ? marathi : english);
     settoggle(!toggle);
   };
+
+
+  const icons = {
+    icon1:<IoCalendarNumber />,
+    icon2: <GiVillage />,
+    icon3:<PiRoadHorizonFill />,
+    icon4:<GiVillage />,
+    icon5:<ImOffice/>,
+    icon6:<BsEnvelopePaperFill />,
+   }
 
   const [photo, setphoto] = useState(true);
   const [video, setvideo] = useState(false);
@@ -55,7 +76,7 @@ console.log(toggle)
           ></Route>
           <Route
             path="/Jal_Saksharta_Rally"
-            element={<Jalsaksharta data={language} />}
+            element={<Jalsaksharta data={language} icons={icons} />}
           ></Route>
           <Route path="/72_Taas_Andolan" element={<Taasandolan data={language} />}></Route>
           <Route
@@ -67,7 +88,7 @@ console.log(toggle)
             element={<Atal data={language} />}
           ></Route>
           <Route path="/Namo_Maharojgar_Melava" element={<Namo data={language} />}></Route>
-          <Route path="/Indraprasth_Jalbhumi_Abhiyan" element={<Indra data={language} />}></Route>
+          <Route path="/Indraprasth_Jalbhumi_Abhiyan" element={<Indra data={language}  icons={icons} />  }></Route>
           <Route path="/Akka_Foundation" element={<Akka data={language} />}></Route>
           <Route
             path="/gallery"

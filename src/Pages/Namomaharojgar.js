@@ -11,6 +11,8 @@ import Imageswiper from "../components/Imageswiper";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
+import 'react-tooltip/dist/react-tooltip.css'
+import { Tooltip } from 'react-tooltip'
 
 function Namomaharojgar(props) {
   return (
@@ -73,6 +75,7 @@ function Namomaharojgar(props) {
             </div>
             <div className="counter-parent1">
               <h3>{data.Marathwada_counter}</h3>
+              <Tooltip id="my-tooltip" />
               <Counter
                 data={props.data}
                 background=""
