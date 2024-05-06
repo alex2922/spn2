@@ -50,3 +50,26 @@
     }
 
 }
+
+
+
+@media only screen and (max-width: 1840px){
+.imageswiper-parent{
+padding-top: 300px !important;
+}
+}
+@media only screen and (max-width: 1250px){
+.imageswiper-parent{
+padding-top: 400px !important;
+}
+}
+@media only screen and (max-width: 900px){
+.imageswiper-parent{
+padding-top: 500px !important;
+}
+}
+@media only screen and (max-width: 750px){
+.imageswiper-parent{
+padding-top: 50px !important;
+}
+}

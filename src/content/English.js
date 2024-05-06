@@ -72,6 +72,7 @@ const english = [
      Home_subdescription:"Although there is family legacy, behind it Sambhaji Patil Nilangekar took a new step. In 2004, through the Bharatiya Janata Party, he first brought his mother Smt. Rupatai Patil Nilangekar (Akka) into the fray of the Lok Sabha elections. By winning, he created history in Latur district. At the same time, Sambhaji Patil Nilangekar contested the assembly elections. He also created a history by winning. He was the youngest MLA in the legislature at that time. After working in the Bharatiya Janata Party at the district level, the party promoted Sambhaji Patil Nilangekar after seeing his style of work.",
 
      Home_btn:"Read More",
+     Read_less:"Read less",
      
 
 
@@ -95,6 +96,7 @@ const english = [
       
       Jal_saksharta_heading:"Jal Saksharta Rally",
       Jal_saksharta_para:"To solve the water problem of Latur district forever and for the demand that Latur district should get its rightful water from the water flowing in the Arabian Sea. On the initiative of Sambhaji Patil Nilangekar, 'Jal Saksharta Rally' was organized in the entire Latur district from 19th September to 26th September 2023. At this time, thousands of citizens leave their homes for the festival of ‘Ain Gauri-Ganpati’ and roam around the entire district for 8 days to awaken the citizens especially by meeting the Ganesha mandals. In this, the current situation of the district in terms of water, the problems arising from it, the seriousness of the future and the solution-plans were awakened and motivated the citizens to participate in this work. Finally, on September 26, the first phase of the rally was concluded at Latur in the presence of lakhs of Latur’s residents.  ",
+      
 
       Jal_countup1:"Days",      
       Jal_countup2:"Talukas",

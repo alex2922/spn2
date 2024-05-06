@@ -35,9 +35,10 @@ function Jalsaksharta(props) {
   const [responsive, setResponsive] = useState(false);
   const [func2, setfunc2] = useState(false);
 
-  useEffect ( () => {
+
+  useEffect(() => {
     const togglePara = () => {
-      setResponsive(window.innerWidth <= 500);
+      setResponsive(window.innerWidth <= 700);
     };
 
     togglePara();
@@ -47,7 +48,7 @@ function Jalsaksharta(props) {
     return () => {
       window.addEventListener("resize", togglePara);
     };
-  },[]);
+  }, []);
   return (
     <>
       <Helmet>
@@ -182,60 +183,40 @@ function Jalsaksharta(props) {
               </video>
               <div className="jal2-content">
                 {/* <div className="jal2-left">  */}
-                <h2 className="jal-headding">
-                  FAIR WATER – THIS IS OUR DEMAND!
-                </h2>
+                <h2 className="jal-headding">{data.Jal_saksharta_heading}</h2>
                 {responsive ? (
                   <p className="jal2-text">
                     <>
-                      During this 'Jal Saksharta Rally', the state government
-                      was demanded to urgently take three immediate,
-                      medium-term, and long-term solutions to permanently solve
-                      the problem of water scarcity in Latur.{" "}
-                    
+                      {data.Jal_saksharta_para.slice(0, 300)}{" "}
                       {func2 && (
-                        <span>
-                          In which, three measures were suggested - maintenance
-                          of retention ponds in the district, increasing the
-                          storage capacity of the dams that supply water to the
-                          districts by removing the silt and out of the 167 TMC
-                          of water supplied to Marathwada, Latur's share of
-                          water should be distributed to the source and not
-                          brought through the diverting water from the Godavari
-                          River to the Manjra valley via the Bhandardara route.
-                          So that everyone will get water in a fair and healthy
-                          manner without any water dispute in any district.
-                        </span>
+                        <span>{data.Jal_saksharta_para.slice(300, 1000)}</span>
                       )}
-
-
-<span
+                      { !func2 ?  <span
                         onClick={() => {
                           setfunc2(!func2);
+                         
                         }}
-
                         className="read-more"
                       >
-                        Read More
+                        {data.Home_btn}
                       </span>
+                     :
+                     
+                     <span
+                        onClick={() => {
+                          setfunc2(!func2);
+                      
+                        }}
+                        className="read-more"
+                      >
+                        {data.Read_less}
+                      </span>
+                    
+                    }
                     </>
                   </p>
                 ) : (
-                  <p>
-                    During this 'Jal Saksharta Rally', the state government was
-                    demanded to urgently take three immediate, medium-term, and
-                    long-term solutions to permanently solve the problem of
-                    water scarcity in Latur. In which, three measures were
-                    suggested - maintenance of retention ponds in the district,
-                    increasing the storage capacity of the dams that supply
-                    water to the districts by removing the silt and out of the
-                    167 TMC of water supplied to Marathwada, Latur's share of
-                    water should be distributed to the source and not brought
-                    through the diverting water from the Godavari River to the
-                    Manjra valley via the Bhandardara route. So that everyone
-                    will get water in a fair and healthy manner without any
-                    water dispute in any district.
-                  </p>
+                  <p>{data.Jal_saksharta_para}</p>
                 )}
               </div>
               {/* <div className="jal2-right"></div> */}

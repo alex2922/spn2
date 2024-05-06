@@ -13,7 +13,7 @@
   .jal-overlay {
     height: 100%;
     width: 100%;
-    background: linear-gradient(0deg, #000000d2, #00000000);
+    background: linear-gradient(0deg, #000000b4, #00000000);
     position: absolute;
   }
 
@@ -85,7 +85,7 @@
     }
 
     .read-more{
-      color: var(--accent);
+      color: white;
       font-weight: 700;
     }
   }
@@ -116,7 +116,7 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .jal2-parent {
     background: url("../photos//Jal_saksharta_rally/for\ mobile\ view.webp")!important;
     position: relative !important;
@@ -182,6 +182,7 @@
     h2,
     p {
       line-height: 100%;
+      color: rgba(255, 255, 255, 0.514);
     }
   }
 }
