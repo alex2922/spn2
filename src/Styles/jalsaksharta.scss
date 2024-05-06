@@ -1,179 +1,187 @@
 .jal-parent {
-    // margin-top: 60px;
-    height: 600px;
+  // margin-top: 60px;
+  height: 600px;
+  width: 100%;
+  // background: url('../assets/SPN\ Website\ Banner\ 1920-600\ -2.jpg');
+  background: url("../assets/jal.jpeg");
+  position: relative;
+  // align-items: center;
+
+  display: flex;
+  justify-content: center;
+
+  .jal-overlay {
+    height: 100%;
     width: 100%;
-    // background: url('../assets/SPN\ Website\ Banner\ 1920-600\ -2.jpg');
-    background: url('../assets/jal.jpeg');
-    position: relative;
+    background: linear-gradient(0deg, #000000d2, #00000000);
+    position: absolute;
+  }
+
+  .jal-headding1 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    padding-left: 30px;
     // align-items: center;
-
-    display: flex;
-    justify-content: center;
-
-
-    .jal-overlay {
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(0deg, #000000d2, #00000000);
-        position: absolute;
-
-    }
-
-    .jal-headding1 {
-        position: absolute;
-        z-index: 2;
-        color: white;
-        padding-left: 30px;
-        // align-items: center;
-        bottom: 20px;
-        font-size: 45px;
-        font-weight: 700;
-        text-align: center;
-    }
+    bottom: 20px;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+  }
 }
-
 
 .jal2-parent {
-    height: 600px;
+  height: 600px;
+  width: 100%;
+  // background: url('../assets/jal3.jpg');
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .jal2-overlay {
+    height: 100%;
     width: 100%;
-    // background: url('../assets/jal3.jpg');
-    position: relative;
+    // background: linear-gradient(90deg,
+    //         rgba(0, 0, 0, 0.71) 50%,
+    //         rgba(0, 0, 0, 0.184));
+    background-color: rgba(0, 0, 0, 0.575);
+    z-index: 1;
+    position: absolute;
+  }
+
+  .jal2-content {
+    width: 70%;
     display: flex;
+    flex-direction: column;
+    z-index: 5;
+    position: absolute;
     justify-content: center;
     align-items: center;
+    // background-color: var(--accent);
+    top: 80%;
+    gap: var(--gap);
+    padding: 20px;
+    border-radius: var(--rad);
+    backdrop-filter: blur(16px) saturate(180%);
+    // -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    // background-color: #a81c1cbb;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
 
-    .jal2-overlay {
-        height: 100%;
-        width: 100%;
-        // background: linear-gradient(90deg,
-        //         rgba(0, 0, 0, 0.71) 50%,
-        //         rgba(0, 0, 0, 0.184));
-        background-color: rgba(0, 0, 0, 0.575);
-        z-index: 1;
-        position: absolute;
+    .jal-headding {
+      font-size: 30px;
+    }
+    .jal2-text,
+    .jal-headding {
+      color: rgb(255, 255, 255);
 
+     
     }
 
-    .jal2-content {
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        z-index: 5;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        // background-color: var(--accent);
-        top: 80%;
-        gap: var(--gap);
-        padding: 20px;
-        border-radius: var(--rad);
-        backdrop-filter: blur(16px) saturate(180%);
-        -webkit-backdrop-filter: blur(16px) saturate(180%);
-        background-color: rgba(17, 25, 40, 0.75);
-        // background-color: #a81c1cbb;
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.125);
-
-            .jal-headding {
-                font-size: 30px;
-            }
-            .jal2-text,
-            .jal-headding {
-                color: rgb(255, 255, 255);
-
-        }
-
+    p{
+      color: white;
     }
 
+    .read-more{
+      color: var(--accent);
+      font-weight: 700;
+    }
+  }
 }
-
-
 
 .img-box-jal {
-    background: url('../photos/Jal_saksharta_rally/Jal_Saksharta_Rally.jpg');
+  background: url("../photos/Jal_saksharta_rally/Jal_Saksharta_Rally.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  aspect-ratio: 5/4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.counter-parent2 {
+  padding: 60px 0px;
+
+  h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    aspect-ratio: 5/4;
-    padding: 20px;
-    border-radius: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 700;
+  }
 }
 
+@media only screen and (max-width: 600px) {
+  .jal2-parent {
+    background: url("../photos//Jal_saksharta_rally/for\ mobile\ view.webp")!important;
+    position: relative !important;
+    height: 100vh !important;
+    background-size: cover !important;
+    background-position: center !important;
 
-
-.counter-parent2 {
-    padding: 60px 0px;
-
-    h3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 40px;
-        font-size: 30px;
-        font-weight: 700;
+    video {
+      display: none !important;
     }
+    .jal2-content {
+      position: relative !important;
+      top: 0 !important;
+      width: 100% !important;
+      height: 100vh !important;
+      background-color: transparent !important;
+      backdrop-filter: none !important;
+   
+      display: flex;
+      justify-content: flex-end !important;
+      
+
+
+      h2{
+        font-size: 16px !important;
+      }
+
+      p{
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
 
 
 }
 
-
-@media only screen and (max-width: 600px) { 
-    // .jal2-parent{
-    //      background: url('../photos//Jal_saksharta_rally/for\ mobile\ view.webp') !important;
-    //      position: relative !important;
-    //      height: 100vh !important;
-    //      background-size: cover !important;
-    //      background-position: center !important;
-
-
-
-
-    //      video{
-    //         display: none !important;
-    //      }
-
-        
-    // }
-
-    .jal2-content{
-        // position: relative !important;
-        // top: 0 !important;
-        width: 100% !important;
-        // height: 100vh !important;
-        // background: none !important;
-        // display: none;
-     }
-}
-
-.box-counter{
+.box-counter {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  gap: 20px;
+  width: fit-content;
+  .icon {
+    height: 50px;
+    aspect-ratio: 1;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: var(--shadow);
-    border-radius: 10px;
-    gap: 20px;
-    width: fit-content;
-    .icon{
-        height: 50px;
-        aspect-ratio: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: aqua;
-        border-radius: 15px;
-    }   
-    .content{
-        display: flex;
+    background-color: aqua;
+    border-radius: 15px;
+  }
+  .content {
+    display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 5px;
     flex-direction: column;
-    h2,p{
-        line-height: 100%;
+    h2,
+    p {
+      line-height: 100%;
     }
-    }
+  }
 }

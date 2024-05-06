@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Styles/jalsaksharta.scss";
 import img1 from "../photos/Jal_saksharta_rally/01.JPG.webp";
 import img2 from "../photos/Jal_saksharta_rally/06.webp";
@@ -17,8 +17,8 @@ import BgVideo from "../assets/BgVideo.ogg";
 import BgVideo1 from "../assets/BgVideo.webm";
 import posterImage from "../photos/Jal_saksharta_rally/09.webp";
 import { RiMotorbikeFill } from "react-icons/ri";
-import 'react-tooltip/dist/react-tooltip.css'
-import { Tooltip } from 'react-tooltip'
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 
 import { IoCalendarNumber } from "react-icons/io5";
 import { GiVillage } from "react-icons/gi";
@@ -31,6 +31,23 @@ function Jalsaksharta(props) {
   };
 
   const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  const [responsive, setResponsive] = useState(false);
+  const [func2, setfunc2] = useState(false);
+
+  useEffect ( () => {
+    const togglePara = () => {
+      setResponsive(window.innerWidth <= 500);
+    };
+
+    togglePara();
+
+    window.addEventListener("resize", togglePara);
+
+    return () => {
+      window.addEventListener("resize", togglePara);
+    };
+  },[]);
   return (
     <>
       <Helmet>
@@ -168,21 +185,58 @@ function Jalsaksharta(props) {
                 <h2 className="jal-headding">
                   FAIR WATER – THIS IS OUR DEMAND!
                 </h2>
-                <p className="jal2-text">
-                  During this 'Jal Saksharta Rally', the state government was
-                  demanded to urgently take three immediate, medium-term, and
-                  long-term solutions to permanently solve the problem of water
-                  scarcity in Latur. In which, three measures were suggested -
-                  maintenance of retention ponds in the district, increasing the
-                  storage capacity of the dams that supply water to the
-                  districts by removing the silt and out of the 167 TMC of water
-                  supplied to Marathwada, Latur's share of water should be
-                  distributed to the source and not brought through the
-                  diverting water from the Godavari River to the Manjra valley
-                  via the Bhandardara route. So that everyone will get water in
-                  a fair and healthy manner without any water dispute in any
-                  district.
-                </p>
+                {responsive ? (
+                  <p className="jal2-text">
+                    <>
+                      During this 'Jal Saksharta Rally', the state government
+                      was demanded to urgently take three immediate,
+                      medium-term, and long-term solutions to permanently solve
+                      the problem of water scarcity in Latur.{" "}
+                    
+                      {func2 && (
+                        <span>
+                          In which, three measures were suggested - maintenance
+                          of retention ponds in the district, increasing the
+                          storage capacity of the dams that supply water to the
+                          districts by removing the silt and out of the 167 TMC
+                          of water supplied to Marathwada, Latur's share of
+                          water should be distributed to the source and not
+                          brought through the diverting water from the Godavari
+                          River to the Manjra valley via the Bhandardara route.
+                          So that everyone will get water in a fair and healthy
+                          manner without any water dispute in any district.
+                        </span>
+                      )}
+
+
+<span
+                        onClick={() => {
+                          setfunc2(!func2);
+                        }}
+
+                        className="read-more"
+                      >
+                        Read More
+                      </span>
+                    </>
+                  </p>
+                ) : (
+                  <p>
+                    During this 'Jal Saksharta Rally', the state government was
+                    demanded to urgently take three immediate, medium-term, and
+                    long-term solutions to permanently solve the problem of
+                    water scarcity in Latur. In which, three measures were
+                    suggested - maintenance of retention ponds in the district,
+                    increasing the storage capacity of the dams that supply
+                    water to the districts by removing the silt and out of the
+                    167 TMC of water supplied to Marathwada, Latur's share of
+                    water should be distributed to the source and not brought
+                    through the diverting water from the Godavari River to the
+                    Manjra valley via the Bhandardara route. So that everyone
+                    will get water in a fair and healthy manner without any
+                    water dispute in any district.
+                  </p>
+                )}
               </div>
               {/* <div className="jal2-right"></div> */}
               {/* </div> */}
