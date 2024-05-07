@@ -206,7 +206,14 @@ const english = [
      akka_swiper6_para:"An innovative initiative ‘Project Anandi’ was launched as a sustainable solution to the menstrual health problems of women and girls in rural areas.",
 
      akka_read_more:"Read More",  
-       
+     project_anandi:"Project anandi",
+     school:"School",
+     anandi_days:"Days",
+     anandi_students:"No. of students",
+     drishti_abhiyan:"Drushti Abhiyan",
+     drishti_total_pateints:"Total  Patients",
+     drishti_total_ooperations:"Total Operations",
+     drishti_specs_distructed:"Specs Distructed",
         
 
 

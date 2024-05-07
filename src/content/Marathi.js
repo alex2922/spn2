@@ -205,6 +205,14 @@ const marathi = [
       "ग्रामीण भागातील महिला आणि मुलींच्या मासिक पाळीच्या आरोग्यविषयक समस्यांवर शाश्वत उपाय म्हणून ‘प्रोजेक्ट आनंदी’ हा अभिनव उपक्रम सुरू करण्यात आला.",
 
     akka_read_more: "अधिक वाचा ",
+    project_anandi:"प्रोजेक्टआनंदी",
+    school:"शाळा",
+    anandi_days:"दिवस",
+    anandi_students:"एकूण विद्यार्थिनी संख्या",
+    drishti_abhiyan:"दृष्टी अभियान",
+    drishti_total_pateints:"एकूण रुग्ण",
+    drishti_total_ooperations:"एकूण शस्त्रक्रिया ",
+    drishti_specs_distructed:"चष्मे वाटप",
 
     // about--page===========================
     About_heading: "शब्द तुमच्या शंभूचा..",
