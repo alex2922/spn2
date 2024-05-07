@@ -56,13 +56,13 @@ function Header(props) {
             <Menu className="dropdown" onClick={handleMenuClick}>
               <Menu.Item key="1">
               
-                <Link to="/sample_page" className={location.pathname === "/sample_page" ? "active" : ""}  > {data.Header_Taas} </Link>
+                <Link to="/72_Taas_Andolan" className={location.pathname === "/72_Taas_Andolan" ? "active" : ""}  > {data.Header_Taas} </Link>
               </Menu.Item>
               <Menu.Item key="2">
                 <Link to="/Jal_Saksharta_Rally" activeClassName="active">{data.Header_Jal}</Link>
               </Menu.Item>
               <Menu.Item key="3">
-                <Link to="/72_Taas_Andolan"> {data.Header_marathwada} </Link>
+                <Link to="/Marathwada_coach_factory"> {data.Header_marathwada} </Link>
               </Menu.Item>
               <Menu.Item key="4">
                 <Link to="/Jan_Jagar_Sanvad">{data.Header_Latur}</Link>

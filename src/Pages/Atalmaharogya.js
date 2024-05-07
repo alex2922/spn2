@@ -17,6 +17,7 @@ import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
 import { FaBed } from "react-icons/fa6";
 import { FaUserDoctor } from "react-icons/fa6";
+import { FaDiagnoses } from "react-icons/fa";
 
 function Atalmaharogya(props) {
   return (
@@ -106,6 +107,7 @@ function Atalmaharogya(props) {
                 text1={data.Atal_countup1}
                 textnum2="7400"
                 plus2="+"
+                icon2={<FaDiagnoses />}
                 text2={data.Atal_countup2}
                 textnum3="45000"
                 plus3=""

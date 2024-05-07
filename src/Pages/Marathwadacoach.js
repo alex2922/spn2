@@ -12,6 +12,8 @@ import img8 from "../photos/coach_factory/img_9.webp";
 import img from "../photos/drushti/Marathwada_coach_factory.jpg";
 import TwoColSec from "../components/TwoColSec";
 import { Helmet } from "react-helmet";
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 import Counter from "../components/Counter";
 
 function Marathwadacoach(props) {
@@ -77,6 +79,7 @@ function Marathwadacoach(props) {
 
             <div className="counter-parent1">
               <h3>{data.Marathwada_counter}</h3>
+              <Tooltip id="my-tooltip" />
               <Counter
                 data={props.data}
                 background=""
