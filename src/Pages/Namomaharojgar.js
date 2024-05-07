@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet";
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip } from 'react-tooltip'
 import { RiBuildingFill } from "react-icons/ri";
-import { FaComputer } from "react-icons/fa6";
+import { IoIosSchool } from "react-icons/io";
 import { GiFactory } from "react-icons/gi";
 
 function Namomaharojgar(props) {
@@ -51,7 +51,7 @@ function Namomaharojgar(props) {
                 icon1={<GiFactory />}
                 textnum1="240"
                 plus="+"
-                icon2={<FaComputer />}
+                icon2={<IoIosSchool />}
                 text1={data.Namo_countup1}
                 textnum2="7000"
                 plus2="+"
