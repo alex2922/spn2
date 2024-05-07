@@ -170,7 +170,7 @@ const english = [
      Indraprashtha11_saksharta_para:"With the aim of making Latur and Marathwada 'drought-free' and 'water-abundant', Mr. Sambhaji Patil Nilangekar initiated the Indraprastha Jalbhumi Mission. Implemented from May 22 to June 5, 2018, across the entire Latur district, this campaign aimed to educate citizens about the importance of water conservation through door-to-door outreach. The mission successfully recharged 2800 borewells and wells in the district by providing free materials and labor support. As a result, a significant increase of 8 meters was recorded in the groundwater level of the district. ",
      Indraprashtha11_countup1:"Villages",      
      Indraprashtha11_countup2:"Recharged Borewells",
-     Indraprashtha11_countup3:"meter increase in  groundwater level of the district",
+     Indraprashtha11_countup3:" Meter increase in  groundwater level of the district",
      
  
      Indraprashtha11_heading2:"Home Awareness, Water Conservation Progress!",

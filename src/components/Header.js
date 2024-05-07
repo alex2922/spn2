@@ -9,6 +9,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import "../Styles/accordian.scss"
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Hamburger from 'hamburger-react'
 
 
 function Header(props) {
@@ -115,8 +116,8 @@ function Header(props) {
                   </Link>
                 </div>
 
-                <div className="menu" onClick={() => setNavOpen(true)}>
-                  <HiMenuAlt3 />
+                <div className="menu" onClick={() => setNavOpen(!navopen)}>
+                <Hamburger toggled={navopen} toggle={handleMenuClick} />
                 </div>
               </div>
               <div className="line"></div>
