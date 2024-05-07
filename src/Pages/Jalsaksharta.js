@@ -35,7 +35,6 @@ function Jalsaksharta(props) {
   const [responsive, setResponsive] = useState(false);
   const [func2, setfunc2] = useState(false);
 
-
   useEffect(() => {
     const togglePara = () => {
       setResponsive(window.innerWidth <= 700);
@@ -191,28 +190,25 @@ function Jalsaksharta(props) {
                       {func2 && (
                         <span>{data.Jal_saksharta_para.slice(300, 1000)}</span>
                       )}
-                      { !func2 ?  <span
-                        onClick={() => {
-                          setfunc2(!func2);
-                         
-                        }}
-                        className="read-more"
-                      >
-                        {data.Home_btn}
-                      </span>
-                     :
-                     
-                     <span
-                        onClick={() => {
-                          setfunc2(!func2);
-                      
-                        }}
-                        className="read-more"
-                      >
-                        {data.Read_less}
-                      </span>
-                    
-                    }
+                      {!func2 ? (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Home_btn}
+                        </span>
+                      ) : (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Read_less}
+                        </span>
+                      )}
                     </>
                   </p>
                 ) : (
