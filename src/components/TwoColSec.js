@@ -8,7 +8,9 @@ function twoColSec(props) {
   return (
     <div
       className="parent twoColSec"
-      style={{ background: `${props.background}`, padding: `${props.padding}` }}
+      style={{ background: `${props.background}`
+      // , padding: `${props.padding}`
+     }}
     >
       <div
         className="twoColSec-cont cont"

@@ -202,7 +202,13 @@ a {
         width: 100% !important;
         aspect-ratio: 3/4 !important;
     }
-
+    .swiper-button-prev:after,
+    .swiper-button-next:after{
+        display: block !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
 }
 
 .swiper-button-next:after {
@@ -224,6 +230,7 @@ a {
     border-radius: 200px;
     height: 30px;
     width: 30px;
+    display: none;
 }
 
 .gap {

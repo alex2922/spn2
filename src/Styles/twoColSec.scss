@@ -1,6 +1,6 @@
 .twoColSec {
   height:auto;
-  padding: 50px 10px;
+  padding: 30px 10px;
 
 
   .twoColSec-cont {
@@ -56,7 +56,7 @@
         aspect-ratio: 1 !important;
         height: 500px !important;
         // width: 800px !important;
-        background-position: center center !important;
+        background-position: center !important;
         // background-size: contain !important;
         border-radius: 10px !important;
       }
@@ -75,10 +75,12 @@
       width: 100%  !important;
       .img-box{
         aspect-ratio: 1 !important;
-        height: 250px ;
+        height: 100% !important;
       }
     }
   }
+
+
 }
 
 

@@ -5,6 +5,8 @@
   .mySwiper {
     height: 100%;
     width: 100%;
+    position: absolute;
+    top: 0;
     .swiper-pagination-bullet {
       background: var(--white) !important;
       width: 20px;

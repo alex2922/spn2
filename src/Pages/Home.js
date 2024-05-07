@@ -23,6 +23,7 @@ import s8 from "../assets/home/Indraprastha_jalbhumi.jpg";
 import s9 from "../assets/home/Akka_foundation.jpg";
 import Accr from "./Accr";
 import { Helmet } from 'react-helmet';
+
 import axios from "axios";
 function Home(props) {
 
