@@ -148,7 +148,7 @@ function Jalsaksharta(props) {
                     <>
                       {data.Jal_saksharta_para.slice(0, 300)}{" "}
                       {func2 && (
-                        <span>{data.Jal_saksharta_para.slice(300, 1000)}</span>
+                        <p>{data.Jal_saksharta_para.slice(300, 1000)}</p>
                       )}
                       {!func2 ? (
                         <span

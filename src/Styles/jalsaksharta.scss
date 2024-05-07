@@ -77,12 +77,18 @@
 
     p{
       color: white;
+    
     }
 
     .read-more{
       color: white;
       font-weight: 700;
+      background-color: var(--accent);
+      padding: 0px 5px;
+    
     }
+
+  
   }
 }
 
