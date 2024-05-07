@@ -72,7 +72,7 @@ function App() {
           <Route path="" element={<Success data={language} />}></Route>
           <Route
             path="/Marathwada_coach_factory"
-            element={<Marathwadacoach data={language} />}
+            element={<Marathwadacoach data={language}  />}
           ></Route>
           <Route
             path="/Jal_Saksharta_Rally"
