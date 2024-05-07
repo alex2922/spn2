@@ -73,46 +73,6 @@ function Jalsaksharta(props) {
               <div className="jal-overlay"></div>
               <h2 className="jal-headding1">Jal Saksharta Rally!</h2>
             </div>
-            {/* <div className="header-bg-box"></div> */}
-
-            {/* 
-            <div className="ss parent  bg-img-contain">
-              <div className="overlay bg-img-cover"></div>
-
-              <div className="ss-cont cont">
-                <div className="ss-left">
-                  <div
-                    className="img-box-jal bg-img-cover"
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-                <div className="ss-right">
-                  <h2
-                    data-aos="fade-left"
-                    data-aos-delay="200"
-                    data-aos-duration="1000"
-                  >
-                    {data.Jal_saksharta_heading}
-                  </h2>
-                  <div
-                    className="line"
-                    data-aos="fade-left"
-                    data-aos-delay="300"
-                    data-aos-duration="1000"
-                  ></div>
-
-                  <p
-                    data-aos="fade-left"
-                    data-aos-delay="400"
-                    data-aos-duration="1000"
-                  >
-                    {data.Jal_saksharta_para}
-                  </p>
-                </div>
-              </div>
-            </div> */}
 
             <div className="counter-parent2 ">
               <h3>{data.Marathwada_counter}</h3>

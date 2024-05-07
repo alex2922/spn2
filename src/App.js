@@ -13,7 +13,7 @@ import Blog from "../src/Pages/Blog";
 import Contact from "../src/Pages/Contact";
 import Success from "./Pages/Success";
 import ScrollTop from "./components/ScrollTop";
-import Cookies from "./Pages/Cookies"
+import Cookies from "./Pages/Cookies";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import Marathwadacoach from "./Pages/Marathwadacoach";
 import Jalsaksharta from "../src/Pages/Jalsaksharta";
@@ -24,14 +24,11 @@ import Namo from "../src/Pages/Namomaharojgar";
 import Indra from "../src/Pages/Indraprashtha";
 import Akka from "../src/Pages/Akkafoundation";
 import Blog_template from "./Pages/Blog_template";
-import SamplePage from "./components/SamplePage";
-
 
 // icons
 
 import { IoCalendarNumber } from "react-icons/io5";
 import { GiVillage } from "react-icons/gi";
-
 
 import { BsEnvelopePaperFill } from "react-icons/bs";
 import { ImOffice } from "react-icons/im";
@@ -45,21 +42,20 @@ function App() {
     settoggle(!toggle);
   };
 
-
   const icons = {
-    icon1:<IoCalendarNumber />,
+    icon1: <IoCalendarNumber />,
     icon2: <GiVillage />,
-    icon3:<PiRoadHorizonFill />,
-    icon4:<GiVillage />,
-    icon5:<ImOffice/>,
-    icon6:<BsEnvelopePaperFill />,
-   }
+    icon3: <PiRoadHorizonFill />,
+    icon4: <GiVillage />,
+    icon5: <ImOffice />,
+    icon6: <BsEnvelopePaperFill />,
+  };
 
   const [photo, setphoto] = useState(true);
   const [video, setvideo] = useState(false);
   const [media, setmedia] = useState(false);
   const [personalphoto, setpersonalphoto] = useState(false);
-console.log(toggle)
+  console.log(toggle);
   return (
     <div className="App">
       <BrowserRouter>
@@ -67,18 +63,24 @@ console.log(toggle)
         <Togglebtn toggle={toggleJsonData} />
         <ScrollTop />
         <Routes>
-          <Route path="/" element={<Home data={language} change={toggle}/>}></Route>
+          <Route
+            path="/"
+            element={<Home data={language} change={toggle} />}
+          ></Route>
           <Route path="/about" element={<About data={language} />}></Route>
           <Route path="" element={<Success data={language} />}></Route>
           <Route
-            path="/sample_page"
-            element={<SamplePage data={language} />}
+            path="/Marathwada_coach_factory"
+            element={<Marathwadacoach data={language} />}
           ></Route>
           <Route
             path="/Jal_Saksharta_Rally"
             element={<Jalsaksharta data={language} icons={icons} />}
           ></Route>
-          <Route path="/72_Taas_Andolan" element={<Taasandolan data={language} />}></Route>
+          <Route
+            path="/72_Taas_Andolan"
+            element={<Taasandolan data={language} />}
+          ></Route>
           <Route
             path="/Jan_Jagar_Sanvad"
             element={<Latur data={language} />}
@@ -87,9 +89,18 @@ console.log(toggle)
             path="/Atal_Maharogya_Shibir"
             element={<Atal data={language} />}
           ></Route>
-          <Route path="/Namo_Maharojgar_Melava" element={<Namo data={language} />}></Route>
-          <Route path="/Indraprasth_Jalbhumi_Abhiyan" element={<Indra data={language}  icons={icons} />  }></Route>
-          <Route path="/Akka_Foundation" element={<Akka data={language} />}></Route>
+          <Route
+            path="/Namo_Maharojgar_Melava"
+            element={<Namo data={language} />}
+          ></Route>
+          <Route
+            path="/Indraprasth_Jalbhumi_Abhiyan"
+            element={<Indra data={language} icons={icons} />}
+          ></Route>
+          <Route
+            path="/Akka_Foundation"
+            element={<Akka data={language} />}
+          ></Route>
           <Route
             path="/gallery"
             element={
@@ -106,11 +117,23 @@ console.log(toggle)
               />
             }
           />
-          <Route path="/blog" element={<Blog data={language} toggle={toggle}/>}></Route>
-          <Route path="/contact" element={<Contact data={language} toggle={toggle}/>}></Route>
+          <Route
+            path="/blog"
+            element={<Blog data={language} toggle={toggle} />}
+          ></Route>
+          <Route
+            path="/contact"
+            element={<Contact data={language} toggle={toggle} />}
+          ></Route>
           <Route path="/cookies" element={<Cookies data={language} />}></Route>
-          <Route path="/privacy_policy" element={<PrivacyPolicy data={language} />}></Route>
-          <Route path="/blogs/:id" element={<Blog_template data={language} />}></Route>
+          <Route
+            path="/privacy_policy"
+            element={<PrivacyPolicy data={language} />}
+          ></Route>
+          <Route
+            path="/blogs/:id"
+            element={<Blog_template data={language} />}
+          ></Route>
         </Routes>
 
         <Footer data={language} />
