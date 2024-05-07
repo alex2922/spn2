@@ -198,7 +198,7 @@ return() =>{
           </div>  
             }
 
-            {mob ?  <div className="count-box">
+            {mob ?  <div className="count-box count-box-1">
                 {props.textnum4 && (
                   <div className="counter-box">
                     <div className="icon">
@@ -275,7 +275,7 @@ return() =>{
                 )}
               </div>
             :
-            <div className="count-box">
+            <div className="count-box  count-box-1">
             {props.textnum4 && (
               <div className="counter-box">
                 <div className="icon">

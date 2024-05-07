@@ -16,7 +16,15 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
+// icons
+import { FaSchool } from "react-icons/fa";
+import { IoCalendarNumber } from "react-icons/io5";
+import { PiStudentFill } from "react-icons/pi";
+import { FaBed } from "react-icons/fa6";
+import { FaUserDoctor } from "react-icons/fa6";
+import { GrInspect } from "react-icons/gr";
 function Akkafoundation(props) {
   return (
     <>
@@ -222,7 +230,49 @@ function Akkafoundation(props) {
                 </SwiperSlide>
               </Swiper>
             </div>
-
+            <div className="counter-parent1 ">
+              <h3>{data.project_anandi}</h3>
+              <Tooltip id="my-tooltip" />
+              <Counter
+                data={props.data}
+                background=""
+                icon1={<FaSchool />}
+                textnum1="321"
+                // plus="+"
+                icon2={<IoCalendarNumber />}
+                text1={data.school}
+                textnum2="168"
+                // plus2="+"
+                icon3={<PiStudentFill />}
+                text2={data.anandi_days}
+                textnum3="26150"
+                plus3=""
+                text3={data.anandi_students}
+                textnum4=""
+              />
+            </div>
+            <div className="counter-parent1 counter-akka">
+              <h3>{data.drishti_abhiyan}</h3>
+              <Tooltip id="my-tooltip" />
+              <Counter
+                data={props.data}
+                background=""
+                icon4={<FaBed />}
+                text4={data.drishti_total_pateints}
+                textnum4="24648"
+                // plus="+"
+                icon5={<FaUserDoctor />}
+                text5={data.drishti_total_ooperations}
+                textnum5="1617"
+                // plus2="+"
+                icon6={<GrInspect />}
+                text6={data.drishti_specs_distructed}
+                textnum6="10721"
+                plus3=""
+               
+                
+              />
+            </div>
             <Imageswiper
               titlegallery={data.Marathwada_gallery}
               background="#efefef"
