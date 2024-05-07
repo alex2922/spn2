@@ -14,7 +14,10 @@ import TwoColSec from "../components/TwoColSec";
 import { Helmet } from "react-helmet";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
+import { HiCurrencyRupee } from "react-icons/hi2";
 import Counter from "../components/Counter";
+import { FaComputer } from "react-icons/fa6";
+import { BsTabletLandscapeFill } from "react-icons/bs";
 
 function Marathwadacoach(props) {
   return (
@@ -85,12 +88,15 @@ function Marathwadacoach(props) {
                 background=""
                 textnum1="600"
                 plus="+"
+                icon1={<HiCurrencyRupee />}
                 text1={data.Marathwada_countup11}
                 textnum2="300"
                 plus2="+"
+                icon2={<BsTabletLandscapeFill />}
                 text2={data.Marathwada_countup12}
                 textnum3="45000"
                 plus3=""
+                icon3={<FaComputer />}
                 text3={data.Marathwada_countup13}
                 textnum4=""
                 plus4=""
