@@ -18,7 +18,8 @@ import Counter from "../components/Counter";
 import { Helmet } from 'react-helmet';
 import { FaPeopleRoof } from "react-icons/fa6";
 import { BiSolidFileBlank } from "react-icons/bi";
-import { GiBrainstorm } from "react-icons/gi";
+import { HiLightBulb } from "react-icons/hi";
+import { FaPeopleGroup } from "react-icons/fa6";
 
 function Laturvachava(props) {
   return (
@@ -77,7 +78,7 @@ function Laturvachava(props) {
               <Counter
                 data={props.data}
                 background=""
-                icon1={<FaPeopleRoof />}
+                icon1={<FaPeopleGroup />}
                 textnum1="450"
                 plus=""
                 icon2={<BiSolidFileBlank />}
@@ -87,7 +88,7 @@ function Laturvachava(props) {
                 text2={data.Latur_countup2}
                 textnum3="100"
                 plus3="+"
-                icon3={<GiBrainstorm />}
+                icon3={<HiLightBulb />}
                 text3={data.Latur_countup3}
                 textnum4=""
                 plus4=""

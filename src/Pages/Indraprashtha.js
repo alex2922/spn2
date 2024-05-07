@@ -18,6 +18,8 @@ import { Helmet } from 'react-helmet';
 import { GiVillage } from "react-icons/gi";
 import { ImMeter2 } from "react-icons/im";
 import { FaOilWell } from "react-icons/fa6";
+import mapIcon from "../assets/MAP.webp";
+
 
 
 function Indraprashtha(props) {
@@ -77,7 +79,8 @@ function Indraprashtha(props) {
               <Counter
                 data={props.data}
                 background=""
-                icon1={<GiVillage />}
+                // icon1={<GiVillage />}
+                icon1={<img src={mapIcon} style={{height:"40px" ,weight:"40px"}} />}
                 textnum1="945"
                 plus="+"
                 
