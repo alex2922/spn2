@@ -34,6 +34,17 @@ function twoColSec(props) {
           <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             {props.subdescription}
           </p>
+          <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            {props.subdescription1}
+          </p>
+          <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            {props.subdescription2}
+          </p>
+
+          <h4 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">{props.heading4}</h4>
+          <h4 data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">{props.heading5}</h4>
+          <h4 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">{props.heading6}</h4>
+         
 
           {props.children}
                                         
