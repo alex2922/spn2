@@ -40,7 +40,7 @@ function Taasandolan(props) {
       {props.data.map((data) => {
         return (
           <>
-            <div className="jal-parent parent bg-img-cover">
+            <div className="jal-parent taas-parent parent bg-img-cover">
               <div className="jal-overlay"></div>
               <h2 className="jal-headding1">72 Taas Andolan</h2>
             </div>
