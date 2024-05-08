@@ -34,6 +34,7 @@ import { GiVillage } from "react-icons/gi";
 import { BsEnvelopePaperFill } from "react-icons/bs";
 import { ImOffice } from "react-icons/im";
 import { PiRoadHorizonFill } from "react-icons/pi";
+import Video_Section from "./components/Video_Section";
 
 function App() {
   const [language, setlanguage] = useState(english);
@@ -135,6 +136,7 @@ function App() {
             path="/blogs/:id"
             element={<Blog_template data={language} />}
           ></Route>
+          <Route path="/videoSection" data={language} toggle={toggle} element={<Video_Section />}></Route>
         </Routes>
 
         <Footer data={language} />

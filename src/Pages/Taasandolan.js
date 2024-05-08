@@ -17,6 +17,7 @@ import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
 import { ImClock2 } from "react-icons/im";
+import Video_Section from "../components/Video_Section";
 
 function Taasandolan(props) {
   return (
@@ -39,44 +40,11 @@ function Taasandolan(props) {
       {props.data.map((data) => {
         return (
           <>
-            <div className="header-bg-box"></div>
-            <div className="ss parent  bg-img-contain">
-              <div className="overlay bg-img-cover"></div>
-
-              <div className="ss-cont cont">
-                <div className="ss-left">
-                  <div
-                    className="img-box-72-taas bg-img-cover"
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-                <div className="ss-right">
-                  <h2
-                    data-aos="fade-left"
-                    data-aos-delay="200"
-                    data-aos-duration="1000"
-                  >
-                    {data.Taas_saksharta_heading}
-                  </h2>
-                  <div
-                    className="line"
-                    data-aos="fade-left"
-                    data-aos-delay="300"
-                    data-aos-duration="1000"
-                  ></div>
-
-                  <p
-                    data-aos="fade-left"
-                    data-aos-delay="400"
-                    data-aos-duration="1000"
-                  >
-                    {data.Taas_saksharta_para}
-                  </p>
-                </div>
-              </div>
+            <div className="jal-parent parent bg-img-cover">
+              <div className="jal-overlay"></div>
+              <h2 className="jal-headding1">72 Taas Andolan</h2>
             </div>
+          
 
             <Counter data={props.data} background="#efefef" />
 
@@ -104,7 +72,7 @@ function Taasandolan(props) {
               />
             </div>
 
-            <TwoColSec
+            {/* <TwoColSec
               padding="50px 0px 50px 0px"
               background="#efefef"
               row="row-reverse"
@@ -112,7 +80,8 @@ function Taasandolan(props) {
               subheading={data.Taas_heading2}
               subdescription={data.Taas_para2}
               btn=""
-            />
+            /> */}
+            <Video_Section />
 
             <Imageswiper
               titlegallery={data.Marathwada_gallery}

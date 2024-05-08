@@ -1,16 +1,30 @@
-.img-box-72-taas{
+.taas-parent {
+  height: 600px;
+  width: 100%; 
+  background: url("../assets/72_taas_andolan.jpg");
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  width: 80%;
-  aspect-ratio: 5/4;
-  padding: 20px;
-  border-radius: 10px;
-  background: url("../photos/72_taas_andolan/72_Taas_Andolan.webp");
+
+  .taas-overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, #000000b4, #00000000);
+    position: absolute;
+  }
+
+  .taas-headding1 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    padding-left: 30px;
+    bottom: 20px;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+  }
 }
     
-  
     h3{
       display: flex;
       align-items: center;
@@ -20,4 +34,3 @@
       font-weight: 700;
     }
 
-  
