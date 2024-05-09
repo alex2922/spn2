@@ -136,7 +136,7 @@ function App() {
             path="/blogs/:id"
             element={<Blog_template data={language} />}
           ></Route>
-          <Route path="/videoSection" data={language} toggle={toggle} element={<Video_Section />}></Route>
+          {/* <Route path="/videoSection"  element={<Video_Section data={language} toggle={toggle} />}></Route> */}
         </Routes>
 
         <Footer data={language} />

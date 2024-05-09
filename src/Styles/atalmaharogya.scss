@@ -1,11 +1,25 @@
-.img-box-shibir{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    aspect-ratio: 5/4;
-    padding: 20px;
-    border-radius: 10px;
-    background: url("../photos/Atal_Mahaarogya_Shibir/Atal\ Maharogya\ Shibir\ 05.webp");
-}
+.atal-parent {
+
+
+    background: url("../assets/Atal_Maharogya_Shibir.jpg");
+  
+  
+  
+    .atal-overlay {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(0deg, #000000b4, #00000000);
+      position: absolute;
+    }
+  
+    .atal-headding1 {
+      position: absolute;
+      z-index: 2;
+      color: white;
+      padding-left: 30px;
+      bottom: 20px;
+      font-size: 45px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }

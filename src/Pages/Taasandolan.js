@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "../Styles/taasandolan.scss";
 import img1 from "../photos/72_taas_andolan/044A7463.webp";
 import img2 from "../photos/72_taas_andolan/044A7344.webp";
@@ -10,16 +10,36 @@ import img7 from "../photos/72_taas_andolan/044A7368.webp";
 import img8 from "../photos/72_taas_andolan/044A7379.webp";
 import img from "../photos/drushti/72_Taas_Andolan.webp";
 import Imageswiper from "../components/Imageswiper";
-import 'react-tooltip/dist/react-tooltip.css'
-import { Tooltip } from 'react-tooltip'
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 import Para from "../components/Para";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
 import { ImClock2 } from "react-icons/im";
-import Video_Section from "../components/Video_Section";
+import taas from "../assets/72_Taas_Andolan.webm";
 
 function Taasandolan(props) {
+
+    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  const [responsive, setResponsive] = useState(false);
+  const [func2, setfunc2] = useState(false);
+
+  useEffect(() => {
+    const togglePara = () => {
+      setResponsive(window.innerWidth <= 700);
+    };
+
+    togglePara();
+
+    window.addEventListener("resize", togglePara);
+
+    return () => {
+      window.addEventListener("resize", togglePara);
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -42,9 +62,8 @@ function Taasandolan(props) {
           <>
             <div className="jal-parent taas-parent parent bg-img-cover">
               <div className="jal-overlay"></div>
-              <h2 className="jal-headding1">72 Taas Andolan</h2>
+              <h2 className="jal-headding1">{data.Taas_saksharta_heading}</h2>
             </div>
-          
 
             <Counter data={props.data} background="#efefef" />
 
@@ -72,16 +91,57 @@ function Taasandolan(props) {
               />
             </div>
 
-            {/* <TwoColSec
-              padding="50px 0px 50px 0px"
-              background="#efefef"
-              row="row-reverse"
-              bg={img}
-              subheading={data.Taas_heading2}
-              subdescription={data.Taas_para2}
-              btn=""
-            /> */}
-            <Video_Section />
+            <div className="jal2-parent parent bg-img-cover">
+              <div className="jal2-overlay"></div>
+              <video
+                autoPlay
+                loop
+                muted
+                className="bg-vid"
+                style={{ position: "absolute", objectFit: "cover" }}
+                height="100%"
+                width="100%"
+              >
+                <source src={taas} type="video/webm" />
+              </video>
+              <div className="jal2-content">
+                {/* <div className="jal2-left">  */}
+                <h2 className="jal-headding">{data.Taas_saksharta_heading}</h2>
+                {responsive ? (
+                  <p className="jal2-text">
+                    <>
+                      {data.Taas_saksharta_para.slice(0, 300)}{" "}
+                      {func2 && (
+                        <p>{data.Taas_saksharta_para.slice(300, 1000)}</p>
+                      )}
+                      {!func2 ? (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Home_btn}
+                        </span>
+                      ) : (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Read_less}
+                        </span>
+                      )}
+                    </>
+                  </p>
+                ) : (
+                  <p>{data.Taas_saksharta_para}</p>
+                )}
+              </div>
+              {/* <div className="jal2-right"></div> */}
+              {/* </div> */}
+            </div>
 
             <Imageswiper
               titlegallery={data.Marathwada_gallery}

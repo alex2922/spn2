@@ -1,7 +1,36 @@
-.header-bg-box {
-    height: 60px;
-    width: 100svw;
-}
+.factory-parent {
+
+
+    background: url("../assets/Marathwada_Coach_Factory.jpg");
+  
+  
+  
+    .factory-overlay {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(0deg, #000000b4, #00000000);
+      position: absolute;
+    }
+  
+    .factory-headding1 {
+      position: absolute;
+      z-index: 2;
+      color: white;
+      padding-left: 30px;
+      bottom: 20px;
+      font-size: 45px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+
+
+
+// .header-bg-box {
+//     height: 60px;
+//     width: 100svw;
+// }
 
 .counter-parent1 {
     padding: 100px 0px 50px 0px;
@@ -27,15 +56,15 @@
     //   );
     background: rgba(0, 0, 0, 0.695);
 
-    .overlay {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        background: url("https://img.freepik.com/free-vector/indian-flag-theme-republic-day-watercolor-texture-decorative-background_1055-16780.jpg?t=st=1711088075~exp=1711091675~hmac=469eb1c0fcf1e8039f90abf3baa3b10440cfc2df88c26ade804e9a93fee9bba1&w=996");
-    }
+    // .overlay {
+    //     position: absolute;
+    //     top: 0px;
+    //     left: 0px;
+    //     height: 100%;
+    //     width: 100%;
+    //     z-index: -1;
+    //     background: url("https://img.freepik.com/free-vector/indian-flag-theme-republic-day-watercolor-texture-decorative-background_1055-16780.jpg?t=st=1711088075~exp=1711091675~hmac=469eb1c0fcf1e8039f90abf3baa3b10440cfc2df88c26ade804e9a93fee9bba1&w=996");
+    // }
 
     .ss-cont {
         display: flex;
@@ -49,19 +78,19 @@
             align-items: center;
             justify-content: center;
 
-            .img-box {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                width: 80%;
-                aspect-ratio: 5/4;
-                padding: 20px;
-                border-radius: 10px;
-                background: url("../photos/coach_factory/Marathwada_coach_factory.webp");
-                // outline: 7px solid var(--white);
-                // box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
-            }
+            // .img-box {
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     flex-direction: column;
+            //     width: 80%;
+            //     aspect-ratio: 5/4;
+            //     padding: 20px;
+            //     border-radius: 10px;
+            //     background: url("../photos/coach_factory/Marathwada_coach_factory.webp");
+            //     // outline: 7px solid var(--white);
+            //     // box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+            // }
         }
 
         .ss-right {

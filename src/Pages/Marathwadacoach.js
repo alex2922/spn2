@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "../Styles/marathwadacoach.scss";
 import Imageswiper from "../components/Imageswiper";
 import img1 from "../photos/coach_factory/img_1.webp";
@@ -9,8 +9,6 @@ import img5 from "../photos/coach_factory/img_5.webp";
 import img6 from "../photos/coach_factory/img_7.webp";
 import img7 from "../photos/coach_factory/img_8.webp";
 import img8 from "../photos/coach_factory/img_9.webp";
-import img from "../photos/drushti/Marathwada_coach_factory.jpg";
-import TwoColSec from "../components/TwoColSec";
 import { Helmet } from "react-helmet";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
@@ -18,8 +16,28 @@ import { HiCurrencyRupee } from "react-icons/hi2";
 import Counter from "../components/Counter";
 import { FaComputer } from "react-icons/fa6";
 import { BsTabletLandscapeFill } from "react-icons/bs";
+import factory from "../assets/Marathwada_Coach_Factory.webm"
 
 function Marathwadacoach(props) {
+
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  const [responsive, setResponsive] = useState(false);
+  const [func2, setfunc2] = useState(false);
+
+  useEffect(() => {
+    const togglePara = () => {
+      setResponsive(window.innerWidth <= 700);
+    };
+
+    togglePara();
+
+    window.addEventListener("resize", togglePara);
+
+    return () => {
+      window.addEventListener("resize", togglePara);
+    };
+  }, []);
   return (
     <>
       <Helmet>
@@ -41,43 +59,9 @@ function Marathwadacoach(props) {
       {props.data.map((data) => {
         return (
           <>
-            <div className="header-bg-box"></div>
-            <div className="ss parent  bg-img-contain">
-              <div className="overlay bg-img-cover"></div>
-
-              <div className="ss-cont cont">
-                <div className="ss-left">
-                  <div
-                    className="img-box bg-img-cover"
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-                <div className="ss-right">
-                  <h2
-                    data-aos="fade-left"
-                    data-aos-delay="200"
-                    data-aos-duration="1000"
-                  >
-                    {data.Marathwada_coach_factory_heading}
-                  </h2>
-                  <div
-                    className="line"
-                    data-aos="fade-left"
-                    data-aos-delay="300"
-                    data-aos-duration="1000"
-                  ></div>
-
-                  <p
-                    data-aos="fade-left"
-                    data-aos-delay="400"
-                    data-aos-duration="1000"
-                  >
-                    {data.Marathwada_coach_factory_para}
-                  </p>
-                </div>
-              </div>
+             <div className="jal-parent factory-parent parent bg-img-cover">
+              <div className="jal-overlay"></div>
+              <h2 className="jal-headding1">{data.Marathwada_coach_factory_heading}</h2>
             </div>
 
             <div className="counter-parent1">
@@ -104,15 +88,57 @@ function Marathwadacoach(props) {
               />
             </div>
 
-            <TwoColSec
-              padding="50px 0px 50px 0px"
-              background="#efefef"
-              row="row-reverse"
-              bg={img}
-              subheading={data.Marathwada_heading2}
-              subdescription={data.Marathwada_para2}
-              btn=""
-            />
+            <div className="jal2-parent parent bg-img-cover">
+              <div className="jal2-overlay"></div>
+              <video
+                autoPlay
+                loop
+                muted
+                className="bg-vid"
+                style={{ position: "absolute", objectFit: "cover" }}
+                height="100%"
+                width="100%"
+              >
+                <source src={factory} type="video/webm" />
+              </video>
+              <div className="jal2-content">
+                {/* <div className="jal2-left">  */}
+                <h2 className="jal-headding">{data.Marathwada_coach_factory_heading}</h2>
+                {responsive ? (
+                  <p className="jal2-text">
+                    <>
+                      {data.Marathwada_coach_factory_para.slice(0, 300)}{" "}
+                      {func2 && (
+                        <p>{data.Marathwada_coach_factory_para.slice(300, 1000)}</p>
+                      )}
+                      {!func2 ? (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Home_btn}
+                        </span>
+                      ) : (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Read_less}
+                        </span>
+                      )}
+                    </>
+                  </p>
+                ) : (
+                  <p>{data.Marathwada_coach_factory_para}</p>
+                )}
+              </div>
+              {/* <div className="jal2-right"></div> */}
+              {/* </div> */}
+            </div>
 
             <Imageswiper
               titlegallery={data.Marathwada_gallery}

@@ -36,7 +36,7 @@ function Indraprashtha(props) {
           <>
             <div className="indraprasta-parent parent bg-img-cover">
               <div className="indraprasta-overlay"></div>
-              <h2 className="indraprasta-headding1">Indraprasth Jalbhumi Abhiyan</h2>
+              <h2 className="indraprasta-headding1">{data.Indraprashtha11_saksharta_heading}</h2>
             </div>
 
             <div className="counter-parent1">

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "../Styles/laturvachava.scss";
 import img1 from "../photos/jan_jagar_sanwad/sanwad1.png";
 import img2 from "../photos/jan_jagar_sanwad/sanwad2.png";
@@ -20,8 +20,28 @@ import { FaPeopleRoof } from "react-icons/fa6";
 import { BiSolidFileBlank } from "react-icons/bi";
 import { HiLightBulb } from "react-icons/hi";
 import { FaPeopleGroup } from "react-icons/fa6";
+import janJagar from "../assets/Jan_Jagar_Savad.webm"
 
 function Laturvachava(props) {
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  const [responsive, setResponsive] = useState(false);
+  const [func2, setfunc2] = useState(false);
+
+  useEffect(() => {
+    const togglePara = () => {
+      setResponsive(window.innerWidth <= 700);
+    };
+
+    togglePara();
+
+    window.addEventListener("resize", togglePara);
+
+    return () => {
+      window.addEventListener("resize", togglePara);
+    };
+  }, []);
+
   return (
     <>
     <Helmet>
@@ -96,15 +116,57 @@ function Laturvachava(props) {
               />
             </div>
 
-            <TwoColSec
-              padding="50px 0px 50px 0px"
-              background="#efefef"
-              row="row-reverse"
-              bg={img}
-              subheading={data.Latur_heading2}
-              subdescription={data.Latur_para2}
-              btn=""
-            />
+            <div className="jal2-parent parent bg-img-cover">
+              <div className="jal2-overlay"></div>
+              <video
+                autoPlay
+                loop
+                muted
+                className="bg-vid"
+                style={{ position: "absolute", objectFit: "cover" }}
+                height="100%"
+                width="100%"
+              >
+                <source src={janJagar} type="video/webm" />
+              </video>
+              <div className="jal2-content">
+                {/* <div className="jal2-left">  */}
+                <h2 className="jal-headding">{data.Latur_saksharta_heading}</h2>
+                {responsive ? (
+                  <p className="jal2-text">
+                    <>
+                      {data.Latur_saksharta_para.slice(0, 300)}{" "}
+                      {func2 && (
+                        <p>{data.Latur_saksharta_para.slice(300, 1000)}</p>
+                      )}
+                      {!func2 ? (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Home_btn}
+                        </span>
+                      ) : (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Read_less}
+                        </span>
+                      )}
+                    </>
+                  </p>
+                ) : (
+                  <p>{data.Latur_saksharta_para}</p>
+                )}
+              </div>
+              {/* <div className="jal2-right"></div> */}
+              {/* </div> */}
+            </div>
 
             <Imageswiper
               titlegallery={data.Marathwada_gallery}

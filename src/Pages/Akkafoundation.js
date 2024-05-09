@@ -50,7 +50,7 @@ function Akkafoundation(props) {
           <>
            <div className="akka-parent parent bg-img-cover">
               <div className="akka-overlay"></div>
-              <h2 className="akka-headding1">Akka Foundation</h2>
+              <h2 className="akka-headding1">{data.akka12_saksharta_heading}</h2>
             </div>
 
             <Counter data={props.data} background="#efefef" />

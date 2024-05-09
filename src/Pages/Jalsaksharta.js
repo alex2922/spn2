@@ -73,7 +73,7 @@ function Jalsaksharta(props) {
           <>
             <div className="jal-parent parent bg-img-cover">
               <div className="jal-overlay"></div>
-              <h2 className="jal-headding1">Jal Saksharta Rally!</h2>
+              <h2 className="jal-headding1">{data.Jal_saksharta_heading}</h2>
             </div>
 
             <div className="counter-parent2 ">
@@ -86,7 +86,12 @@ function Jalsaksharta(props) {
                 textnum1="8"
                 plus=""
                 // icon2={<GiVillage />}
-                icon2={<img src={mapIcon} style={{height:"40px" ,weight:"40px"}} />}
+                icon2={
+                  <img
+                    src={mapIcon}
+                    style={{ height: "40px", weight: "40px" }}
+                  />
+                }
                 text1={data.Jal_countup1}
                 textnum2="10"
                 plus2=""
@@ -95,13 +100,22 @@ function Jalsaksharta(props) {
                 textnum3="1287"
                 plus3=""
                 // icon4={<GiVillage />}
-                icon4={<img src={mapIcon} style={{height:"40px" ,weight:"40px"}} />}
+                icon4={
+                  <img
+                    src={mapIcon}
+                    style={{ height: "40px", weight: "40px" }}
+                  />
+                }
                 text3={data.Jal_countup3}
                 textnum4="354"
                 plus4=""
                 // icon5={<ImOffice />}
-                icon5={<img src={mapIcon} style={{height:"40px" ,weight:"40px"}} />}
-
+                icon5={
+                  <img
+                    src={mapIcon}
+                    style={{ height: "40px", weight: "40px" }}
+                  />
+                }
                 text4={data.Jal_countup4}
                 textnum5="482"
                 plus5=""
