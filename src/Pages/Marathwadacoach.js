@@ -59,9 +59,9 @@ function Marathwadacoach(props) {
       {props.data.map((data) => {
         return (
           <>
-             <div className="jal-parent factory-parent parent bg-img-cover">
-              <div className="jal-overlay"></div>
-              <h2 className="jal-headding1">{data.Marathwada_coach_factory_heading}</h2>
+             <div className="factory-parent parent bg-img-cover">
+              <div className="factory-overlay"></div>
+              <h2 className="factory-headding1">{data.Marathwada_coach_factory_heading}</h2>
             </div>
 
             <div className="counter-parent1">
