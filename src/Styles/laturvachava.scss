@@ -1,11 +1,26 @@
-.img-box-jan-jagar{
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        width: 80%;
-        aspect-ratio: 5/4;
-        padding: 20px;
-        border-radius: 10px;
-        background: url("../photos/drushti/JAN_JAGRAN_SAMVAD.webp");
+.jan-jagar-parent {
+  height: 600px;
+  width: 100%; 
+  background: url("../assets/Jan_Jagar_Sanvad.jpg");
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  .jan-jagar-overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, #000000b4, #00000000);
+    position: absolute;
+  }
+
+  .jan-jagar-headding1 {
+    position: absolute;
+    z-index: 2;
+    color: white;
+    padding-left: 30px;
+    bottom: 20px;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+  }
 }

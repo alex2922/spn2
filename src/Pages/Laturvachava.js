@@ -53,43 +53,9 @@ function Laturvachava(props) {
       {props.data.map((data) => {
         return (
           <>
-            <div className="header-bg-box"></div>
-            <div className="ss parent  bg-img-contain">
-              <div className="overlay bg-img-cover"></div>
-
-              <div className="ss-cont cont">
-                <div className="ss-left">
-                  <div
-                    className="img-box-jan-jagar bg-img-cover"
-                    data-aos="fade-up"
-                    data-aos-delay="0"
-                    data-aos-duration="1000"
-                  ></div>
-                </div>
-                <div className="ss-right">
-                  <h2
-                    data-aos="fade-left"
-                    data-aos-delay="200"
-                    data-aos-duration="1000"
-                  >
-                    {data.Latur_saksharta_heading}
-                  </h2>
-                  <div
-                    className="line"
-                    data-aos="fade-left"
-                    data-aos-delay="300"
-                    data-aos-duration="1000"
-                  ></div>
-
-                  <p
-                    data-aos="fade-left"
-                    data-aos-delay="400"
-                    data-aos-duration="1000"
-                  >
-                    {data.Latur_saksharta_para}
-                  </p>
-                </div>
-              </div>
+             <div className="jan-jagar-parent parent bg-img-cover">
+              <div className="jan-jagar-overlay"></div>
+              <h2 className="jan-jagar-headding1">{data.Latur_saksharta_heading}</h2>
             </div>
 
             <div className="counter-parent1">
