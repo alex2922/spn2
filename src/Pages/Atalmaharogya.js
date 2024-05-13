@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/atalmaharogya.scss";
 import img1 from "../photos/Atal_Mahaarogya_Shibir/359A2242.webp";
 import img2 from "../photos/Atal_Mahaarogya_Shibir/359A7720.webp";
@@ -18,8 +18,14 @@ import { Helmet } from "react-helmet";
 import { FaBed } from "react-icons/fa6";
 import { FaUserDoctor } from "react-icons/fa6";
 import { FaBriefcaseMedical } from "react-icons/fa6";
+import atal from "../assets/Atal_Maharogya_Shibir.webm";
 
 function Atalmaharogya(props) {
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  const [responsive, setResponsive] = useState(false);
+  const [func2, setfunc2] = useState(false);
+
   return (
     <>
       <Helmet>
@@ -85,7 +91,7 @@ function Atalmaharogya(props) {
               />
             </div>
 
-            <TwoColSec
+            {/* <TwoColSec
               padding="50px 0px 50px 0px"
               background="#efefef"
               row="row-reverse"
@@ -93,7 +99,59 @@ function Atalmaharogya(props) {
               subheading={data.Atal_heading2}
               subdescription={data.Atal_para2}
               btn=""
-            />
+            /> */}
+
+            <div className="jal2-parent parent bg-img-cover">
+              <div className="jal2-overlay"></div>
+              <video
+                autoPlay
+                loop
+                muted
+                className="bg-vid"
+                style={{ position: "absolute", objectFit: "cover" }}
+                height="100%"
+                width="100%"
+              >
+                <source src={atal} type="video/webm" />
+              </video>
+              <div className="jal2-content">
+                {/* <div className="jal2-left">  */}
+                <h2 className="jal-headding">{data.Atal_saksharta_heading}</h2>
+                {responsive ? (
+                  <p className="jal2-text">
+                    <>
+                      {data.Atal_saksharta_para.slice(0, 300)}{" "}
+                      {func2 && (
+                        <p>{data.Atal_saksharta_para.slice(300, 1000)}</p>
+                      )}
+                      {!func2 ? (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Home_btn}
+                        </span>
+                      ) : (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Read_less}
+                        </span>
+                      )}
+                    </>
+                  </p>
+                ) : (
+                  <p>{data.Atal_saksharta_para}</p>
+                )}
+              </div>
+              {/* <div className="jal2-right"></div> */}
+              {/* </div> */}
+            </div>
 
             <Imageswiper
               titlegallery={data.Marathwada_gallery}

@@ -25,7 +25,12 @@ import { PiStudentFill } from "react-icons/pi";
 import { FaBed } from "react-icons/fa6";
 import { FaUserDoctor } from "react-icons/fa6";
 import { GrInspect } from "react-icons/gr";
+
+
 function Akkafoundation(props) {
+
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
   return (
     <>
       <Helmet>
