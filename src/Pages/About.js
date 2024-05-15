@@ -68,11 +68,12 @@ function About(props) {
                 className="about-cont cont"
                 style={{ flexDirection: "row-reverse" }}
               >
-                <div className="about-left about-right bg-img-cover"></div>
-                <div
+                <div id="about-right" className="about-left about-right bg-img-cover"></div>
+                <div id="about-left"
                   className={
-                    readmore1 ? "about-right scroll-about" : "about-right"
+                    readmore1 ? "about-right  scroll-about" : "about-right"
                   }
+                
                 >
                   <p>{data.About_subdescription4.slice(0, 600)}</p>
 

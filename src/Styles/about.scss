@@ -31,6 +31,14 @@
             padding: 10px;
             background-color: var(--grey);
             border-radius: 0px 10px 10px 0px;
+
+
+            span{
+                cursor: pointer;
+            }
+
+
+     
         
             &.scroll-about {
                 overflow: scroll;
@@ -52,6 +60,10 @@
         }
     }
 
+}
+
+#about-left{
+    border-radius: 10px 0px 0px 10px;
 }
 
 //   {/* ...........//Personality Section//............. */}
@@ -217,8 +229,11 @@
                 .personality_content {
                     width: 90%;
                     height: 600px;
+                    overflow-y: scroll;
                 }
             }
+
+            
         }
     }
 }
@@ -263,4 +278,32 @@
             }
         }
     }
+
+
+    .about-cont{
+        width: 100% !important;
+        flex-direction: column !important;
+        height: auto !important;
+
+
+        .about-left{
+            width: 100% !important;
+
+            border-radius: 10px 10px 0px 0px !important;
+        }
+
+
+        .about-right{
+            width: 100% !important;
+            border-radius: 0px 0px 10px 10px !important;
+        }
+     }
+      
+
+     #about-right{
+        border-radius: 10px 10px 0px 0px !important;
+     }
+     #about-left{
+        border-radius: 0px 0px 10px 10px !important;
+     }
 }
