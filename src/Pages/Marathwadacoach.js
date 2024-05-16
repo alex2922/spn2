@@ -20,7 +20,7 @@ import factory from "../assets/Marathwada_Coach_Factory.webm"
 
 function Marathwadacoach(props) {
 
-  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  // const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   const [responsive, setResponsive] = useState(false);
   const [func2, setfunc2] = useState(false);
