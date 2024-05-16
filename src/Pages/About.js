@@ -68,12 +68,15 @@ function About(props) {
                 className="about-cont cont"
                 style={{ flexDirection: "row-reverse" }}
               >
-                <div id="about-right" className="about-left about-right bg-img-cover"></div>
-                <div id="about-left"
+                <div
+                  id="about-right"
+                  className="about-left about-right bg-img-cover"
+                ></div>
+                <div
+                  id="about-left"
                   className={
                     readmore1 ? "about-right  scroll-about" : "about-right"
                   }
-                
                 >
                   <p>{data.About_subdescription4.slice(0, 600)}</p>
 
@@ -81,10 +84,7 @@ function About(props) {
                     <p>{data.About_subdescription4.slice(600, 100000000000)}</p>
                   )}
                   {!readmore1 && (
-                    <span
-                      onClick={() => setReadMore1(true)} >
-                      Read More
-                    </span>
+                    <span onClick={() => setReadMore1(true)}>Read More</span>
                   )}
 
                   {readmore1 && (
