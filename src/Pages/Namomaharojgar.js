@@ -101,7 +101,9 @@ function Namomaharojgar(props) {
                     <>
                       {data.Namo_saksharta_para.slice(0, 300)}{" "}
                       {func2 && (
-                        <p>{data.Namo_saksharta_para.slice(300, 1000)}</p>
+                       
+          
+                       <p>{data.Namo_saksharta_para.slice(300, 1000)}</p>
                       )}
                       {!func2 ? (
                         <span
@@ -125,7 +127,7 @@ function Namomaharojgar(props) {
                     </>
                   </p>
                 ) : (
-                  <p>{data.Atal_saksharta_para}</p>
+                  <p>{data.Namo_saksharta_para}</p>
                 )}
               </div>
               {/* <div className="jal2-right"></div> */}
