@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "../Styles/akkafoundation.scss";
 import img1 from "../photos/Akka_foundation/_MG_0997.webp";
 import img2 from "../photos/Akka_foundation/_MG_1752.webp";
@@ -25,11 +25,15 @@ import { PiStudentFill } from "react-icons/pi";
 import { FaBed } from "react-icons/fa6";
 import { FaUserDoctor } from "react-icons/fa6";
 import { GrInspect } from "react-icons/gr";
-
+import akka from "../assets/Akka_Foundation.webm";
 
 function Akkafoundation(props) {
-
   const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+
+
+  const [responsive, setResponsive] = useState(false);
+  const [func2, setfunc2] = useState(false);
 
   return (
     <>
@@ -53,22 +57,62 @@ function Akkafoundation(props) {
       {props.data.map((data) => {
         return (
           <>
-           <div className="akka-parent parent bg-img-cover">
+            <div className="akka-parent parent bg-img-cover">
               <div className="akka-overlay"></div>
-              <h2 className="akka-headding1">{data.akka12_saksharta_heading}</h2>
+              <h2 className="akka-headding1">
+                {data.akka12_saksharta_heading}
+              </h2>
             </div>
 
             <Counter data={props.data} background="#efefef" />
 
-            <TwoColSec
-              padding="50px 0px 50px 0px"
-              background=""
-              row="row-reverse"
-              bg={img}
-              subheading={data.akka12_heading2}
-              subdescription={data.akka12_para2}
-              btn=""
-            />
+            <div className="counter-parent-main ">
+            <div className="counter-parent1 ">
+              <h3>{data.project_anandi}</h3>
+              <Tooltip id="my-tooltip" />
+              <Counter
+                data={props.data}
+                background=""
+                icon1={<FaSchool />}
+                textnum1="321"
+                // plus="+"
+                icon2={<IoCalendarNumber />}
+                text1={data.school}
+                textnum2="168"
+                // plus2="+"
+                icon3={<PiStudentFill />}
+                text2={data.anandi_days}
+                textnum3="26150"
+                plus3=""
+                text3={data.anandi_students}
+                textnum4=""
+              />
+            </div>
+
+            <div className="counter-parent1 counter-akka">
+              <h3>{data.drishti_abhiyan}</h3>
+              <Tooltip id="my-tooltip" />
+              <Counter
+                data={props.data}
+                background=""
+                icon4={<FaBed />}
+                text4={data.drishti_total_pateints}
+                textnum4="24648"
+                // plus="+"
+                icon5={<FaUserDoctor />}
+                text5={data.drishti_total_ooperations}
+                textnum5="1617"
+                // plus2="+"
+                icon6={<GrInspect />}
+                text6={data.drishti_specs_distructed}
+                textnum6="10721"
+                plus3=""
+              />
+            </div>
+            </div>
+
+
+           
 
             <div className="akka-found-parent parent ">
               <Swiper
@@ -201,49 +245,59 @@ function Akkafoundation(props) {
                 </SwiperSlide>
               </Swiper>
             </div>
-            <div className="counter-parent1 ">
-              <h3>{data.project_anandi}</h3>
-              <Tooltip id="my-tooltip" />
-              <Counter
-                data={props.data}
-                background=""
-                icon1={<FaSchool />}
-                textnum1="321"
-                // plus="+"
-                icon2={<IoCalendarNumber />}
-                text1={data.school}
-                textnum2="168"
-                // plus2="+"
-                icon3={<PiStudentFill />}
-                text2={data.anandi_days}
-                textnum3="26150"
-                plus3=""
-                text3={data.anandi_students}
-                textnum4=""
-              />
-            </div>
-            <div className="counter-parent1 counter-akka">
-              <h3>{data.drishti_abhiyan}</h3>
-              <Tooltip id="my-tooltip" />
-              <Counter
-                data={props.data}
-                background=""
-                icon4={<FaBed />}
-                text4={data.drishti_total_pateints}
-                textnum4="24648"
-                // plus="+"
-                icon5={<FaUserDoctor />}
-                text5={data.drishti_total_ooperations}
-                textnum5="1617"
-                // plus2="+"
-                icon6={<GrInspect />}
-                text6={data.drishti_specs_distructed}
-                textnum6="10721"
-                plus3=""
-               
-                
-              />
-            </div>
+
+
+            {/* <div className="jal2-parent parent bg-img-cover">
+              <div className="jal2-overlay"></div>
+              <video
+                autoPlay
+                loop
+                muted
+                className="bg-vid"
+                style={{ position: "absolute", objectFit: "cover" }}
+                height="100%"
+                width="100%"
+              >
+                <source src={akka} type="video/webm" />
+              </video>
+              <div className="jal2-content">
+              
+                <h2 className="jal-headding">{data.akka12_heading2}</h2>
+                {responsive ? (
+                  <p className="jal2-text">
+                    <>
+                      {data.akka12_para2.slice(0, 300)}{" "}
+                      {func2 && (
+                        <p>{data.akka12_para2.slice(300, 1000)}</p>
+                      )}
+                      {!func2 ? (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Home_btn}
+                        </span>
+                      ) : (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Read_less}
+                        </span>
+                      )}
+                    </>
+                  </p>
+                ) : (
+                  <p>{data.akka12_para2}</p>
+                )}
+              </div>
+         
+            </div> */}
+
             <Imageswiper
               titlegallery={data.Marathwada_gallery}
               background="#efefef"

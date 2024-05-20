@@ -52,15 +52,14 @@ function About(props) {
                   <h2>{data.About_subheading}</h2>
                   <h4>{data.About_subdescription}</h4>
                   <h4>{data.About_subdescription1}</h4>
-                  <p>{data.About_subdescription2.slice(0, 471)}</p>
-                  {readmore && (
+                  <p>{data.About_subdescription2.slice(0, 471)}</p>{readmore && (
                     <p>{data.About_subdescription2.slice(471, 100000000000)}</p>
                   )}
-                  {!readmore ? (
-                    <span onClick={() => setReadMore(true)}>Read More</span>
-                  ) : (
-                    <span onClick={() => setReadMore(false)}>Read Less</span>
+                  {!readmore ? (<span onClick={() => setReadMore(true)}>Read More</span>                    
+                  ) : (<span onClick={() => setReadMore(false)}>Read Less</span>
+                    
                   )}
+                 
                 </div>
               </div>
 
@@ -83,8 +82,8 @@ function About(props) {
                   {readmore1 && (
                     <p>{data.About_subdescription4.slice(600, 100000000000)}</p>
                   )}
-                  {!readmore1 && (
-                    <span onClick={() => setReadMore1(true)}>Read More</span>
+                  {!readmore1 && (<span onClick={() => setReadMore1(true)}>Read More</span>
+                    
                   )}
 
                   {readmore1 && (
@@ -93,37 +92,11 @@ function About(props) {
                       <h4>{data.About_heading4}</h4>
                       <h4>{data.About_heading5}</h4>
                       <h4>{data.About_heading6}</h4>
-
                       <span onClick={() => setReadMore1(false)}>Read Less</span>
                     </div>
                   )}
                 </div>
               </div>
-
-              {/* <TwoColSec
-                padding="50px 0px 2px 0px"
-                background=""
-                row=""
-                bg={latur1_img}
-                subheading={data.About_subheading}
-                subdescription={data.About_subdescription}
-                subdescription1={data.About_subdescription1}
-                subdescription2={data.About_subdescription2}
-                btn=""
-              />
-              <TwoColSec
-                padding="0px 0px 50px 0px"
-                background=""
-                row="row-reverse"
-                bg={latur2_img}
-                subheading=""
-                subdescription={data.About_subdescription4}
-                subdescription1={data.About_subdescription5}
-                heading4={data.About_heading4}
-                heading5={data.About_heading5}
-                heading6={data.About_heading6}
-                btn=""
-              /> */}
             </div>
 
             {/* ...........//Personality Section//............. */}

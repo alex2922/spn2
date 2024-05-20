@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "../Styles/indraprashtha.scss";
 import img1 from "../photos/indraprasta/img1.webp";
 import img2 from "../photos/indraprasta/img10.webp";
@@ -18,11 +18,21 @@ import { Helmet } from 'react-helmet';
 import { GiVillage } from "react-icons/gi";
 import { ImMeter2 } from "react-icons/im";
 import { FaOilWell } from "react-icons/fa6";
-import mapIcon from "../assets/MAP.webp";
+import mapIcon from "../assets/MAP.webp"; 
+import indraprasta from "../assets/Indraprasta.mp4";
 
 
 
 function Indraprashtha(props) {
+
+
+
+
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  const [responsive, setResponsive] = useState(false);
+  const [func2, setfunc2] = useState(false);
+
   return (
     <>
     <Helmet>
@@ -65,15 +75,57 @@ function Indraprashtha(props) {
               />
             </div>
 
-            <TwoColSec
-              padding="50px 0px 50px 0px"
-              background="#efefef"
-              row="row-reverse"
-              bg={img}
-              subheading={data.Indraprashtha11_heading2}
-              subdescription={data.Indraprashtha11_para2}
-              btn=""
-            />
+            <div className="jal2-parent parent bg-img-cover">
+              <div className="jal2-overlay"></div>
+              <video
+                autoPlay
+                loop
+                muted
+                className="bg-vid"
+                style={{ position: "absolute", objectFit: "cover" }}
+                height="100%"
+                width="100%"
+              >
+                <source src={indraprasta} type="video/webm" />
+              </video>
+              <div className="jal2-content">
+                {/* <div className="jal2-left">  */}
+                <h2 className="jal-headding">{data.Indraprashtha11_saksharta_heading}</h2>
+                {responsive ? (
+                  <p className="jal2-text">
+                    <>
+                      {data.Indraprashtha11_saksharta_para.slice(0, 300)}{" "}
+                      {func2 && (
+                        <p>{data.Indraprashtha11_saksharta_para.slice(300, 1000)}</p>
+                      )}
+                      {!func2 ? (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Home_btn}
+                        </span>
+                      ) : (
+                        <span
+                          onClick={() => {
+                            setfunc2(!func2);
+                          }}
+                          className="read-more"
+                        >
+                          {data.Read_less}
+                        </span>
+                      )}
+                    </>
+                  </p>
+                ) : (
+                  <p>{data.Indraprashtha11_saksharta_para}</p>
+                )}
+              </div>
+              {/* <div className="jal2-right"></div> */}
+              {/* </div> */}
+            </div>
 
             <Imageswiper
               titlegallery="gallery"
