@@ -68,8 +68,8 @@ const english = [
      
 
   
-     Home_subheading:"A brief introduction",
-     Home_subdescription:"Although there is family legacy, behind it Sambhaji Patil Nilangekar took a new step. In 2004, through the Bharatiya Janata Party, he first brought his mother Smt. Rupatai Patil Nilangekar (Akka) into the fray of the Lok Sabha elections. By winning, he created history in Latur district. At the same time, Sambhaji Patil Nilangekar contested the assembly elections. He also created a history by winning. He was the youngest MLA in the legislature at that time. After working in the Bharatiya Janata Party at the district level, the party promoted Sambhaji Patil Nilangekar after seeing his style of work.",
+     Home_subheading:"Sambhaji Patil Nilangekar: A Commitment to Service",
+     Home_subdescription:"Those who know Sambhaji Patil Nilangekar will tell you his dedication to public service is unwavering. Inspired by the ideals of the late Atal Bihari Vajpayee, who believed politics should be a platform for national service, Sambhaji found his calling.His journey began in 2004, not with his own name on the ballot, but with his mother's, Smt. Rupatai Patil Nilangekar.  Encouraged by Sambhaji's belief in her, she entered the Lok Sabha elections, unseating a formidable six-term incumbent. This historic victory marked a turning point for the BJP in Latur, and a testament to the collective effort and unwavering spirit of the community.     Witnessing his mother's success and its impact, Sambhaji decided to enter the political arena himself. Later that year, he contested the assembly elections and became the youngest MLA in the state. This win wasn't just a personal achievement but a recognition of the trust the people placed in him.Since then, Sambhaji has tirelessly served his constituency. He approaches every challenge with a learning mindset, constantly seeking improvement.  His dedication and collaborative spirit are what truly define him.",
 
      Home_btn:"Read More",
      Read_less:"Read less",
