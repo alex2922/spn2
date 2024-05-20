@@ -62,7 +62,7 @@ const english = [
     Gallery_calender: "Calender Posts",
 
      // home_page=========================
-     Home_slider1:"The Youngest MLA",
+     Home_slider1:"",
      Home_slider2:"Latur's Own Leader, A Farmer's Friend",
      Home_slider3:"From a commercial pilot to a developmental pilot",
      

@@ -49,6 +49,13 @@ function Header(props) {
         return (
           <>
             <Menu className="dropdown" onClick={handleMenuClick}>
+
+            <Menu.Item key="3">
+                <Link to="/Marathwada_coach_factory">
+                  {" "}
+                  {data.Header_marathwada}{" "}
+                </Link>
+              </Menu.Item>
               <Menu.Item key="1">
                 <Link
                   to="/72_Taas_Andolan"
@@ -65,12 +72,7 @@ function Header(props) {
                   {data.Header_Jal}
                 </Link>
               </Menu.Item>
-              <Menu.Item key="3">
-                <Link to="/Marathwada_coach_factory">
-                  {" "}
-                  {data.Header_marathwada}{" "}
-                </Link>
-              </Menu.Item>
+              
               <Menu.Item key="4">
                 <Link to="/Jan_Jagar_Sanvad">{data.Header_Latur}</Link>
               </Menu.Item>

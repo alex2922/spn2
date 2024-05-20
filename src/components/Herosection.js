@@ -63,7 +63,7 @@ function HeroSection(props) {
                   {slide2 && (
                     <SwiperSlide>
                       <div className="slide2 slide-img">
-                        {/* <h1>{data.Home_slider1}</h1> */}
+                        <h1>{data.Home_slider1}</h1>
                         <div className="overlay"></div>
                         
                         <div className="spn-frame bg-img-cover"></div>
