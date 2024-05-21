@@ -52,9 +52,9 @@ function About(props) {
                   <h2>{data.About_subheading}</h2>
                   <h4>{data.About_subdescription}</h4>
                   <h4>{data.About_subdescription1}</h4>
-                  <p>{data.About_subdescription2.slice(0, 471)}</p>{readmore && (
-                    <p>{data.About_subdescription2.slice(471, 100000000000)}</p>
-                  )}
+                  <p>{data.About_subdescription2.slice(0, 471)} {readmore && (
+                    <span>{data.About_subdescription2.slice(471, 100000000000)}</span>
+                  )}</p>
                   {!readmore ? (<span onClick={() => setReadMore(true)}>Read More</span>                    
                   ) : (<span onClick={() => setReadMore(false)}>Read Less</span>
                     
@@ -77,11 +77,11 @@ function About(props) {
                     readmore1 ? "about-right  scroll-about" : "about-right"
                   }
                 >
-                  <p>{data.About_subdescription4.slice(0, 600)}</p>
+                  <p>{data.About_subdescription4.slice(0, 600)}  {readmore1 && (
+                    <span>{data.About_subdescription4.slice(600, 100000000000)}</span>
+                  )}</p>
 
-                  {readmore1 && (
-                    <p>{data.About_subdescription4.slice(600, 100000000000)}</p>
-                  )}
+                 
                   {!readmore1 && (<span onClick={() => setReadMore1(true)}>Read More</span>
                     
                   )}
