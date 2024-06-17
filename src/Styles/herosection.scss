@@ -124,7 +124,6 @@
     background: url("../photos/heroSlider/s2_bgimg.png");
     .slide-main {
       background: url("../photos/heroSlider/spn.png");
-
       height: 700px;
       z-index: -1;
     }
@@ -142,7 +141,12 @@
   }
 
   .slide3 {
-    background: url("../assets/home/bg2.png");
+    background: url("../assets/home/home_s3_bg.jpg");
+    .slide-main {
+      background: url("../assets/home/hero_s3.png");
+      height: 700px;
+      z-index: -1;
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 .akka-parent {
   height: 600px;
-  width: 100%; 
+  width: 100%;
   background: url("../assets/Akka_Foundation.jpg");
   position: relative;
   display: flex;
@@ -26,15 +26,12 @@
 }
 
 
-.counter-parent-main{
-  display: flex; 
+.counter-parent-main {
+  display: flex;
   max-width: var(--max-width);
   margin: auto;
+
 }
-
-
-
-
 
 .akka-found-parent {
   height: 500px;
@@ -43,11 +40,9 @@
   .overlay-swiper {
     height: 500px;
     width: 100%;
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.89) 50%,
-      rgba(0, 0, 0, 0.184)
-    );
+    background: linear-gradient(90deg,
+        rgba(0, 0, 0, 0.89) 50%,
+        rgba(0, 0, 0, 0.184));
     z-index: 1;
     position: absolute;
   }
@@ -94,7 +89,7 @@
     border-radius: 100%;
     font-size: 20px;
     font-weight: 600;
-    background-color: rgba(192,191,191);
+    background-color: rgba(192, 191, 191);
     align-items: center;
     display: flex;
     align-items: center;
@@ -161,16 +156,19 @@
 
 @media only screen and (max-width: 1200px) {
 
-  .counter-parent-main{
+  .counter-parent-main {
     flex-direction: column !important;
 
   }
-    .overlay-swiper {
-        background: rgba(0, 0, 0, 0.781) !important;
-      }
+
+  .overlay-swiper {
+    background: rgba(0, 0, 0, 0.781) !important;
+  }
+
   .swiper-section {
     align-items: center !important;
     justify-content: center !important;
+
     .left-swiper {
       width: 100% !important;
       display: flex !important;
@@ -178,18 +176,22 @@
       align-items: center !important;
       justify-content: center !important;
       left: 0 !important;
+
       .swiper-heading {
         display: flex !important;
         justify-content: left !important;
       }
+
       // .swiper-btn {
       // }
     }
+
     .right-swiper {
       display: none !important;
     }
   }
 }
+
 // .counter-akka{
 //   padding-top: 5px !important;
 // }

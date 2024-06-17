@@ -46,7 +46,7 @@ function Namomaharojgar(props) {
           <>
             <div className="namo-parent parent bg-img-cover">
               <div className="namo-overlay"></div>
-              <h2 className="namo-headding1">Namo Maharojgar Melava</h2>
+              <h2 className="namo-headding1">{data.Header_Namo_maharojgar}</h2>
             </div>
             <div className="counter-parent1">
               <h3>{data.Marathwada_counter}</h3>

@@ -169,7 +169,7 @@ function Home(props) {
             <div className="blog-parent1">
               <div className="blog-container cont">
                 <div className="blog-headding">
-                  <h2>Blogs</h2>
+                  <h2>{data.Header_Blog}</h2>
                 </div>
                 {
                   blogdata && blogdata.slice(0,3).reverse().map((data) => {
@@ -197,7 +197,7 @@ function Home(props) {
               </div>
               <div className="loadmore-btn">
                 <Link to="/blog" className="loadmore btn">
-                  Load More
+                  {data.Home_btn}
                 </Link>
               </div>
             </div>
