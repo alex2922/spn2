@@ -63,6 +63,7 @@ const marathi = [
     // home_page=========================
     Home_slider1: "अविरत विकासाचा बुलंद आवाज!",
     Home_slider2: "लातूरच्या मातीतील शेतकऱ्यांचा नेता..",
+    Home_slider3: "विकासाभिमुख दूरदर्शी नेतृत्व!",
 
     Home_subheading: "संक्षिप्त परिचय",
     Home_subdescription:

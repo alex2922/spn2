@@ -56,6 +56,7 @@
         align-items: flex-start;
         justify-content: center;
         gap: 5px;
+
         h2,
         p {
           line-height: 100%;
@@ -86,6 +87,7 @@
       .icon-full-box {
         width: 30%;
         height: 70px;
+
         .small-box {
           height: 70px;
           width: 70px;
@@ -127,16 +129,17 @@
   }
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px) {
 
-  .counter-box-container{
+  .counter-box-container {
     gap: 20px !important;
   }
 
-  .count-box{
+  .count-box {
     padding: 0px 20px;
     gap: 20px !important;
   }
+
   .counter-box {
     width: 100% !important;
   }

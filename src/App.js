@@ -37,7 +37,7 @@ import { PiRoadHorizonFill } from "react-icons/pi";
 import Video_Section from "./components/Video_Section";
 
 function App() {
-  const [language, setlanguage] = useState(english);
+  const [language, setlanguage] = useState(marathi);
   const [toggle, settoggle] = useState(true);
   const toggleJsonData = () => {
     setlanguage(language === english ? marathi : english);

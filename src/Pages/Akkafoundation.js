@@ -93,6 +93,7 @@ function Akkafoundation(props) {
               <h3>{data.drishti_abhiyan}</h3>
               <Tooltip id="my-tooltip" />
               <Counter 
+              className="hg"
                 data={props.data}
                 background=""
                 icon4={<FaBed />}
