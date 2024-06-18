@@ -62,9 +62,9 @@ const english = [
     Gallery_calender: "Calender Posts",
 
      // home_page=========================
-     Home_slider1:"",
+     Home_slider1:"The relentless pursuit of progress!",
      Home_slider2:"Latur's Own Leader, A Farmer's Friend",
-     Home_slider3:"",
+     Home_slider3:"Progress-oriented visionary leadership!",
      
 
   
