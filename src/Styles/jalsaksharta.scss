@@ -125,6 +125,56 @@
     background-size: cover !important;
     background-position: center !important;
 
+    
+
+    &.tass-mobile-img{
+      background: url("../photos/72_taas_andolan/72tass_mobile_view.webp") !important;
+      position: relative !important;
+      height: 100vh !important;
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+
+    &.factory-mobile-img{
+      background: url("../photos/coach_factory/factory_mobile_view.webp") !important;
+      position: relative !important;
+      height: 100vh !important;
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+
+    &.jan-jagar-mobile-img{
+      background: url("../photos/jan_jagar_sanwad/sanwad_mobile_view.webp") !important;
+      position: relative !important;
+      height: 100vh !important;
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+
+    &.atal-maharogya-mobile-img{
+      background: url("../photos/Atal_Mahaarogya_Shibir/maharogya_mobile_view.webp") !important;
+      position: relative !important;
+      height: 100vh !important;
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+
+    &.namo-maharojgar-mobile-img{
+      background: url("../photos/personality/bjp.jpg") !important;
+      position: relative !important;
+      height: 100vh !important;
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+
+    &.indraprasta-mobile-img{
+      background: url("../photos/indraprasta/indraprasta_mobile_img.webp") !important;
+      position: relative !important;
+      height: 100vh !important;
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+
     video {
       display: none !important;
     }
@@ -142,7 +192,8 @@
 
 
       h2{
-        font-size: 16px !important;
+        font-size: 24px !important;
+        font-weight: 900 !important;        
       }
 
       p{

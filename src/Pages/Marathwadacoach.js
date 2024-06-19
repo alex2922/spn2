@@ -1,8 +1,6 @@
 import React,{useState,useEffect} from "react";
 import "../Styles/marathwadacoach.scss";
 import Imageswiper from "../components/Imageswiper";
-import img1 from "../photos/coach_factory/img_1.webp";
-import img2 from "../photos/coach_factory/img_2.webp";
 import img3 from "../photos/coach_factory/img_3.webp";
 import img4 from "../photos/coach_factory/img_4.jpeg";
 import img5 from "../photos/coach_factory/img_5.webp";
@@ -88,7 +86,7 @@ function Marathwadacoach(props) {
               />
             </div>
 
-            <div className="jal2-parent parent bg-img-cover">
+            <div className="jal2-parent factory-mobile-img parent bg-img-cover">
               <div className="jal2-overlay"></div>
               <video
                 autoPlay

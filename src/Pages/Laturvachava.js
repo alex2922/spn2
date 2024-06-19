@@ -82,7 +82,7 @@ function Laturvachava(props) {
               />
             </div>
 
-            <div className="jal2-parent parent bg-img-cover">
+            <div className="jal2-parent jan-jagar-mobile-img parent bg-img-cover">
               <div className="jal2-overlay"></div>
               <video
                 autoPlay

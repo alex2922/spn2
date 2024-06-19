@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/taasandolan.scss";
 import img1 from "../photos/72_taas_andolan/044A7463.webp";
 import img2 from "../photos/72_taas_andolan/044A7344.webp";
@@ -8,20 +8,16 @@ import img5 from "../photos/72_taas_andolan/044A7351.webp";
 import img6 from "../photos/72_taas_andolan/044A7363.webp";
 import img7 from "../photos/72_taas_andolan/044A7368.webp";
 import img8 from "../photos/72_taas_andolan/044A7379.webp";
-import img from "../photos/drushti/72_Taas_Andolan.webp";
 import Imageswiper from "../components/Imageswiper";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
-import Para from "../components/Para";
-import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
 import { ImClock2 } from "react-icons/im";
 import taas from "../assets/72_Taas_Andolan.webm";
 
 function Taasandolan(props) {
-
-    const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   const [responsive, setResponsive] = useState(false);
   const [func2, setfunc2] = useState(false);
@@ -91,7 +87,7 @@ function Taasandolan(props) {
               />
             </div>
 
-            <div className="jal2-parent parent bg-img-cover">
+            <div className="jal2-parent tass-mobile-img parent bg-img-cover">
               <div className="jal2-overlay"></div>
               <video
                 autoPlay

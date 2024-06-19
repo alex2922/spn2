@@ -15,8 +15,6 @@ import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
 import BgVideo from "../assets/BgVideo.ogg";
 import BgVideo1 from "../assets/BgVideo.webm";
-import posterImage from "../photos/Jal_saksharta_rally/09.webp";
-import { RiMotorbikeFill } from "react-icons/ri";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
 

@@ -4,6 +4,7 @@ import Videos from "../components/Videos";
 import "../Styles/gallery.scss";
 import Media from "../components/Media";
 import Personalphotos from "../components/Personalphotos";
+import { Link } from "react-router-dom";
 
 const Gallery = (props) => {
   return (
@@ -66,21 +67,24 @@ const Gallery = (props) => {
                 {data.Gallery_Media}
               </button>
 
-              <button
+              <a
+                href="http://stock.sambhajipatilnilangekar.com"
+                target="_blank"
+                 rel="noopener noreferrer"
                 className={
                   props.personalphoto
                     ? "btn-active gallery-btn1"
                     : "btn-unactive gallery-btn1"
                 }
-                onClick={() => {
-                  props.setmedia(false);
-                  props.setphoto(false);
-                  props.setvideo(false);
-                  props.setpersonalphoto(true);
-                }}
+                // onClick={() => {
+                //   props.setmedia(false);
+                //   props.setphoto(false);
+                //   props.setvideo(false);
+                //   props.setpersonalphoto(true);
+                // }}
               >
                 {data.Gallery_Stock}
-              </button>
+              </a>
             </div>
           </div>
         );

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/indraprashtha.scss";
 import img1 from "../photos/indraprasta/img1.webp";
 import img2 from "../photos/indraprasta/img10.webp";
@@ -10,24 +10,18 @@ import img7 from "../photos/indraprasta/img8.webp";
 import img8 from "../photos/indraprasta/img9.webp";
 import img from "../photos/drushti/Indraprasta_jalbhumi_abhiyan.webp";
 import Imageswiper from "../components/Imageswiper";
-import 'react-tooltip/dist/react-tooltip.css'
-import { Tooltip } from 'react-tooltip'
+import "react-tooltip/dist/react-tooltip.css";
+import { Tooltip } from "react-tooltip";
 import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import { GiVillage } from "react-icons/gi";
 import { ImMeter2 } from "react-icons/im";
 import { FaOilWell } from "react-icons/fa6";
-import mapIcon from "../assets/MAP.webp"; 
+import mapIcon from "../assets/MAP.webp";
 import indraprasta from "../assets/Indraprasta.mp4";
 
-
-
 function Indraprashtha(props) {
-
-
-
-
   const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   const [responsive, setResponsive] = useState(false);
@@ -35,18 +29,29 @@ function Indraprashtha(props) {
 
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>Indraprasth Jalbhumi Abhiyan</title>
-        <meta name="keywords" content="drought-free,water-abundant,Indraprastha Jalbhumi Mission,recharged 2800 borewells,Jala Yoddha" />
-        <meta name="description" content="Explore the Indraprastha Jalbhumi Mission's initiative to combat drought with water abundance. Witness the success as 2800 borewells are recharged, transforming warriors into 'Jala Yoddha'. Join the movement towards a drought-free future." />
-        <link rel="canonical" href="https://sambhajipatilnilangekar.in/Indraprasth_Jalbhumi_Abhiyan" />
+        <meta
+          name="keywords"
+          content="drought-free,water-abundant,Indraprastha Jalbhumi Mission,recharged 2800 borewells,Jala Yoddha"
+        />
+        <meta
+          name="description"
+          content="Explore the Indraprastha Jalbhumi Mission's initiative to combat drought with water abundance. Witness the success as 2800 borewells are recharged, transforming warriors into 'Jala Yoddha'. Join the movement towards a drought-free future."
+        />
+        <link
+          rel="canonical"
+          href="https://sambhajipatilnilangekar.in/Indraprasth_Jalbhumi_Abhiyan"
+        />
       </Helmet>
       {props.data.map((data) => {
         return (
           <>
             <div className="indraprasta-parent parent bg-img-cover">
               <div className="indraprasta-overlay"></div>
-              <h2 className="indraprasta-headding1">{data.Indraprashtha11_saksharta_heading}</h2>
+              <h2 className="indraprasta-headding1">
+                {data.Indraprashtha11_saksharta_heading}
+              </h2>
             </div>
 
             <div className="counter-parent1">
@@ -56,10 +61,14 @@ function Indraprashtha(props) {
                 data={props.data}
                 background=""
                 // icon1={<GiVillage />}
-                icon1={<img src={mapIcon} style={{height:"40px" ,weight:"40px"}} />}
+                icon1={
+                  <img alt=""
+                    src={mapIcon}
+                    style={{ height: "40px", weight: "40px" }}
+                  />
+                }
                 textnum1="945"
                 plus="+"
-                
                 text1={data.Indraprashtha11_countup1}
                 textnum2="2800"
                 plus2="+"
@@ -75,7 +84,7 @@ function Indraprashtha(props) {
               />
             </div>
 
-            <div className="jal2-parent parent bg-img-cover">
+            <div className="jal2-parent indraprasta-mobile-img  parent bg-img-cover">
               <div className="jal2-overlay"></div>
               <video
                 autoPlay
@@ -90,13 +99,17 @@ function Indraprashtha(props) {
               </video>
               <div className="jal2-content">
                 {/* <div className="jal2-left">  */}
-                <h2 className="jal-headding">{data.Indraprashtha11_saksharta_heading}</h2>
+                <h2 className="jal-headding">
+                  {data.Indraprashtha11_saksharta_heading}
+                </h2>
                 {responsive ? (
                   <p className="jal2-text">
                     <>
                       {data.Indraprashtha11_saksharta_para.slice(0, 300)}{" "}
                       {func2 && (
-                        <p>{data.Indraprashtha11_saksharta_para.slice(300, 1000)}</p>
+                        <p>
+                          {data.Indraprashtha11_saksharta_para.slice(300, 1000)}
+                        </p>
                       )}
                       {!func2 ? (
                         <span

@@ -62,7 +62,7 @@ function Atalmaharogya(props) {
       {props.data.map((data) => {
         return (
           <>
-            <div className="jal-parent atal-parent parent bg-img-cover">
+            <div className="jal-parent atalmaharogya- atal-parent parent bg-img-cover">
               <div className="atal-overlay"></div>
               <h2 className="atal-headding1">{data.Atal_saksharta_heading}</h2>
             </div>
@@ -101,7 +101,7 @@ function Atalmaharogya(props) {
               btn=""
             /> */}
 
-            <div className="jal2-parent parent bg-img-cover">
+            <div className="jal2-parent atal-maharogya-mobile-img parent bg-img-cover">
               <div className="jal2-overlay"></div>
               <video
                 autoPlay

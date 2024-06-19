@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../Styles/namomaharojgar.scss";
 import img1 from "../photos/Atal_Mahaarogya_Shibir/359A2242.webp";
 import img2 from "../photos/Atal_Mahaarogya_Shibir/359A7720.webp";
@@ -6,14 +6,11 @@ import img3 from "../photos/Atal_Mahaarogya_Shibir/359A7724.webp";
 import img4 from "../photos/Atal_Mahaarogya_Shibir/359A7739.webp";
 import img5 from "../photos/Atal_Mahaarogya_Shibir/IMG_7558.JPG";
 import img6 from "../photos/Atal_Mahaarogya_Shibir/IMG_7717.JPG";
-import img from "../photos/drushti/Namo_maharojgar_melava.webp";
 import Imageswiper from "../components/Imageswiper";
-import TwoColSec from "../components/TwoColSec";
 import Counter from "../components/Counter";
 import { Helmet } from "react-helmet";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
-import { RiBuildingFill } from "react-icons/ri";
 import { IoIosSchool } from "react-icons/io";
 import { GiFactory } from "react-icons/gi";
 import namo from "../assets/Namo_Maharojgar_Melava.webm";
@@ -80,7 +77,7 @@ function Namomaharojgar(props) {
               btn=""
             /> */}
 
-            <div className="jal2-parent parent bg-img-cover">
+            <div className="jal2-parent namo-maharojgar-mobile-img parent bg-img-cover">
               <div className="jal2-overlay"></div>
               <video
                 autoPlay
