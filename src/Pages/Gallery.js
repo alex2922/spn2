@@ -71,11 +71,9 @@ const Gallery = (props) => {
                 href="http://stock.sambhajipatilnilangekar.com"
                 target="_blank"
                  rel="noopener noreferrer"
-                className={
-                  props.personalphoto
-                    ? "btn-active gallery-btn1"
-                    : "btn-unactive gallery-btn1"
-                }
+                className="gallery-btn-new"
+     
+                
                 // onClick={() => {
                 //   props.setmedia(false);
                 //   props.setphoto(false);

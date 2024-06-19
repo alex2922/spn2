@@ -24,8 +24,6 @@ import { Helmet } from "react-helmet";
 import axios from "axios";
 function Home(props) {
   const swiperSlidesData = [
-
-
     {
       heading_marathi: "मराठवाडा रेल्वे कोच कारखाना",
       link: "/Marathwada_Coach_Factory",
@@ -55,7 +53,6 @@ function Home(props) {
       bgImage: s8,
     },
     { heading: "अक्का फाउंडेशन", link: "/Akka_Foundation", bgImage: s9 },
-   
   ];
 
   const swiperSlidesDataMarathi = [
@@ -108,8 +105,8 @@ function Home(props) {
     axios
       .get(
         props.change
-          ?"https://backend.sambhajipatilnilangekar.com/api/blogs/category/2/"
-              :    "https://backend.sambhajipatilnilangekar.com/api/blogs/category/3/" 
+          ? "https://backend.sambhajipatilnilangekar.com/api/blogs/category/2/"
+          : "https://backend.sambhajipatilnilangekar.com/api/blogs/category/3/"
       )
       .then((res) => setdata(res.data))
       .catch((err) => console.log(err));
@@ -211,7 +208,7 @@ function Home(props) {
                           <div className="overlay">
                             <h2>{slide.heading}</h2>
                             <Link to={slide.link} className="btn2">
-                            {data.akka_read_more}
+                              {data.akka_read_more}
                             </Link>
                           </div>
                         </SwiperSlide>
@@ -224,7 +221,7 @@ function Home(props) {
                           <div className="overlay">
                             <h2>{slide.heading}</h2>
                             <Link to={slide.link} className="btn2">
-                             {data.akka_read_more}
+                              {data.akka_read_more}
                             </Link>
                           </div>
                         </SwiperSlide>
