@@ -210,7 +210,7 @@ function Home(props) {
                         >
                           <div className="overlay">
                             <h2>{slide.heading}</h2>
-                            <Link to={slide.link} className="btn2">``
+                            <Link to={slide.link} className="btn2">
                             {data.akka_read_more}
                             </Link>
                           </div>
