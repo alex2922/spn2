@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import TwoColSec from "../components/TwoColSec";
-import latur1_img from "../photos/about/latur1.webp";
-import latur2_img from "../photos/about/latur2.webp";
 import "../Styles/about.scss";
-import { Link } from "react-router-dom";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -52,14 +47,23 @@ function About(props) {
                   <h2>{data.About_subheading}</h2>
                   <h4>{data.About_subdescription}</h4>
                   <h4>{data.About_subdescription1}</h4>
-                  <p>{data.About_subdescription2.slice(0, 471)} {readmore && (
-                    <span>{data.About_subdescription2.slice(471, 100000000000)}</span>
-                  )}</p>
-                  {!readmore ? (<span onClick={() => setReadMore(true)}>Read More</span>                    
-                  ) : (<span onClick={() => setReadMore(false)}>Read Less</span>
-                    
+                  <p>
+                    {data.About_subdescription2.slice(0, 471)}{" "}
+                    {readmore && (
+                      <span>
+                        {data.About_subdescription2.slice(471, 100000000000)}
+                      </span>
+                    )}
+                  </p>
+                  {!readmore ? (
+                    <span onClick={() => setReadMore(true)}>
+                      {data.Home_btn}...
+                    </span>
+                  ) : (
+                    <span onClick={() => setReadMore(false)}>
+                      {data.Read_less}
+                    </span>
                   )}
-                 
                 </div>
               </div>
 
@@ -77,13 +81,19 @@ function About(props) {
                     readmore1 ? "about-right  scroll-about" : "about-right"
                   }
                 >
-                  <p>{data.About_subdescription4.slice(0, 600)}  {readmore1 && (
-                    <span>{data.About_subdescription4.slice(600, 100000000000)}</span>
-                  )}</p>
+                  <p>
+                    {data.About_subdescription4.slice(0, 600)}{" "}
+                    {readmore1 && (
+                      <span>
+                        {data.About_subdescription4.slice(600, 100000000000)}
+                      </span>
+                    )}
+                  </p>
 
-                 
-                  {!readmore1 && (<span onClick={() => setReadMore1(true)}>Read More</span>
-                    
+                  {!readmore1 && (
+                    <span onClick={() => setReadMore1(true)}>
+                      {data.Home_btn}...
+                    </span>
                   )}
 
                   {readmore1 && (
@@ -92,7 +102,9 @@ function About(props) {
                       <h4>{data.About_heading4}</h4>
                       <h4>{data.About_heading5}</h4>
                       <h4>{data.About_heading6}</h4>
-                      <span onClick={() => setReadMore1(false)}>Read Less</span>
+                      <span onClick={() => setReadMore1(false)}>
+                        {data.Read_less}
+                      </span>
                     </div>
                   )}
                 </div>

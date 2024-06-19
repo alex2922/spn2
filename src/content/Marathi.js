@@ -59,6 +59,11 @@ const marathi = [
     Gallery_election: "निवडणूक पोस्ट ",
     Gallery_marketing: "मार्केटिंग पोस्ट",
     Gallery_calender: "जयंती, पुण्यतिथी विशेष पोस्ट",
+    Gallery_Photo:"फोटो",
+    Gallery_Videos:"व्हिडीओ",
+    Gallery_Media:"मीडिया",
+    Gallery_Stock:"स्टॉक्स",
+
 
     // home_page=========================
     Home_slider1: "अविरत विकासाचा बुलंद आवाज!",

@@ -60,6 +60,10 @@ const english = [
     Gallery_election: "Elections Posts",
     Gallery_marketing: "Marketing Posts",
     Gallery_calender: "Calender Posts",
+    Gallery_Photo:"Photo",
+    Gallery_Videos:"Videos",
+    Gallery_Media:"Media",
+    Gallery_Stock:"Stock",
 
      // home_page=========================
      Home_slider1:"The relentless pursuit of progress!",
