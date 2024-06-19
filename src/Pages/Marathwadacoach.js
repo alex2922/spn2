@@ -63,7 +63,7 @@ function Marathwadacoach(props) {
             </div>
 
             <div className="counter-parent1">
-              <h3>{data.Marathwada_counter}</h3>
+              <h3 >{data.Marathwada_counter}</h3>
               <Tooltip id="my-tooltip" />
               <Counter
                 data={props.data}

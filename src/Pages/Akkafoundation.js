@@ -90,7 +90,7 @@ function Akkafoundation(props) {
             </div>
 
             <div className="counter-parent1 counter-akka counter-akka-11 ">
-              <h3>{data.drishti_abhiyan}</h3>
+              <h3  className="akka-head">{data.drishti_abhiyan}</h3>
               <Tooltip id="my-tooltip" />
               <Counter 
               className="hg"
