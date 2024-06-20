@@ -54,22 +54,6 @@ h6 {
     color: var(--accent);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 p {
     text-align: justify;
     font-size: 1rem;
@@ -242,3 +226,15 @@ a {
     color: green;
   } 
   
+
+  /* Change the selection background color and text color */
+::selection {
+    background-color: var(--accent); /* Background color */
+    color: var(--white); /* Text color */
+  }
+  
+  /* For Firefox */
+  ::-moz-selection {
+    background-color: var(--accent); /* Background color */
+    color:var(--white); /* Text color */
+  }
