@@ -150,6 +150,7 @@ function Home(props) {
                 row=""
                 bg={brief}
                 subheading={data.Home_subheading}
+                subheading1={data.Home_subheading1}
                 subdescription={data.Home_subdescription}
                 btn={data.Home_btn}
               />

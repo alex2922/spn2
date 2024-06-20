@@ -1,9 +1,9 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import "../Styles/marathwadacoach.scss";
 import Imageswiper from "../components/Imageswiper";
 import img3 from "../photos/coach_factory/img_3.webp";
 import img4 from "../photos/coach_factory/img_4.jpeg";
-import img5 from "../photos/coach_factory/img_5.webp";
+import img5 from "../photos/coach_factory/factory_mobile_view.webp";
 import img6 from "../photos/coach_factory/img_7.webp";
 import img7 from "../photos/coach_factory/img_8.webp";
 import img8 from "../photos/coach_factory/img_9.webp";
@@ -14,10 +14,9 @@ import { HiCurrencyRupee } from "react-icons/hi2";
 import Counter from "../components/Counter";
 import { FaComputer } from "react-icons/fa6";
 import { BsTabletLandscapeFill } from "react-icons/bs";
-import factory from "../assets/Marathwada_Coach_Factory.webm"
+import factory from "../assets/Marathwada_Coach_Factory.webm";
 
 function Marathwadacoach(props) {
-
   // const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   const [responsive, setResponsive] = useState(false);
@@ -57,13 +56,15 @@ function Marathwadacoach(props) {
       {props.data.map((data) => {
         return (
           <>
-             <div className="factory-parent parent bg-img-cover">
+            <div className="factory-parent parent bg-img-cover">
               <div className="factory-overlay"></div>
-              <h2 className="factory-headding1">{data.Marathwada_coach_factory_heading}</h2>
+              <h2 className="factory-headding1">
+                {data.Marathwada_coach_factory_heading}
+              </h2>
             </div>
 
             <div className="counter-parent1">
-              <h3 >{data.Marathwada_counter}</h3>
+              <h3>{data.Marathwada_counter}</h3>
               <Tooltip id="my-tooltip" />
               <Counter
                 data={props.data}
@@ -101,13 +102,17 @@ function Marathwadacoach(props) {
               </video>
               <div className="jal2-content">
                 {/* <div className="jal2-left">  */}
-                <h2 className="jal-headding">{data.Marathwada_coach_factory_heading}</h2>
+                <h2 className="jal-headding">
+                  {data.Marathwada_coach_factory_heading}
+                </h2>
                 {responsive ? (
                   <p className="jal2-text">
                     <>
                       {data.Marathwada_coach_factory_para.slice(0, 300)}{" "}
                       {func2 && (
-                        <p>{data.Marathwada_coach_factory_para.slice(300, 1000)}</p>
+                        <p>
+                          {data.Marathwada_coach_factory_para.slice(300, 1000)}
+                        </p>
                       )}
                       {!func2 ? (
                         <span
@@ -146,7 +151,7 @@ function Marathwadacoach(props) {
               img3={img3}
               img4={img4}
               img5={img5}
-                img6={img6}
+              img6={img6}
               img7={img7}
               img8={img8}
             />

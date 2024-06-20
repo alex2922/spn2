@@ -32,9 +32,12 @@
       align-items: flex-start;
       justify-content: center;
       // gap: var(--gap);
-      h2,
-      p {
-        margin-bottom: var(--gap);
+        h2,
+        p {
+          margin-bottom: var(--gap);
+        }
+      .sub-heading{
+       margin-top: -23px;
       }
     }
   }

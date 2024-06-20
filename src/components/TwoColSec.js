@@ -31,6 +31,9 @@ function twoColSec(props) {
           <h2 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
             {props.subheading}
           </h2>
+          <h2 className="sub-heading"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            {props.subheading1}
+          </h2>
           <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             {props.subdescription}
           </p>
