@@ -143,6 +143,14 @@
    }  
   }
 
+
+  @media only screen and (max-width:550px) {
+    .contact2 {
+      margin-top: 0px !important;
+    }
+}
+
+
   @media only screen and (max-width:400px) {  
     .contact2-cont-bottom-right {
         padding: 0px;
