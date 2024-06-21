@@ -25,7 +25,7 @@ import axios from "axios";
 function Home(props) {
   const swiperSlidesData = [
     {
-      heading_marathi: "मराठवाडा रेल्वे कोच कारखाना",
+      heading: "मराठवाडा रेल्वे कोच कारखाना",
       link: "/Marathwada_Coach_Factory",
       bgImage: s1,
     },
