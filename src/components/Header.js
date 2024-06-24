@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../Styles/Header.scss";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/header/BJP_election_symbol.png";
-import { HiMenuAlt3 } from "react-icons/hi";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { Menu, Dropdown } from "antd";
 import { RiArrowDropDownLine } from "react-icons/ri";
