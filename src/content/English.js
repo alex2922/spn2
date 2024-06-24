@@ -136,7 +136,7 @@ const english = [
 
     Taas_countup1:"hours duration",      
     Taas_countup2:"10 thousand crore rupees of assistance",
-    Taas_countup3:"Citizen participation ",
+    Taas_countup3:"1000+ Participation of protestors",
     
 
     Taas_heading2:"Sacrificing food for food!  ",

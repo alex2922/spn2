@@ -76,16 +76,17 @@ function Taasandolan(props) {
                 textnum1="72"
                 plus=""
                 text1={data.Taas_countup1}
-                textnum2="72"
+                textnum2="10000"
                 icon2={<MdCurrencyRupee />}
                 plus2=""
                 text2={data.Taas_countup2}
-                textnum3=""
-                plus3=""
+                textnum3="1000"
+                plus3="+"
+                icon3={<MdCurrencyRupee />}
                 text3={data.Taas_countup3}
-                textnum4=""
-                plus4=""
-                text4=""
+                // textnum4=""
+                // plus4=""
+                // text4=""
               />
             </div>
 
