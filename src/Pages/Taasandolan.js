@@ -16,6 +16,7 @@ import { Helmet } from "react-helmet";
 import { ImClock2 } from "react-icons/im";
 import taas from "../assets/72_Taas_Andolan.webm";
 import { MdCurrencyRupee } from "react-icons/md";
+import { FaPeopleGroup } from "react-icons/fa6";
 
 function Taasandolan(props) {
   const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -82,7 +83,7 @@ function Taasandolan(props) {
                 text2={data.Taas_countup2}
                 textnum3="1000"
                 plus3="+"
-                icon3={<MdCurrencyRupee />}
+                icon3={<FaPeopleGroup />}
                 text3={data.Taas_countup3}
                 // textnum4=""
                 // plus4=""
