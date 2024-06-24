@@ -135,8 +135,8 @@ const english = [
     Taas_saksharta_para:"On the initiative of MLA Sambhaji Patil Nilangekar, '72 Hours Fasting' was held on 11th October 2021 to raise voice about the anti-farmer policies of the then Maha Vikas Aghadi government and the neglect of the damaged farmers. This movement was held in the presence of thousands of farmers. Attacking the Nizam attitude of the government, farmers along with Sambhaji Patil went on a food boycott. Meanwhile, 14 more farmers had to be taken to the hospital due to this. Finally, the government woke up and on the third day, the government announced an aid of 10 thousand crore rupees for the affected farmers. ",
 
     Taas_countup1:"hours duration",      
-    Taas_countup2:"10 thousand crore rupees of assistance",
-    Taas_countup3:"1000+ Participation of protestors",
+    Taas_countup2:"thousand crore rupees of assistance",
+    Taas_countup3:"participation of protestors",
     
 
     Taas_heading2:"Sacrificing food for food!  ",
