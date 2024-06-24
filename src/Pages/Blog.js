@@ -7,15 +7,21 @@ import axios from "axios";
 
 function Blogs(props) {
   const [blogdata, setdata] = useState([]);
-  const fetchData = () => {
-    axios
-      .get(
-        props.toggle
-          ? "https://backend.sambhajipatilnilangekar.com/api/blogs/category/2/"
-          : "https://backend.sambhajipatilnilangekar.com/api/blogs/category/3/"
-      )
-      .then((res) => setdata(res.data))
-      .catch((err) => console.log(err));
+  const fetchData = async () => {
+    const url = props.toggle
+      ? "https://backend.sambhajipatilnilangekar.com/api/blogs/category/2/"
+      : "https://backend.sambhajipatilnilangekar.com/api/blogs/category/3/";
+  
+    try {
+      const response = await axios.get(url, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      setdata(response.data);
+    } catch (error) {
+      console.log(error);
+    }
   };
   console.log(blogdata);
   function formatDate(dateString) {
