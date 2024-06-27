@@ -39,18 +39,22 @@ function Imageswiper(props) {
 
                             640: {
                                 slidesPerView: 2,
-                                spaceBetween: 0,
+                                spaceBetween: 10,
                             },
                             768: {
                                 slidesPerView: 2,
-                                spaceBetween: 0,
+                                spaceBetween: 10,
                             },
                             910: {
-                                slidesPerView: 3,
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            1000: {
+                                slidesPerView: 2,
                                 spaceBetween: 20,
                             },
                             1024: {
-                                slidesPerView: 3,
+                                slidesPerView: 2,
                                 spaceBetween: 20,
                             },
                             1200: {

@@ -67,8 +67,8 @@ function Akkafoundation(props) {
             <Counter data={props.data} background="#efefef" />
 
             <div className="counter-parent-main ">
-            <div className="counter-parent1 ">
-              <h3>{data.project_anandi}</h3>
+            <div className="counter-parent11 ">
+              <h3 className="akka-head1" >{data.project_anandi}</h3>
               <Tooltip id="my-tooltip" />
               <Counter
                 data={props.data}
@@ -88,9 +88,9 @@ function Akkafoundation(props) {
                 textnum4=""
               />
             </div>
-
-            <div className="counter-parent1 counter-akka counter-akka-11 ">
-              <h3  className="akka-head">{data.drishti_abhiyan}</h3>
+<hr className="counter-hr"/>
+            <div className="counter-parent12 counter-akka counter-akka-11 ">
+              <h3  className="akka-head akka-head2 ">{data.drishti_abhiyan}</h3>
               <Tooltip id="my-tooltip" />
               <Counter 
               className="hg"

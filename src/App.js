@@ -22,7 +22,6 @@ import Latur from "../src/Pages/Laturvachava";
 import Atal from "../src/Pages/Atalmaharogya";
 import Namo from "../src/Pages/Namomaharojgar";
 import Indra from "../src/Pages/Indraprashtha";
-import Akka from "../src/Pages/Akkafoundation";
 import Blog_template from "./Pages/Blog_template";
 
 
@@ -35,6 +34,7 @@ import { BsEnvelopePaperFill } from "react-icons/bs";
 import { ImOffice } from "react-icons/im";
 import { PiRoadHorizonFill } from "react-icons/pi";
 import Video_Section from "./components/Video_Section";
+import Akkafoundation from "./Pages/Akkafoundation";
 
 function App() {
   const [language, setlanguage] = useState(marathi);
@@ -101,7 +101,7 @@ function App() {
           ></Route>
           <Route
             path="/Akka_Foundation"
-            element={<Akka data={language} />}
+            element={<Akkafoundation data={language} />}
           ></Route>
           <Route
             path="/gallery"

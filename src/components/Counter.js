@@ -39,7 +39,7 @@ return() =>{
       {props.data.map((data) => {
         return (
           <>
-            {/* <div className="counter-parent parent" style={{background:`${props.background}`}}>
+            {/* <div className="counter-parent parent" style={{background:${props.background}}}>
         <div className="conter-container cont"> */}
 
             <div className="counter-box-container">
